@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="https://flunggg.cn/"/>
   <updated>2019-11-30T17:51:53.686Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>https://flunggg.cn/</id>
   
   <author>
     <name>flunggg</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2019/11/30/hello-world/"/>
-    <id>http://yoursite.com/2019/11/30/hello-world/</id>
+    <link href="https://flunggg.cn/2019/11/30/hello-world/"/>
+    <id>https://flunggg.cn/2019/11/30/hello-world/</id>
     <published>2019-11-30T14:32:44.481Z</published>
     <updated>2019-11-30T17:51:53.686Z</updated>
     
@@ -36,7 +36,7 @@
     
     
     
-      <category term="test" scheme="http://yoursite.com/tags/test/"/>
+      <category term="test" scheme="https://flunggg.cn/tags/test/"/>
     
   </entry>
   
