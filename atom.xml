@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://flunggg.cn/"/>
-  <updated>2019-12-04T03:59:35.486Z</updated>
+  <updated>2019-12-04T06:09:39.758Z</updated>
   <id>https://flunggg.cn/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello My First</title>
+    <link href="https://flunggg.cn/archives/3c5a70d9.html"/>
+    <id>https://flunggg.cn/archives/3c5a70d9.html</id>
+    <published>2019-12-04T06:09:39.000Z</published>
+    <updated>2019-12-04T06:09:39.758Z</updated>
+    
+    <content type="html"><![CDATA[<!-- Go to www.addthis.com/dashboard to customize your tools --><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5de3b2dbb911cfe6"></script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Test</title>
