@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://flunggg.cn/"/>
-  <updated>2019-12-08T14:17:44.535Z</updated>
+  <updated>2019-12-08T15:08:58.266Z</updated>
   <id>https://flunggg.cn/</id>
   
   <author>
@@ -17,128 +17,13 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>hahah</title>
-    <link href="https://flunggg.cn/archives/95b172e3.html"/>
-    <id>https://flunggg.cn/archives/95b172e3.html</id>
-    <published>2019-12-08T14:17:28.000Z</published>
-    <updated>2019-12-08T14:17:44.535Z</updated>
-    
-    <content type="html"><![CDATA[<!-- Go to www.addthis.com/dashboard to customize your tools --><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5de3b2dbb911cfe6"></script>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>HH</title>
-    <link href="https://flunggg.cn/archives/17e1e50.html"/>
-    <id>https://flunggg.cn/archives/17e1e50.html</id>
-    <published>2019-12-04T10:38:06.000Z</published>
-    <updated>2019-12-04T10:38:14.254Z</updated>
-    
-    <content type="html"><![CDATA[<!-- Go to www.addthis.com/dashboard to customize your tools --><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5de3b2dbb911cfe6"></script>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello My First</title>
-    <link href="https://flunggg.cn/archives/3c5a70d9.html"/>
-    <id>https://flunggg.cn/archives/3c5a70d9.html</id>
-    <published>2019-12-04T06:09:39.000Z</published>
-    <updated>2019-12-04T06:10:03.543Z</updated>
-    
-    <content type="html"><![CDATA[<!-- Go to www.addthis.com/dashboard to customize your tools --><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5de3b2dbb911cfe6"></script>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Test</title>
-    <link href="https://flunggg.cn/archives/784dd132.html"/>
-    <id>https://flunggg.cn/archives/784dd132.html</id>
-    <published>2019-12-04T03:58:09.000Z</published>
-    <updated>2019-12-04T03:59:35.486Z</updated>
-    
-    <content type="html"><![CDATA[<!-- Go to www.addthis.com/dashboard to customize your tools --><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5de3b2dbb911cfe6"></script>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello Blog</title>
-    <link href="https://flunggg.cn/archives/ca41cb46.html"/>
-    <id>https://flunggg.cn/archives/ca41cb46.html</id>
-    <published>2019-12-03T14:46:32.000Z</published>
-    <updated>2019-12-03T14:47:19.476Z</updated>
-    
-    <content type="html"><![CDATA[<!-- Go to www.addthis.com/dashboard to customize your tools --><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5de3b2dbb911cfe6"></script>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>Hello Myblog</title>
     <link href="https://flunggg.cn/archives/7d96358d.html"/>
     <id>https://flunggg.cn/archives/7d96358d.html</id>
     <published>2019-12-01T13:46:35.000Z</published>
-    <updated>2019-12-01T13:53:12.217Z</updated>
+    <updated>2019-12-08T15:08:58.266Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="已完成"><a href="#已完成" class="headerlink" title="已完成"></a>已完成</h3><ul><li>引入Valine评论系统</li><li>引入Url持久化– hexo-abbrlink, 原本默认生成路径为 <code>【网站名称／年／月／日／文章名称】</code><!-- Go to www.addthis.com/dashboard to customize your tools --><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5de3b2dbb911cfe6"></script></li></ul>]]></content>
+    <content type="html"><![CDATA[<h3 id="已完成"><a href="#已完成" class="headerlink" title="已完成"></a>已完成</h3><ul><li>引入Valine评论系统</li><li>引入Url持久化– hexo-abbrlink, 原本默认生成路径为 <code>【网站名称／年／月／日／文章名称】</code></li></ul>]]></content>
     
     <summary type="html">
     
@@ -152,30 +37,6 @@
     </summary>
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://flunggg.cn/archives/4a17b156.html"/>
-    <id>https://flunggg.cn/archives/4a17b156.html</id>
-    <published>2019-11-30T14:32:44.481Z</published>
-    <updated>2019-12-01T13:30:16.261Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external nofollow noopener noreferrer">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external nofollow noopener noreferrer">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external nofollow noopener noreferrer">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external nofollow noopener noreferrer">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external nofollow noopener noreferrer">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ hexo server</span></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external nofollow noopener noreferrer">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ hexo generate</span></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external nofollow noopener noreferrer">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external nofollow noopener noreferrer&quot;&gt;Hexo&lt;/a&gt;! This is your very first post.
-      
-    
-    </summary>
-    
-    
-    
-      <category term="test" scheme="https://flunggg.cn/tags/test/"/>
     
   </entry>
   
