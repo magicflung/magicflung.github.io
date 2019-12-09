@@ -1,12 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>Hello Myblog</title>
-    <url>/archives/7d96358d.html</url>
-    <content><![CDATA[<h3 id="已完成"><a href="#已完成" class="headerlink" title="已完成"></a>已完成</h3><ul>
-<li>引入Valine评论系统</li>
-<li>引入Url持久化– hexo-abbrlink, 原本默认生成路径为 <code>【网站名称／年／月／日／文章名称】</code></li>
-</ul>
-]]></content>
-  </entry>
+<search> 
+  
+  
+    
+    <entry>
+      <title>test</title>
+      <link href="/archives/d87f7e0c.html"/>
+      <url>/archives/d87f7e0c.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello Myblog</title>
+      <link href="/archives/7d96358d.html"/>
+      <url>/archives/7d96358d.html</url>
+      
+        <content type="html"><![CDATA[<h3 id="已完成"><a href="#已完成" class="headerlink" title="已完成"></a>已完成</h3><ul><li>引入Valine评论系统</li><li>引入Url持久化– hexo-abbrlink, 原本默认生成路径为 <code>【网站名称／年／月／日／文章名称】</code></li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
 </search>

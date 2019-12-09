@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://flunggg.cn/"/>
-  <updated>2019-12-08T15:08:58.266Z</updated>
+  <updated>2019-12-09T13:57:04.828Z</updated>
   <id>https://flunggg.cn/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test</title>
+    <link href="https://flunggg.cn/archives/d87f7e0c.html"/>
+    <id>https://flunggg.cn/archives/d87f7e0c.html</id>
+    <published>2019-12-09T13:57:03.000Z</published>
+    <updated>2019-12-09T13:57:04.828Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Hello Myblog</title>
