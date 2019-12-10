@@ -1,32 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-  
-    
-    <entry>
-      <title>Hello Myblog</title>
-      <link href="/archives/7d96358d.html"/>
-      <url>/archives/7d96358d.html</url>
-      
-        <content type="html"><![CDATA[<h3 id="已完成"><a href="#已完成" class="headerlink" title="已完成"></a>已完成</h3><h5 id="本博客搭建的技术-hexo4-0-next7-6-vps"><a href="#本博客搭建的技术-hexo4-0-next7-6-vps" class="headerlink" title="本博客搭建的技术: hexo4.0 + next7.6 + vps"></a>本博客搭建的技术: hexo4.0 + next7.6 + vps</h5><ul><li>引入<code>Valine</code>评论系统</li><li>引入Url持久化– <code>hexo-abbrlink</code>, 原本默认生成路径为 <code>【网站名称／年／月／日／文章名称】</code></li><li>成功配置gulp，压缩<code>css，js，image</code>，小加速博客</li><li>成功配置<code>git hooks</code>，实现每次即部署到<code>vps</code>也推到<code>github</code>上</li><li>引入<code>LeanCloud</code>，实现每篇文章<code>记录字数</code>，和<code>站点总字数</code></li><li>使用<code>不蒜子</code>统计<code>阅读次数</code></li><li>加入背景图和一些css</li><li>SSL证书</li></ul>]]></content>
-      
-      
+<search>
+  <entry>
+    <title>Hello Myblog</title>
+    <url>/archives/7d96358d.html</url>
+    <content><![CDATA[<h3 id="已完成"><a href="#已完成" class="headerlink" title="已完成"></a>已完成</h3><h5 id="本博客搭建的技术-hexo4-0-next7-6-vps"><a href="#本博客搭建的技术-hexo4-0-next7-6-vps" class="headerlink" title="本博客搭建的技术: hexo4.0 + next7.6 + vps"></a>本博客搭建的技术: hexo4.0 + next7.6 + vps</h5><ul>
+<li>引入<code>Valine</code>评论系统</li>
+<li>引入Url持久化– <code>hexo-abbrlink</code>, 原本默认生成路径为 <code>【网站名称／年／月／日／文章名称】</code></li>
+<li>成功配置gulp，压缩<code>css，js，image</code>，小加速博客</li>
+<li>成功配置<code>git hooks</code>，实现每次即部署到<code>vps</code>也推到<code>github</code>上</li>
+<li>引入<code>LeanCloud</code>，实现每篇文章<code>记录字数</code>，和<code>站点总字数</code></li>
+<li>使用<code>不蒜子</code>统计<code>阅读次数</code></li>
+<li>加入背景图和一些css</li>
+<li>SSL证书</li>
+</ul>
+]]></content>
       <categories>
-          
-          <category> hexo </category>
-          
+        <category>hexo</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> hexo </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-  
-  
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
 </search>
