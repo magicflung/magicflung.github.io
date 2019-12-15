@@ -2,16 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://flunggg.cn/lib/pace/README.html</loc>
+    <loc>https://flunggg.cn/about/index.html</loc>
     
-    <lastmod>2019-12-10T12:10:44.002Z</lastmod>
+    <lastmod>2019-12-15T15:12:26.740Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://flunggg.cn/archives/7d96358d.html</loc>
     
-    <lastmod>2019-12-10T04:50:07.197Z</lastmod>
+    <lastmod>2019-12-15T14:23:52.584Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://flunggg.cn/tags/index.html</loc>
+    
+    <lastmod>2019-12-15T14:03:49.554Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://flunggg.cn/categories/index.html</loc>
+    
+    <lastmod>2019-12-15T14:03:16.353Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://flunggg.cn/lib/pace/README.html</loc>
+    
+    <lastmod>2019-12-10T12:10:44.002Z</lastmod>
     
   </url>
   
@@ -33,27 +54,6 @@
     <loc>https://flunggg.cn/archives/index.html</loc>
     
     <lastmod>2019-11-30T14:55:23.378Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://flunggg.cn/tags/index.html</loc>
-    
-    <lastmod>2019-11-30T14:54:49.746Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://flunggg.cn/categories/index.html</loc>
-    
-    <lastmod>2019-11-30T14:54:29.435Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://flunggg.cn/about/index.html</loc>
-    
-    <lastmod>2019-11-30T14:53:30.252Z</lastmod>
     
   </url>
   
