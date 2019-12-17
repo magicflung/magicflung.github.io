@@ -5,9 +5,9 @@
   <subtitle>做自己喜欢的事</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://www.flunggg.cn/"/>
+  <link href="https://flunggg.cn/"/>
   <updated>2019-12-17T12:47:19.595Z</updated>
-  <id>https://www.flunggg.cn/</id>
+  <id>https://flunggg.cn/</id>
   
   <author>
     <name>flunggg</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello Myblog</title>
-    <link href="https://www.flunggg.cn/archives/7d96358d.html"/>
-    <id>https://www.flunggg.cn/archives/7d96358d.html</id>
+    <link href="https://flunggg.cn/archives/7d96358d.html"/>
+    <id>https://flunggg.cn/archives/7d96358d.html</id>
     <published>2019-12-01T13:46:35.000Z</published>
     <updated>2019-12-17T12:47:19.595Z</updated>
     
@@ -32,10 +32,10 @@
     </summary>
     
     
-      <category term="hexo" scheme="https://www.flunggg.cn/categories/hexo/"/>
+      <category term="hexo" scheme="https://flunggg.cn/categories/hexo/"/>
     
     
-      <category term="hexo" scheme="https://www.flunggg.cn/tags/hexo/"/>
+      <category term="hexo" scheme="https://flunggg.cn/tags/hexo/"/>
     
   </entry>
   

@@ -1,32 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-  
-    
-    <entry>
-      <title>Hello Myblog</title>
-      <link href="/archives/7d96358d.html"/>
-      <url>/archives/7d96358d.html</url>
-      
-        <content type="html"><![CDATA[<h3 id="已完成"><a href="#已完成" class="headerlink" title="已完成"></a>已完成</h3><blockquote><p>本博客搭建的技术: hexo4.0 + next7.6 + vps + cnd加速</p></blockquote><ul><li>引入<code>Valine</code>评论系统</li><li>引入Url持久化– <code>hexo-abbrlink</code>, 原本默认生成路径为 <code>【网站名称／年／月／日／文章名称】</code></li><li>成功配置gulp，压缩<code>css，js，image</code>，小加速博客</li><li>成功配置<code>git hooks</code>，实现每次即部署到<code>vps</code>也推到<code>github</code>上</li><li>引入<code>LeanCloud</code>，实现每篇文章<code>阅读次数</code></li><li>使用<code>不蒜子</code>统计 <code>记录文章字数</code> 和<code>页面访问量</code>和<code>站点总字数</code></li><li>加入代码雨特效和一些css，美化</li><li>SSL证书</li><li>待续</li></ul><h3 id="感慨"><a href="#感慨" class="headerlink" title="感慨"></a>感慨</h3><blockquote><p>搭建这博客，和遇到的很多问题，版本问题，包括如何美化，去研究了配置的源码，并且在服务器上刚开始不是很会用，所以折腾了3周的时间，哈哈真是折磨自己。</p><p>现在还有一个问题就是在手机打开时，这背景图会显示不好，我找不到解决方法，本想换主题，但是有些主题真的不错但是有些乱，我比较喜欢简洁，但是又有点炫酷，哈哈。</p><p>以后就在这写博客了，我一般发布在CSDN，现在多了一个发布的对象。能够用博文帮助到别人很开心，因为我也是常遇到很多问题，然后看了某些博文就知道怎么解决了，非常感谢那些人。</p><p>博客主要记录我学习的一些笔记和遇到的某些问题的解决方法。</p></blockquote>]]></content>
-      
-      
+<search>
+  <entry>
+    <title>Hello Myblog</title>
+    <url>/archives/7d96358d.html</url>
+    <content><![CDATA[<h3 id="已完成"><a href="#已完成" class="headerlink" title="已完成"></a>已完成</h3><blockquote>
+<p>本博客搭建的技术: hexo4.0 + next7.6 + vps + cnd加速</p>
+</blockquote>
+<ul>
+<li>引入<code>Valine</code>评论系统</li>
+<li>引入Url持久化– <code>hexo-abbrlink</code>, 原本默认生成路径为 <code>【网站名称／年／月／日／文章名称】</code></li>
+<li>成功配置gulp，压缩<code>css，js，image</code>，小加速博客</li>
+<li>成功配置<code>git hooks</code>，实现每次即部署到<code>vps</code>也推到<code>github</code>上</li>
+<li>引入<code>LeanCloud</code>，实现每篇文章<code>阅读次数</code></li>
+<li>使用<code>不蒜子</code>统计 <code>记录文章字数</code> 和<code>页面访问量</code>和<code>站点总字数</code></li>
+<li>加入代码雨特效和一些css，美化</li>
+<li>SSL证书</li>
+<li>待续</li>
+</ul>
+<h3 id="感慨"><a href="#感慨" class="headerlink" title="感慨"></a>感慨</h3><blockquote>
+<p>搭建这博客，和遇到的很多问题，版本问题，包括如何美化，去研究了配置的源码，并且在服务器上刚开始不是很会用，所以折腾了3周的时间，哈哈真是折磨自己。</p>
+<p>现在还有一个问题就是在手机打开时，这背景图会显示不好，我找不到解决方法，本想换主题，但是有些主题真的不错但是有些乱，我比较喜欢简洁，但是又有点炫酷，哈哈。</p>
+<p>以后就在这写博客了，我一般发布在CSDN，现在多了一个发布的对象。能够用博文帮助到别人很开心，因为我也是常遇到很多问题，然后看了某些博文就知道怎么解决了，非常感谢那些人。</p>
+<p>博客主要记录我学习的一些笔记和遇到的某些问题的解决方法。</p>
+</blockquote>
+]]></content>
       <categories>
-          
-          <category> hexo </category>
-          
+        <category>hexo</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> hexo </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-  
-  
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
 </search>
