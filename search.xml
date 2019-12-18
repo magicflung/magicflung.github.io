@@ -3,14 +3,14 @@
   <entry>
     <title>hexo4+nexT7.6搭建博客（一）</title>
     <url>/archives/f1c28309.html</url>
-    <content><![CDATA[<h3 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h3><p>网上有很多hexo+nexT7的教程，很多因为现在版本问题，有些配置完会出错或者不生效。搭建这个博客用了我4天的时间，加上美化。<br>期间使用nexT5.0和hexo4.0导致访问路径有点问题，出现 ==<a href="http://localhost:4000/archives/20%/\==" target="_blank" rel="external nofollow noopener noreferrer">http://localhost:4000/archives/20%/\==</a> 我不明白咋回事，所以删了两次本地博客。结果发现是版本问题。</p>
+    <content><![CDATA[<h3 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h3><p>网上有很多hexo+nexT7的教程，很多因为现在版本问题，有些配置完会出错或者不生效。搭建这个博客用了我4天的时间，加上美化。<br>期间使用nexT5.0和hexo4.0导致访问路径有点问题，出现 <a href="http://localhost:4000/archives/20%/" target="_blank" rel="external nofollow noopener noreferrer">http://localhost:4000/archives/20%/</a> 我不明白咋回事，所以删了两次本地博客。结果发现是版本问题。</p>
 <h3 id="2-安装Node和Git"><a href="#2-安装Node和Git" class="headerlink" title="2.安装Node和Git"></a>2.安装Node和Git</h3><p>使用hexo需要安装两个前置工具: Node 和 Git。</p>
 <p>Node直接默认安装就行，点击下载 <a href="http://nodejs.cn/download/" target="_blank" rel="external nofollow noopener noreferrer">Node</a>。安装完不用理。</p>
 <p>Git也是直接下载，点击下载 <a href="https://git-scm.com/" target="_blank" rel="external nofollow noopener noreferrer">Git</a>。一直默认安装完需要如下操作：</p>
 <ul>
 <li><p>如果没有GitHub账号的，自己去注册，有账号的，直接创建一个新的仓库，名为 ==yourgithubname.github.io==，其中==yourgithubname==是你的github名称，必须操作。</p>
 <blockquote>
-<p>比如我的：/ 前面是我的用户名，后面就是用我的用户名。<br><img src="/archives/f1c28309/%5Chexo4-nexT7-6%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%80%EF%BC%89%5Cgitname.png" alt></p>
+<p>比如我的：/ 前面是我的用户名，后面就是用我的用户名。<br><img src="/archives/f1c28309/gitname.png" alt></p>
 </blockquote>
 </li>
 <li><p>配置Git的SSH Key，第一次使用==Git Bash==使用一些配置：</p>
