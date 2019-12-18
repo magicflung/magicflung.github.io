@@ -40,7 +40,7 @@
 </ul>
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">deploy:</span></pre></td></tr><tr><td class="code"><pre><span class="line">  type: git</span></pre></td></tr><tr><td class="code"><pre><span class="line">  repository: https://github.com/yourgitname/yourgitname.github.io.git</span></pre></td></tr><tr><td class="code"><pre><span class="line">  branch: master</span></pre></td></tr></table></figure>
 <ul>
-<li>然后使用下面三条命令。<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">![主题配置文件css样式](D:\myblog\blog\source\_posts\hexo4-nexT7-6搭建博客（一）\主题配置文件css样式.png)hexo clean &#x2F;&#x2F; 清除缓存</span></pre></td></tr><tr><td class="code"><pre><span class="line">hexo g  &#x2F;&#x2F; 生成静态页面</span></pre></td></tr><tr><td class="code"><pre><span class="line">hexo d &#x2F;&#x2F; 部署</span></pre></td></tr></table></figure>
+<li>然后使用下面三条命令。  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">![主题配置文件css样式](D:\myblog\blog\source\_posts\hexo4-nexT7-6搭建博客（一）\主题配置文件css样式.png)hexo clean &#x2F;&#x2F; 清除缓存</span></pre></td></tr><tr><td class="code"><pre><span class="line">hexo g  &#x2F;&#x2F; 生成静态页面</span></pre></td></tr><tr><td class="code"><pre><span class="line">hexo d &#x2F;&#x2F; 部署</span></pre></td></tr></table></figure>
 
 
 
