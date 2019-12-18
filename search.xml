@@ -33,14 +33,16 @@
 </ul>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo clean &#x2F;&#x2F; 清除缓存</span></pre></td></tr><tr><td class="code"><pre><span class="line">hexo g  &#x2F;&#x2F; 生成静态页面</span></pre></td></tr><tr><td class="code"><pre><span class="line">hexo s &#x2F;&#x2F; 启动本地项目</span></pre></td></tr></table></figure>
 <ul>
-<li><p>然后就可以在浏览器上访问 <a href="localhost:4000" target="_blank" rel="external nofollow noopener noreferrer">localhost:4000</a> 来看到最初的博客，如果看到说明成功了</p>
+<li><p>然后就可以在浏览器上访问 <a href="localhost:4000" target="_blank" rel="external nofollow noopener noreferrer">localhost:4000</a> 来看到最初的博客，如果看到说明成功了。</p>
 </li>
-<li><p>那部署博客到git上,先在站点目录下的_config.yml文件最后一行配置</p>
+<li><p>那部署博客到git上,先在站点目录下的_config.yml文件最后一行配置。</p>
 </li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">deploy:</span></pre></td></tr><tr><td class="code"><pre><span class="line">  type: git</span></pre></td></tr><tr><td class="code"><pre><span class="line">  repository: https:&#x2F;&#x2F;github.com&#x2F;yourgitname&#x2F;yourgitname.github.io.git</span></pre></td></tr><tr><td class="code"><pre><span class="line">  branch: master</span></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">deploy:</span></pre></td></tr><tr><td class="code"><pre><span class="line">  type: git</span></pre></td></tr><tr><td class="code"><pre><span class="line">  repository: https://github.com/yourgitname/yourgitname.github.io.git</span></pre></td></tr><tr><td class="code"><pre><span class="line">  branch: master</span></pre></td></tr></table></figure>
 <ul>
-<li>然后使用下面三条命令<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">![主题配置文件css样式](D:\myblog\blog\source\_posts\hexo4-nexT7-6搭建博客（一）\主题配置文件css样式.png)hexo clean &#x2F;&#x2F; 清除缓存</span></pre></td></tr><tr><td class="code"><pre><span class="line">hexo g  &#x2F;&#x2F; 生成静态页面</span></pre></td></tr><tr><td class="code"><pre><span class="line">hexo d &#x2F;&#x2F; 部署</span></pre></td></tr></table></figure>
+<li>然后使用下面三条命令。<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">![主题配置文件css样式](D:\myblog\blog\source\_posts\hexo4-nexT7-6搭建博客（一）\主题配置文件css样式.png)hexo clean &#x2F;&#x2F; 清除缓存</span></pre></td></tr><tr><td class="code"><pre><span class="line">hexo g  &#x2F;&#x2F; 生成静态页面</span></pre></td></tr><tr><td class="code"><pre><span class="line">hexo d &#x2F;&#x2F; 部署</span></pre></td></tr></table></figure>
+
+
 
 </li>
 </ul>
