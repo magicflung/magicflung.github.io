@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>hexo4 - NexT7搭建博客（三）</title>
+    <url>/archives/2ba9a068.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>hexo4 - NexT7搭建博客（二）</title>
     <url>/archives/66b7033a.html</url>
     <content><![CDATA[<h3 id="1-主题"><a href="#1-主题" class="headerlink" title="1.主题"></a>1.主题</h3><p>主题文件都是存放在站点的themes文件下，默认为landscape主题，主题可以从hexo官网下载，每个主题都会有文档。</p>
