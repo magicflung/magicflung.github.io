@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>hexo4-NexT7搭建博客（三）</title>
+    <title>hexo4-NexT7搭建博客(三)</title>
     <url>/archives/53889e4c.html</url>
-    <content><![CDATA[<p>参考：</p>
-<p>​    <a href="https://blog.csdn.net/weixin_42905141/article/details/102677424" target="_blank" rel="external nofollow noopener noreferrer">1</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/60424755" target="_blank" rel="external nofollow noopener noreferrer">    2</a></p>
+    <content><![CDATA[<h3 id="1-添加博客图标"><a href="#1-添加博客图标" class="headerlink" title="1. 添加博客图标"></a>1. 添加博客图标</h3><p>如：<img src="/archives/53889e4c/4.png" alt></p>
+<p>在主题目录下_config.yml文件查询 favicon，只需要修改前两个：small和medium，图片的像素得为16像素和32像素</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">favicon:</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">small:</span> <span class="string">/images/favicon-16x16-next.png</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">medium:</span> <span class="string">/images/favicon-32x32-next.png</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">apple_touch_icon:</span> <span class="string">/images/apple-touch-icon-next.png</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">safari_pinned_tab:</span> <span class="string">/images/logo.svg</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment">#android_manifest: /images/manifest.json</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment">#ms_browserconfig: /images/browserconfig.xml</span></span></pre></td></tr></table></figure>
+
+<p>你可以看到这两个属性的值，/images其实完整的路径为：themes/next/source/images 这条路径来定位的。</p>
+<p>也可以定义外部URI。</p>
+<p>可以去图标素材：<a href="https://www.iconfont.cn/" target="_blank" rel="external nofollow noopener noreferrer">iconfont</a>，<a href="https://www.easyicon.net/" target="_blank" rel="external nofollow noopener noreferrer">easyicon</a>。中下载16x16和32x32大小的PNG格式图片，然后放到themes/next/source/images下。</p>
+<p>可以得出，要在主题某处添加什么图片都可以放在这个目录下。</p>
 ]]></content>
   </entry>
   <entry>
-    <title>hexo4 - NexT7搭建博客（二）</title>
+    <title>hexo4 - NexT7搭建博客(二)</title>
     <url>/archives/66b7033a.html</url>
     <content><![CDATA[<h3 id="1-主题"><a href="#1-主题" class="headerlink" title="1. 主题"></a>1. 主题</h3><p>主题文件都是存放在站点的themes文件下，默认为landscape主题，主题可以从hexo官网下载，每个主题都会有文档。</p>
 <p>下载主题有两种方式，一种是下载主题包然后放到themes文件中，而我喜欢用另一种，就是使用GitBash从github上clone下来，可能速度有点慢，自己也可以用第一种方法，去github直接下载。</p>
@@ -78,7 +83,7 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo4 - nexT7搭建博客（一）</title>
+    <title>hexo4 - nexT7搭建博客(一)</title>
     <url>/archives/f1c28309.html</url>
     <content><![CDATA[<h3 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h3><p>网上有很多hexo+nexT7的教程，很多因为现在版本问题，有些配置完会出错或者不生效。搭建这个博客用了我4天的时间，加上美化。<br>期间使用nexT5.0和hexo4.0导致访问路径有点问题，出现 <a href="http://localhost:4000/archives/20%/" target="_blank" rel="external nofollow noopener noreferrer">http://localhost:4000/archives/20%/</a> 我不明白咋回事，所以删了两次本地博客。结果发现是版本问题。</p>
 <p><strong>首先在前面说清楚，每做完一步就给我使用三条指令本地测试（下面会说）一下，别傻傻的等着搞完一半甚至全部做完才来测试，要是出错那可是很致命的，最坏的结果当然是重做。如果每次都有测试要是出现bug就可以根据哪步来排除问题。</strong></p>
