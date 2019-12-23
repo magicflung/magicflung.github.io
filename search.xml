@@ -3,7 +3,7 @@
   <entry>
     <title>hexo4 - NexT7搭建博客（三）</title>
     <url>/archives/2ba9a068.html</url>
-    <content><![CDATA[<h3 id="1-添加博客图标"><a href="#1-添加博客图标" class="headerlink" title="1.添加博客图标"></a>1.添加博客图标</h3><p>如：![](\hexo4 - NexT7搭建博客（二）\4.png)</p>
+    <content><![CDATA[<h3 id="1-添加博客图标"><a href="#1-添加博客图标" class="headerlink" title="1.添加博客图标"></a>1.添加博客图标</h3><p>如：<img src="/archives/2ba9a068/4.png" alt></p>
 <p>在主题目录下_config.yml文件查询 favicon，只需要修改前两个：small和medium，图片的像素得为16像素和32像素</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">favicon:</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">small:</span> <span class="string">/images/favicon-16x16-next.png</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">medium:</span> <span class="string">/images/favicon-32x32-next.png</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">apple_touch_icon:</span> <span class="string">/images/apple-touch-icon-next.png</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">safari_pinned_tab:</span> <span class="string">/images/logo.svg</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment">#android_manifest: /images/manifest.json</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment">#ms_browserconfig: /images/browserconfig.xml</span></span></pre></td></tr></table></figure>
 
@@ -40,13 +40,13 @@
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Use icon instead of the symbol # to indicate the tag at the bottom of the post</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="attr">tag_icon:</span> <span class="literal">true</span></span></pre></td></tr></table></figure>
 
 <p>效果：</p>
-<p><img src="/archives/2ba9a068/%5Chexo4-NexT7%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%89%EF%BC%89%5C1.png" alt="1"></p>
+<p><img src="/archives/2ba9a068/1.png" alt="1"></p>
 <h3 id="6-访问量统计"><a href="#6-访问量统计" class="headerlink" title="6.访问量统计"></a>6.访问量统计</h3><p>在主题目录打开_config.yml，查询  busuanzi</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Show Views / Visitors of the website / page with busuanzi.</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment"># Get more information on http://ibruce.info/2015/04/04/busuanzi</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="attr">busuanzi_count:</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span> <span class="comment"># 是否开启访问量统计</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">total_visitors:</span> <span class="literal">false</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">total_visitors_icon:</span> <span class="string">user</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">total_views:</span> <span class="literal">true</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">total_views_icon:</span> <span class="string">eye</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">post_views:</span> <span class="literal">false</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">post_views_icon:</span> <span class="string">eye</span></span></pre></td></tr></table></figure>
 
 <p>但是我当时配置时失效，我百度一下，找到解决方案，原来是不蒜子使用的七牛的域名被强制过期。。</p>
 <p>在\themes\next\layout_third-party\statistics中的busuanzi-counter.swig中，看最前面，如图：</p>
-<p><img src="/archives/2ba9a068/%5Chexo4-NexT7%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%89%EF%BC%89%5C2.png" alt="2"></p>
+<p><img src="/archives/2ba9a068/2.png" alt="2"></p>
 <p>我是改了的，你把src中的改为：</p>
 <p>参考：</p>
 <p>​    <a href="https://blog.csdn.net/weixin_42905141/article/details/102677424" target="_blank" rel="external nofollow noopener noreferrer">1</a></p>
@@ -64,7 +64,7 @@
     <content><![CDATA[<h3 id="1-主题"><a href="#1-主题" class="headerlink" title="1.主题"></a>1.主题</h3><p>主题文件都是存放在站点的themes文件下，默认为landscape主题，主题可以从hexo官网下载，每个主题都会有文档。</p>
 <p>下载主题有两种方式，一种是下载主题包然后放到themes文件中，而我喜欢用另一种，就是使用GitBash从github上clone下来，可能速度有点慢，自己也可以用第一种方法，去github直接下载。</p>
 <h3 id="2-语言"><a href="#2-语言" class="headerlink" title="2.语言"></a>2.语言</h3><p>一开始来是英文的，所以得改成中文，打开站点目录下的_config.yml。找到下面的代码：</p>
-<p><img src="/archives/66b7033a/%5Chexo4-NexT7%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%BA%8C%EF%BC%89%5C5.png" alt></p>
+<p><img src="/archives/66b7033a/5.png" alt></p>
 <p>在language的值修改为: zh-CN</p>
 <p>然后测试下就变中文。</p>
 <h3 id="2-NexT主题"><a href="#2-NexT主题" class="headerlink" title="2.NexT主题"></a>2.NexT主题</h3><h5 id="下载NexT主题"><a href="#下载NexT主题" class="headerlink" title="下载NexT主题"></a>下载NexT主题</h5><p>我使用的是Next主题，比较火，出bug容易找到解决方案，访问速度很快，简洁。</p>
@@ -73,12 +73,12 @@
 
 <p>然后等待下载，最后的themes/next 表示会把克隆的主题放到该目录，具体可以参考  <a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="external nofollow noopener noreferrer">官方</a>。</p>
 <h5 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h5><p>在站点目录下的_config.yml文件中更改新下载的主题，把theme后面的值改为next，记得要有空格，这是yml文件得遵循yml语法。</p>
-<p><img src="/archives/66b7033a/%5Chexo4-NexT7%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%BA%8C%EF%BC%89%5C1.png" alt="1"></p>
+<p><img src="/archives/66b7033a/1.png" alt="1"></p>
 <p>然后使用之前说的三条指令启动本地测试，访问localhost:4000，就可以看到更换的next主题</p>
 <p>NexT主题中还有四个不同风格的主题，我是用Gemini风格，这个可以改，在主题目录下（next）的_config.yml中查询 Schemes，然后下面有四种风格，都试试喜欢哪一种，把不用的注释，只能存在一个风格。</p>
 <p><img src="/archives/66b7033a/%5Chexo4-NexT7%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%BA%8C%EF%BC%89%5C2.png" alt="2"></p>
 <h5 id="在菜单栏开启一些跳转页面"><a href="#在菜单栏开启一些跳转页面" class="headerlink" title="在菜单栏开启一些跳转页面"></a>在菜单栏开启一些跳转页面</h5><p>还是在主题目录下的_config.yml中。把想要的页面开启，去掉#即可。</p>
-<p><img src="/archives/66b7033a/%5Chexo4-NexT7%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%BA%8C%EF%BC%89%5C3.png" alt="3"></p>
+<p><img src="/archives/66b7033a/3.png" alt="3"></p>
 <p>我开启的从上到下分别是：首页、阅读排行（这个是我加的原先没有，后面再说怎么加）、归档、分类、标签、关于我。</p>
 <p>开启后使用指令本地测试下，看看是否显示成功并且点一点看看是否跳转成功。</p>
 <blockquote>
