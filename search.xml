@@ -76,7 +76,7 @@
 <p><img src="/archives/66b7033a/1.png" alt="1"></p>
 <p>然后使用之前说的三条指令启动本地测试，访问localhost:4000，就可以看到更换的next主题</p>
 <p>NexT主题中还有四个不同风格的主题，我是用Gemini风格，这个可以改，在主题目录下（next）的_config.yml中查询 Schemes，然后下面有四种风格，都试试喜欢哪一种，把不用的注释，只能存在一个风格。</p>
-<p><img src="/archives/66b7033a/%5Chexo4-NexT7%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%BA%8C%EF%BC%89%5C2.png" alt="2"></p>
+<p><img src="/archives/66b7033a/2.png" alt="2"></p>
 <h5 id="在菜单栏开启一些跳转页面"><a href="#在菜单栏开启一些跳转页面" class="headerlink" title="在菜单栏开启一些跳转页面"></a>在菜单栏开启一些跳转页面</h5><p>还是在主题目录下的_config.yml中。把想要的页面开启，去掉#即可。</p>
 <p><img src="/archives/66b7033a/3.png" alt="3"></p>
 <p>我开启的从上到下分别是：首页、阅读排行（这个是我加的原先没有，后面再说怎么加）、归档、分类、标签、关于我。</p>
