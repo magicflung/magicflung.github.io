@@ -134,17 +134,13 @@
 
 <p>不喜欢的可以使用false让它不启动。并且文章字数统计时，他是连空格，标点符号等都统计了，可能会导致文章的字数会不正确，偏大。</p>
 <p>效果：</p>
+<p><img src="/archives/53889e4c/9.png" alt></p>
 <h2 id="16-修改博文目录"><a href="#16-修改博文目录" class="headerlink" title="16. 修改博文目录"></a>16. 修改博文目录</h2><p>在主题目录的_config.yml 查询 toc</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 侧边栏中的目录</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment"># Front-matter variable (unsupport wrap expand_all).</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="attr">toc:</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span> <span class="comment"># 是否启动博文目标</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment"># 自动将列表号添加到目录。</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">number:</span> <span class="literal">false</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment"># 如果为true，则如果标题宽度大于边栏宽度，则所有单词都将放在下一行。width.</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">wrap:</span> <span class="literal">false</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment"># 如果为true，则将显示帖子中所有级别的TOC，而不是其中激活的部分。</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">expand_all:</span> <span class="literal">false</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment"># 生成的子标题的最大深度。</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">max_depth:</span> <span class="number">6</span></span></pre></td></tr></table></figure>
 
 
 
-
-
-
-
-
-
+<h2 id="17-RSS订阅"><a href="#17-RSS订阅" class="headerlink" title="17. RSS订阅"></a>17. RSS订阅</h2><p>可以对文章内容进行订阅，进行信息聚合，带来更好的文章阅读体验。但是我去看别人的教程，点出来是一堆代码，然后说试试换下浏览器，我火狐和谷歌都试了还是代码，最后说要安装RSS阅读器，我嫌麻烦，就不搞了。现在RSS还不是很完善。</p>
 <p>参考：</p>
 <p>​    <a href="https://blog.csdn.net/weixin_42905141/article/details/102677424" target="_blank" rel="external nofollow noopener noreferrer">1</a></p>
 <p>​    <a href="https://zhuanlan.zhihu.com/p/60424755" target="_blank" rel="external nofollow noopener noreferrer">2</a></p>
