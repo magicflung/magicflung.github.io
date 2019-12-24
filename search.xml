@@ -112,13 +112,13 @@
 
 
 
-<h4 id="12-文章加密访问"><a href="#12-文章加密访问" class="headerlink" title="12. 文章加密访问"></a>12. 文章加密访问</h4><p>我不推荐用，毕竟只是前端校验而已。虽然一般人破不出。</p>
-<h4 id="13-启动代码复制按钮"><a href="#13-启动代码复制按钮" class="headerlink" title="13. 启动代码复制按钮"></a>13. 启动代码复制按钮</h4><p>打开主题目录的_config.yml，查询 copy_button。</p>
+<h2 id="12-文章加密访问"><a href="#12-文章加密访问" class="headerlink" title="12. 文章加密访问"></a>12. 文章加密访问</h2><p>我不推荐用，毕竟只是前端校验而已。虽然一般人破不出。</p>
+<h2 id="13-启动代码复制按钮"><a href="#13-启动代码复制按钮" class="headerlink" title="13. 启动代码复制按钮"></a>13. 启动代码复制按钮</h2><p>打开主题目录的_config.yml，查询 copy_button。</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">codeblock:</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment"># Code Highlight theme</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment"># Available values: normal | night | night eighties | night blue | night bright | solarized | solarized dark | galactic</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment"># See: https://github.com/chriskempson/tomorrow-theme</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">highlight_theme:</span> <span class="string">normal</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment"># Add copy button on codeblock</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">copy_button:</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attr">enable:</span> <span class="literal">true</span> <span class="comment"># 开启代码复制按钮</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="comment"># Show text copy result.</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attr">show_result:</span> <span class="literal">true</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="comment"># Available values: default | flat | mac</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attr">style:</span> <span class="string">mac</span> <span class="comment"># 代码框样式，我喜欢用mac的，上面有三个选择都可以试试</span></span></pre></td></tr></table></figure>
 
 
 
-<h4 id="14-在Footer添加站点运行时间"><a href="#14-在Footer添加站点运行时间" class="headerlink" title="14. 在Footer添加站点运行时间"></a>14. 在Footer添加站点运行时间</h4><p>在主题目录的/themes/next/layout/_partials/footer.swig中找到下面这句。</p>
+<h2 id="14-在Footer添加站点运行时间"><a href="#14-在Footer添加站点运行时间" class="headerlink" title="14. 在Footer添加站点运行时间"></a>14. 在Footer添加站点运行时间</h2><p>在主题目录的/themes/next/layout/_partials/footer.swig中找到下面这句。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;%- if theme.footer.theme.enable %&#125;</span></pre></td></tr></table></figure>
 
 <p>然后在这句的下面添加：</p>
@@ -126,7 +126,7 @@
 
 <p>在这条语句里面我把原先的代码都注释了，不想用。为了怕说不清，贴图：</p>
 <p><img src="/archives/53889e4c/8.png" alt></p>
-<h4 id="15-实现文章统计功能"><a href="#15-实现文章统计功能" class="headerlink" title="15. 实现文章统计功能"></a>15. 实现文章统计功能</h4><p>安装一个 hexo-symbols-count-time插件，可以统计字数和阅读分钟数，</p>
+<h2 id="15-实现文章统计功能"><a href="#15-实现文章统计功能" class="headerlink" title="15. 实现文章统计功能"></a>15. 实现文章统计功能</h2><p>安装一个 hexo-symbols-count-time插件，可以统计字数和阅读分钟数，</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-symbols-count-time --save</span></pre></td></tr></table></figure>
 
 <p>然后在站点目录的config.yml最后添加：</p>
@@ -134,7 +134,7 @@
 
 <p>不喜欢的可以使用false让它不启动。并且文章字数统计时，他是连空格，标点符号等都统计了，可能会导致文章的字数会不正确，偏大。</p>
 <p>效果：</p>
-<h4 id="16-修改博文目录"><a href="#16-修改博文目录" class="headerlink" title="16. 修改博文目录"></a>16. 修改博文目录</h4><p>在主题目录的_config.yml 查询 toc</p>
+<h2 id="16-修改博文目录"><a href="#16-修改博文目录" class="headerlink" title="16. 修改博文目录"></a>16. 修改博文目录</h2><p>在主题目录的_config.yml 查询 toc</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 侧边栏中的目录</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment"># Front-matter variable (unsupport wrap expand_all).</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="attr">toc:</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span> <span class="comment"># 是否启动博文目标</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment"># 自动将列表号添加到目录。</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">number:</span> <span class="literal">false</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment"># 如果为true，则如果标题宽度大于边栏宽度，则所有单词都将放在下一行。width.</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">wrap:</span> <span class="literal">false</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment"># 如果为true，则将显示帖子中所有级别的TOC，而不是其中激活的部分。</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">expand_all:</span> <span class="literal">false</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment"># 生成的子标题的最大深度。</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">max_depth:</span> <span class="number">6</span></span></pre></td></tr></table></figure>
 
 
@@ -147,7 +147,7 @@
 
 <p>参考：</p>
 <p>​    <a href="https://blog.csdn.net/weixin_42905141/article/details/102677424" target="_blank" rel="external nofollow noopener noreferrer">1</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/60424755" target="_blank" rel="external nofollow noopener noreferrer">    2</a></p>
+<p>​    <a href="https://zhuanlan.zhihu.com/p/60424755" target="_blank" rel="external nofollow noopener noreferrer">2</a></p>
 ]]></content>
   </entry>
   <entry>
