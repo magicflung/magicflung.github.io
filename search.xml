@@ -134,6 +134,7 @@
 <p>然后还可以设置自己的自定义头像，登录 <a href="https://cn.gravatar.com/" target="_blank" rel="external nofollow noopener noreferrer">gravatar</a>，注册账号并设置头像，然后在valine评论时，输入我们刚刚注册的邮箱，会显示出我们自定义的头像。我的设置如下：</p>
 <p><img src="/images/loading.png" data-original="/archives/6bbc4ccb/22.png" alt></p>
 <h2 id="26-添加文章阅读次数"><a href="#26-添加文章阅读次数" class="headerlink" title="26. 添加文章阅读次数"></a>26. 添加文章阅读次数</h2><p>这个还是得借助<a href="https://leancloud.cn/dashboard/login.html#/signup" target="_blank" rel="external nofollow noopener noreferrer">Leancloud</a>，我建议再新建一个新的应用</p>
+<p>在主题目录的_config.yml 查询 leancloud_visitors</p>
 <h2 id="27-Url-持久化"><a href="#27-Url-持久化" class="headerlink" title="27. Url 持久化"></a>27. Url 持久化</h2><p>我们可以发现 hexo 默认生成的文章地址路径是 <code>【网站名称／年／月／日／文章名称】</code>。</p>
 <p>这种链接对搜索爬虫是很不友好的，它的 url 结构超过了三层，太深了。</p>
 <p>下面我推荐安装 <code>hexo-abbrlink</code> 插件：</p>
