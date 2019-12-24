@@ -21,7 +21,7 @@
 <p><img src="/images/loading.png" data-original="/archives/6bbc4ccb/5.png" alt></p>
 <p>不过上面的 网址(http://) 我觉得没什么用，就把它去掉了，打开themes\next\layout_third-party\comments中的valine.swig文件，删掉第三个，我的已经删了：</p>
 <p><img src="/images/loading.png" data-original="/archives/6bbc4ccb/6.png" alt></p>
-<p>也可以选择Gitalk评论系统，这个我就不说了。</p>
+<p>也可以选择Gitalk评论系统，这个我就不说了。要的自己百度。</p>
 <h2 id="24-Vline邮箱评论通知"><a href="#24-Vline邮箱评论通知" class="headerlink" title="24. Vline邮箱评论通知"></a>24. Vline邮箱评论通知</h2><p>每当有人在博文下面评论我们的博文，我们就可以使用这个插件通过邮箱知道。</p>
 <p>下面这款插件是新款，有几个优点：</p>
 <ul>
