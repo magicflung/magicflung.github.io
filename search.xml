@@ -161,8 +161,47 @@
 <p>RSS的URL就是我们点开后一堆代码的上面的URL，比如我的是：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;flunggg.cn&#x2F;atom.xml</span></pre></td></tr></table></figure>
 
-<p>这个非必要，我一般喜欢收藏。</p>
-<h2 id="18"><a href="#18" class="headerlink" title="18."></a>18.</h2><p>参考：</p>
+
+
+
+
+<h2 id="18-GitHub-Fork-Me"><a href="#18-GitHub-Fork-Me" class="headerlink" title="18. GitHub Fork Me"></a>18. GitHub Fork Me</h2><p>这个可以在我们的网站右上角出现一个到GitHub的跳转按钮，其实也跟侧边栏那个社交小图标差不多功能</p>
+<p>在主题目录的_config.yml查询 github_banner</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># &#96;Follow me on GitHub&#96; banner in the top-right corner.</span></pre></td></tr><tr><td class="code"><pre><span class="line">github_banner:</span></pre></td></tr><tr><td class="code"><pre><span class="line">  enable: true # 开启</span></pre></td></tr><tr><td class="code"><pre><span class="line">  permalink: https:&#x2F;&#x2F;github.com&#x2F;magicflung # 把它改为你的github首页</span></pre></td></tr><tr><td class="code"><pre><span class="line">  title: Follow me on GitHub</span></pre></td></tr></table></figure>
+
+
+
+<h2 id="19-bookmark"><a href="#19-bookmark" class="headerlink" title="19. bookmark"></a>19. bookmark</h2><p>Bookmark是一个插件，允许用户保存他们的阅读进度。用户只需单击页面左上角的书签图标即可保存滚动位置。当他们下次访问您的博客时，他们可以自动恢复每个页面的最后滚动位置。</p>
+<p>在主题目录的_config.yml查询 bookmark</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">bookmark:</span></pre></td></tr><tr><td class="code"><pre><span class="line">  enable: true # 开启</span></pre></td></tr><tr><td class="code"><pre><span class="line">  # Customize the color of the bookmark.</span></pre></td></tr><tr><td class="code"><pre><span class="line">  color: &quot;#836FFF&quot; # 自定义颜色</span></pre></td></tr><tr><td class="code"><pre><span class="line">  # If auto, save the reading progress when closing the page or clicking the bookmark-icon.</span></pre></td></tr><tr><td class="code"><pre><span class="line">  # If manual, only save it by clicking the bookmark-icon.</span></pre></td></tr><tr><td class="code"><pre><span class="line">  save: auto # 会自动保存阅读进度</span></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<p><img src="/archives/53889e4c/10.png" alt></p>
+<h2 id="20-添加lazyload"><a href="#20-添加lazyload" class="headerlink" title="20. 添加lazyload"></a>20. 添加lazyload</h2><p>对于图片进行延迟加载，访问到图片位置时才去请求图片资源，这样可以提高博客的访问速度，节省流量。下面一整条都复制。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;theme-next-jquery-lazyload source&#x2F;lib&#x2F;jquery_lazyload</span></pre></td></tr></table></figure>
+
+<p>然后在主题目录的_config.yml查询 lazyload，默认为false。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Vanilla JavaScript plugin for lazyloading images.</span></pre></td></tr><tr><td class="code"><pre><span class="line"># For more information: https:&#x2F;&#x2F;github.com&#x2F;ApoorvSaxena&#x2F;lozad.js</span></pre></td></tr><tr><td class="code"><pre><span class="line">lazyload: true</span></pre></td></tr></table></figure>
+
+
+
+<h2 id="21-显示当前浏览进度"><a href="#21-显示当前浏览进度" class="headerlink" title="21. 显示当前浏览进度"></a>21. 显示当前浏览进度</h2><p>在主题目录的_config.yml查询scrollpercent，默认为false，改为true</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">back2top:</span></pre></td></tr><tr><td class="code"><pre><span class="line">  enable: true</span></pre></td></tr><tr><td class="code"><pre><span class="line">  # Back to top in sidebar.</span></pre></td></tr><tr><td class="code"><pre><span class="line">  sidebar: false</span></pre></td></tr><tr><td class="code"><pre><span class="line">  # Scroll percent label in b2t button.</span></pre></td></tr><tr><td class="code"><pre><span class="line">  scrollpercent: true # 开启</span></pre></td></tr></table></figure>
+
+
+
+<h2 id="22-阅读进度"><a href="#22-阅读进度" class="headerlink" title="22. 阅读进度"></a>22. 阅读进度</h2><p>在主题目录的_config.yml查询reading_progress</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Reading progress bar</span></pre></td></tr><tr><td class="code"><pre><span class="line">reading_progress:</span></pre></td></tr><tr><td class="code"><pre><span class="line">  enable: true # 开启</span></pre></td></tr><tr><td class="code"><pre><span class="line">  # Available values: top | bottom</span></pre></td></tr><tr><td class="code"><pre><span class="line">  position: top # top会出现在页面最顶部，bottom会出现在 回到顶部按钮那里</span></pre></td></tr><tr><td class="code"><pre><span class="line">  color: &quot;#836FFF&quot; # 可修改颜色</span></pre></td></tr><tr><td class="code"><pre><span class="line">  height: 3px</span></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+<p>参考：</p>
 <p>​    <a href="https://blog.csdn.net/weixin_42905141/article/details/102677424" target="_blank" rel="external nofollow noopener noreferrer">1</a></p>
 <p>​    <a href="https://zhuanlan.zhihu.com/p/60424755" target="_blank" rel="external nofollow noopener noreferrer">2</a></p>
 ]]></content>
