@@ -3,7 +3,7 @@
   <entry>
     <title>hexo4-NexT7搭建博客(三)</title>
     <url>/archives/53889e4c.html</url>
-    <content><![CDATA[<h2 id="1-添加博客图标"><a href="#1-添加博客图标" class="headerlink" title="1. 添加博客图标"></a>1. 添加博客图标</h2><p>如：<img src="/archives/53889e4c/0.png" alt></p>
+    <content><![CDATA[<h2 id="1-添加博客图标"><a href="#1-添加博客图标" class="headerlink" title="1. 添加博客图标"></a>1. 添加博客图标</h2><p>如：<img src="/images/loading.png" data-original="/archives/53889e4c/0.png" alt></p>
 <p>在主题目录下_config.yml文件查询 favicon，只需要修改前两个：small和medium，图片的像素得为16像素和32像素</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">favicon:</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">small:</span> <span class="string">/images/favicon-16x16-next.png</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">medium:</span> <span class="string">/images/favicon-32x32-next.png</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">apple_touch_icon:</span> <span class="string">/images/apple-touch-icon-next.png</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">safari_pinned_tab:</span> <span class="string">/images/logo.svg</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment">#android_manifest: /images/manifest.json</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment">#ms_browserconfig: /images/browserconfig.xml</span></span></pre></td></tr></table></figure>
 
@@ -40,13 +40,13 @@
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Use icon instead of the symbol # to indicate the tag at the bottom of the post</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="attr">tag_icon:</span> <span class="literal">true</span></span></pre></td></tr></table></figure>
 
 <p>效果：</p>
-<p><img src="/archives/53889e4c/1.png" alt="1"></p>
+<p><img src="/images/loading.png" data-original="/archives/53889e4c/1.png" alt="1"></p>
 <h2 id="6-访问量统计"><a href="#6-访问量统计" class="headerlink" title="6. 访问量统计"></a>6. 访问量统计</h2><p>在主题目录打开_config.yml，查询  busuanzi</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Show Views / Visitors of the website / page with busuanzi.</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment"># Get more information on http://ibruce.info/2015/04/04/busuanzi</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="attr">busuanzi_count:</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span> <span class="comment"># 是否开启访问量统计</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">total_visitors:</span> <span class="literal">false</span> <span class="comment"># 本站访客数</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">total_visitors_icon:</span> <span class="string">user</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">total_views:</span> <span class="literal">true</span> <span class="comment"># 本站总访问量</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">total_views_icon:</span> <span class="string">eye</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">post_views:</span> <span class="literal">false</span> <span class="comment"># 文章访问量，但我不喜欢用这个，因为在我的网站首页不会显示每篇博文的访问量，而是得点进博文，我用别的来统计，待会会说</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">post_views_icon:</span> <span class="string">eye</span></span></pre></td></tr></table></figure>
 
 <p>但是我当时配置时失效，我百度一下，找到解决方案，原来是不蒜子使用的七牛的域名被强制过期。。</p>
 <p>在\themes\next\layout_third-party\statistics中的busuanzi-counter.swig中，看最前面，如图：</p>
-<p><img src="/archives/53889e4c/2.png" alt="2"></p>
+<p><img src="/images/loading.png" data-original="/archives/53889e4c/2.png" alt="2"></p>
 <p>我是改了的，你把src中的改为：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;busuanzi.ibruce.info&#x2F;busuanzi&#x2F;2.3&#x2F;busuanzi.pure.mini.js</span></pre></td></tr></table></figure>
 
@@ -70,10 +70,10 @@
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Read more button</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment"># If true, the read more button will be displayed in excerpt section.</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="attr">read_more_btn:</span> <span class="literal">true</span> <span class="comment"># 启动</span></span></pre></td></tr></table></figure>
 
 <p>效果：</p>
-<p><img src="/archives/53889e4c/4.png" alt></p>
+<p><img src="/images/loading.png" data-original="/archives/53889e4c/4.png" alt></p>
 <p>这里需要额外说一下，必须在每篇博文的最前面有一堆默认键值对代码那里，添加上一个键: description，</p>
 <p>然后冒号： :，然后再空格，添加上自己的小文段。</p>
-<p> <img src="/archives/53889e4c/5.png" alt></p>
+<p> <img src="/images/loading.png" data-original="/archives/53889e4c/5.png" alt></p>
 <p>但是每次都得自己加太麻烦了，所以在站点目录下的scaffolds文件中有个post文件，这个文件就是博文模板，点开就可以添加每篇博文的通用信息。我的如下：</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="attr">title:</span> <span class="string">&#123;&#123;</span> <span class="string">title</span> <span class="string">&#125;&#125;</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="attr">date:</span> <span class="string">&#123;&#123;</span> <span class="string">date</span> <span class="string">&#125;&#125;</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="attr">tags:</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="attr">categories:</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="attr">copyright:</span> <span class="literal">true</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="attr">top:</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="attr">description:</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span></pre></td></tr></table></figure>
 
@@ -95,7 +95,7 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% if post.top %&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">	&lt;i class&#x3D;&quot;fa fa-thumb-tack&quot;&gt;&lt;&#x2F;i&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">	&lt;font color&#x3D;7D26CD&gt;置顶&lt;&#x2F;font&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">	&lt;span class&#x3D;&quot;post-meta-divider&quot;&gt;|&lt;&#x2F;span&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#123;% endif %&#125;</span></pre></td></tr></table></figure>
 
 <p>效果：</p>
-<p><img src="/archives/53889e4c/7.png" alt></p>
+<p><img src="/images/loading.png" data-original="/archives/53889e4c/7.png" alt></p>
 <h2 id="10-在文章底部增加版权信息"><a href="#10-在文章底部增加版权信息" class="headerlink" title="10. 在文章底部增加版权信息"></a>10. 在文章底部增加版权信息</h2><p>我是使用自己的，在themes\next\layout_macro中新建一个 my-copyright.swig文件，并添加：</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">  &#123;% <span class="keyword">if</span> page.copyright %&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"my_post_copyright"</span>&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  &lt;script src=<span class="string">"//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">  &lt;!-- JS库 sweetalert 可修改路径 --&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  &lt;script src=<span class="string">"https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  &lt;script src=<span class="string">"https://unpkg.com/sweetalert/dist/sweetalert.min.js"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  &lt;p&gt;<span class="xml"><span class="tag">&lt;<span class="name">span</span>&gt;</span>文章作者:<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><span class="xml"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"/"</span> <span class="attr">title</span>=<span class="string">"访问 &#123;&#123; theme.author &#125;&#125; 的个人博客"</span>&gt;</span>&#123;&#123; theme.author &#125;&#125;<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  &lt;p&gt;<span class="xml"><span class="tag">&lt;<span class="name">span</span>&gt;</span>发布时间:<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span>&#123;&#123; page.date.format(<span class="string">"YYYY年MM月DD日 - HH:MM"</span>) &#125;&#125;&lt;<span class="regexp">/p&gt;</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="regexp">  &lt;p&gt;&lt;span&gt;原始链接:&lt;/</span>span&gt;<span class="xml"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&#123;&#123; url_for(page.path) &#125;&#125;"</span> <span class="attr">title</span>=<span class="string">"&#123;&#123; page.title &#125;&#125;"</span>&gt;</span>&#123;&#123; page.permalink &#125;&#125;<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span></pre></td></tr><tr><td class="code"><pre><span class="line">    &lt;span <span class="class"><span class="keyword">class</span></span>=<span class="string">"copy-path"</span>  title=<span class="string">"点击复制文章链接"</span>&gt;<span class="xml"><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-clipboard"</span> <span class="attr">data-clipboard-text</span>=<span class="string">"&#123;&#123; page.permalink &#125;&#125;"</span>  <span class="attr">aria-label</span>=<span class="string">"复制成功！"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  &lt;<span class="regexp">/p&gt;</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="regexp">  &lt;p&gt;&lt;span&gt;许可协议:&lt;/</span>span&gt; 转载请保留原文链接及作者。&lt;<span class="regexp">/p&gt;  </span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="regexp">&lt;/</span>div&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;script&gt; </span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="keyword">var</span> clipboard = <span class="keyword">new</span> Clipboard(<span class="string">'.fa-clipboard'</span>);</span></pre></td></tr><tr><td class="code"><pre><span class="line">      $(<span class="string">".fa-clipboard"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">      clipboard.on(<span class="string">'success'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">        swal(&#123;   </span></pre></td></tr><tr><td class="code"><pre><span class="line">          title: <span class="string">""</span>,   </span></pre></td></tr><tr><td class="code"><pre><span class="line">          text: <span class="string">'复制成功'</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line">          icon: <span class="string">"success"</span>, </span></pre></td></tr><tr><td class="code"><pre><span class="line">          showConfirmButton: <span class="literal">true</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">          &#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">        &#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;);  </span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;<span class="regexp">/script&gt;</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="regexp">&#123;% endif %&#125;</span></span></pre></td></tr></table></figure>
 
@@ -105,7 +105,7 @@
 <p>然后在themes/next/layout/_macro/post.swig中，搜索 END POST BODY，然后再下一行添加：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">	&#123;% if not is_index %&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">		&#123;% include &#39;my-copyright.swig&#39; %&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">	&#123;% endif %&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;&#x2F;div&gt;</span></pre></td></tr></table></figure>
 
-<p><img src="/archives/53889e4c/6.png" alt></p>
+<p><img src="/images/loading.png" data-original="/archives/53889e4c/6.png" alt></p>
 <p>然后回到站点目录下的scaffolds文件中有个post文件，添加copyright: true。也就是我上面那图，这就会在每篇博文下添加版权信息，也方便别人复制你的url。</p>
 <h2 id="11-添加打赏"><a href="#11-添加打赏" class="headerlink" title="11. 添加打赏"></a>11. 添加打赏</h2><p>在主题文件的_config.yml，查询：reward</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Reward (Donate)</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment"># Front-matter variable (unsupport animation).</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="attr">reward_settings:</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment"># If true, reward will be displayed in every article by default.</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span> <span class="comment"># 开启打赏</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">animation:</span> <span class="literal">true</span> <span class="comment"># 开启动画抖动，可以自己试试</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment">#comment: Donate comment here.</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="attr">reward:</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">wechatpay:</span> <span class="string">/images/wechatpay.jpg</span> <span class="comment"># 放微信的收款码</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">alipay:</span> <span class="string">/images/alipay.jpg</span> <span class="comment"># 放支付宝的收款码</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment">#bitcoin: /images/bitcoin.png</span></span></pre></td></tr></table></figure>
@@ -125,7 +125,7 @@
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;div id=<span class="string">"days"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span></pre></td></tr><tr><td class="code"><pre><span class="line">	&lt;<span class="regexp">/script&gt;</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="regexp">	&lt;script language="javascript"&gt;</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="regexp">	function show_date_time()&#123;</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="regexp">	window.setTimeout("show_date_time()", 1000);</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="regexp">	BirthDay=new Date("11/</span><span class="number">29</span>/<span class="number">2019</span> <span class="number">20</span>:<span class="number">00</span>:<span class="number">00</span><span class="string">");</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">	today=new Date();</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">	timeold=(today.getTime()-BirthDay.getTime());</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">	sectimeold=timeold/1000</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">	secondsold=Math.floor(sectimeold);</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">	msPerDay=24*60*60*1000</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">	e_daysold=timeold/msPerDay</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">	daysold=Math.floor(e_daysold);</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">	e_hrsold=(e_daysold-daysold)*24;</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">	hrsold=setzero(Math.floor(e_hrsold));</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">	e_minsold=(e_hrsold-hrsold)*60;</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">	minsold=setzero(Math.floor((e_hrsold-hrsold)*60));</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">	seconds=setzero(Math.floor((e_minsold-minsold)*60));</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">	document.getElementById('days').innerHTML="</span>已运行<span class="string">"+daysold+"</span>天<span class="string">"+hrsold+"</span>时<span class="string">"+minsold+"</span>分<span class="string">"+seconds+"</span>秒<span class="string">";</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">	&#125;</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">	function setzero(i)&#123;</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">	if (i&lt;10)</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">	&#123;i="</span><span class="number">0</span><span class="string">" + i&#125;;</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">	return i;</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">	&#125;</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">	show_date_time();</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">	&lt;/script&gt;</span></span></pre></td></tr></table></figure>
 
 <p>在这条语句里面我把原先的代码都注释了，不想用。为了怕说不清，贴图：</p>
-<p><img src="/archives/53889e4c/8.png" alt></p>
+<p><img src="/images/loading.png" data-original="/archives/53889e4c/8.png" alt></p>
 <h2 id="15-实现文章统计功能"><a href="#15-实现文章统计功能" class="headerlink" title="15. 实现文章统计功能"></a>15. 实现文章统计功能</h2><p>安装一个 hexo-symbols-count-time插件，可以统计字数和阅读分钟数，</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-symbols-count-time --save</span></pre></td></tr></table></figure>
 
@@ -134,14 +134,14 @@
 
 <p>不喜欢的可以使用false让它不启动。并且文章字数统计时，他是连空格，标点符号等都统计了，可能会导致文章的字数会不正确，偏大。</p>
 <p>效果：</p>
-<p><img src="/archives/53889e4c/9.png" alt></p>
+<p><img src="/images/loading.png" data-original="/archives/53889e4c/9.png" alt></p>
 <h2 id="16-修改博文目录"><a href="#16-修改博文目录" class="headerlink" title="16. 修改博文目录"></a>16. 修改博文目录</h2><p>在主题目录的_config.yml 查询 toc</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 侧边栏中的目录</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment"># Front-matter variable (unsupport wrap expand_all).</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="attr">toc:</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span> <span class="comment"># 是否启动博文目标</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment"># 自动将列表号添加到目录。</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">number:</span> <span class="literal">false</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment"># 如果为true，则如果标题宽度大于边栏宽度，则所有单词都将放在下一行。width.</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">wrap:</span> <span class="literal">false</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment"># 如果为true，则将显示帖子中所有级别的TOC，而不是其中激活的部分。</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">expand_all:</span> <span class="literal">false</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment"># 生成的子标题的最大深度。</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">max_depth:</span> <span class="number">6</span></span></pre></td></tr></table></figure>
 
 
 
 <h2 id="17-RSS订阅（非必要）"><a href="#17-RSS订阅（非必要）" class="headerlink" title="17. RSS订阅（非必要）"></a>17. RSS订阅（非必要）</h2><p>原因：RSS订阅可以对文章内容进行订阅。如下：就不必每次去收藏夹找该博客网站</p>
-<p><img src="/archives/53889e4c/RSSReader0.png" alt></p>
+<p><img src="/images/loading.png" data-original="/archives/53889e4c/RSSReader0.png" alt></p>
 <p>首先在站点目录下打开Git Bash 安装</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-feed --save</span></pre></td></tr></table></figure>
 
@@ -154,10 +154,10 @@
 
 <p>然后部署到网站就可以看到，但是我们点开时是一堆代码，我们需要安装一个RSS阅读器的插件，在浏览器搜索</p>
 <p>RSS，谷歌商城一般登不上，登得上一样查RSS就行，那在火狐的附加工具搜，第一个就是下面这个：</p>
-<p><img src="/archives/53889e4c/RSS.png" alt></p>
+<p><img src="/images/loading.png" data-original="/archives/53889e4c/RSS.png" alt></p>
 <p>安装这个，使用方法：</p>
-<p><img src="/archives/53889e4c/RSSReader.png" alt></p>
-<p><img src="/archives/53889e4c/RSSReader2.png" alt></p>
+<p><img src="/images/loading.png" data-original="/archives/53889e4c/RSSReader.png" alt></p>
+<p><img src="/images/loading.png" data-original="/archives/53889e4c/RSSReader2.png" alt></p>
 <p>RSS的URL就是我们点开后一堆代码的上面的URL，比如我的是：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;flunggg.cn&#x2F;atom.xml</span></pre></td></tr></table></figure>
 
@@ -176,7 +176,7 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">bookmark:</span></pre></td></tr><tr><td class="code"><pre><span class="line">  enable: true # 开启</span></pre></td></tr><tr><td class="code"><pre><span class="line">  # Customize the color of the bookmark.</span></pre></td></tr><tr><td class="code"><pre><span class="line">  color: &quot;#836FFF&quot; # 自定义颜色</span></pre></td></tr><tr><td class="code"><pre><span class="line">  # If auto, save the reading progress when closing the page or clicking the bookmark-icon.</span></pre></td></tr><tr><td class="code"><pre><span class="line">  # If manual, only save it by clicking the bookmark-icon.</span></pre></td></tr><tr><td class="code"><pre><span class="line">  save: auto # 会自动保存阅读进度</span></pre></td></tr></table></figure>
 
 <p>效果：</p>
-<p><img src="/archives/53889e4c/10.png" alt></p>
+<p><img src="/images/loading.png" data-original="/archives/53889e4c/10.png" alt></p>
 <h2 id="20-添加lazyload"><a href="#20-添加lazyload" class="headerlink" title="20. 添加lazyload"></a>20. 添加lazyload</h2><p>对于图片进行延迟加载，访问到图片位置时才去请求图片资源，这样可以提高博客的访问速度，节省流量。下面一整条都复制。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;theme-next-jquery-lazyload source&#x2F;lib&#x2F;jquery_lazyload</span></pre></td></tr></table></figure>
 
@@ -185,23 +185,15 @@
 
 
 
-<h2 id="21-显示当前浏览进度"><a href="#21-显示当前浏览进度" class="headerlink" title="21. 显示当前浏览进度"></a>21. 显示当前浏览进度</h2><p>在主题目录的_config.yml查询scrollpercent，默认为false，改为true</p>
+<h2 id="21-显示当前浏览进度"><a href="#21-显示当前浏览进度" class="headerlink" title="21. 显示当前浏览进度"></a>21. 显示当前浏览进度</h2><h3 id="21-1-方式一"><a href="#21-1-方式一" class="headerlink" title="21.1 方式一"></a>21.1 方式一</h3><p>在主题目录的_config.yml查询scrollpercent，默认为false，改为true</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">back2top:</span></pre></td></tr><tr><td class="code"><pre><span class="line">  enable: true</span></pre></td></tr><tr><td class="code"><pre><span class="line">  # Back to top in sidebar.</span></pre></td></tr><tr><td class="code"><pre><span class="line">  sidebar: false</span></pre></td></tr><tr><td class="code"><pre><span class="line">  # Scroll percent label in b2t button.</span></pre></td></tr><tr><td class="code"><pre><span class="line">  scrollpercent: true # 开启</span></pre></td></tr></table></figure>
 
-
-
-<h2 id="22-阅读进度"><a href="#22-阅读进度" class="headerlink" title="22. 阅读进度"></a>22. 阅读进度</h2><p>在主题目录的_config.yml查询reading_progress</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Reading progress bar</span></pre></td></tr><tr><td class="code"><pre><span class="line">reading_progress:</span></pre></td></tr><tr><td class="code"><pre><span class="line">  enable: true # 开启</span></pre></td></tr><tr><td class="code"><pre><span class="line">  # Available values: top | bottom</span></pre></td></tr><tr><td class="code"><pre><span class="line">  position: top # top会出现在页面最顶部，bottom会出现在 回到顶部按钮那里</span></pre></td></tr><tr><td class="code"><pre><span class="line">  color: &quot;#836FFF&quot; # 可修改颜色</span></pre></td></tr><tr><td class="code"><pre><span class="line">  height: 3px</span></pre></td></tr></table></figure>
-
+<h3 id="21-2-方式二"><a href="#21-2-方式二" class="headerlink" title="21.2 方式二"></a>21.2 方式二</h3><p>在主题目录的_config.yml查询reading_progress</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Reading progress bar</span></pre></td></tr><tr><td class="code"><pre><span class="line">reading_progress:</span></pre></td></tr><tr><td class="code"><pre><span class="line">  enable: true # 开启</span></pre></td></tr><tr><td class="code"><pre><span class="line">  # Available values: top | bottom</span></pre></td></tr><tr><td class="code"><pre><span class="line">  position: top # top会出现在页面最顶部，bottom会出现在那里</span></pre></td></tr><tr><td class="code"><pre><span class="line">  color: &quot;#836FFF&quot; # 可修改颜色</span></pre></td></tr><tr><td class="code"><pre><span class="line">  height: 3px</span></pre></td></tr></table></figure>
 
 
 
-
-
-
-
-
-<p>参考：</p>
+<h2 id="22-阅读进度"><a href="#22-阅读进度" class="headerlink" title="22. 阅读进度"></a>22. 阅读进度</h2><p>参考：</p>
 <p>​    <a href="https://blog.csdn.net/weixin_42905141/article/details/102677424" target="_blank" rel="external nofollow noopener noreferrer">1</a></p>
 <p>​    <a href="https://zhuanlan.zhihu.com/p/60424755" target="_blank" rel="external nofollow noopener noreferrer">2</a></p>
 ]]></content>
@@ -212,7 +204,7 @@
     <content><![CDATA[<h2 id="1-主题"><a href="#1-主题" class="headerlink" title="1. 主题"></a>1. 主题</h2><p>主题文件都是存放在站点的themes文件下，默认为landscape主题，主题可以从hexo官网下载，每个主题都会有文档。</p>
 <p>下载主题有两种方式，一种是下载主题包然后放到themes文件中，而我喜欢用另一种，就是使用GitBash从github上clone下来，可能速度有点慢，自己也可以用第一种方法，去github直接下载。</p>
 <h2 id="2-语言"><a href="#2-语言" class="headerlink" title="2. 语言"></a>2. 语言</h2><p>一开始来是英文的，所以得改成中文，打开站点目录下的_config.yml。找到下面的代码：</p>
-<p><img src="/archives/66b7033a/5.png" alt></p>
+<p><img src="/images/loading.png" data-original="/archives/66b7033a/5.png" alt></p>
 <p>在language的值修改为: zh-CN</p>
 <p>然后测试下就变中文。</p>
 <h2 id="3-NexT主题"><a href="#3-NexT主题" class="headerlink" title="3. NexT主题"></a>3. NexT主题</h2><h4 id="3-1-下载NexT主题"><a href="#3-1-下载NexT主题" class="headerlink" title="3.1 下载NexT主题"></a>3.1 下载NexT主题</h4><p>我使用的是Next主题，比较火，出bug容易找到解决方案，访问速度很快，简洁。</p>
@@ -221,12 +213,12 @@
 
 <p>然后等待下载，最后的themes/next 表示会把克隆的主题放到该目录，具体可以参考  <a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="external nofollow noopener noreferrer">官方</a>。</p>
 <h4 id="3-2-更换主题"><a href="#3-2-更换主题" class="headerlink" title="3.2 更换主题"></a>3.2 更换主题</h4><p>在站点目录下的_config.yml文件中更改新下载的主题，把theme后面的值改为next，记得要有空格，这是yml文件得遵循yml语法。</p>
-<p><img src="/archives/66b7033a/1.png" alt="1"></p>
+<p><img src="/images/loading.png" data-original="/archives/66b7033a/1.png" alt="1"></p>
 <p>然后使用之前说的三条指令启动本地测试，访问localhost:4000，就可以看到更换的next主题</p>
 <p>NexT主题中还有四个不同风格的主题，我是用Gemini风格，这个可以改，在主题目录下（next）的_config.yml中查询 Schemes，然后下面有四种风格，都试试喜欢哪一种，把不用的注释，只能存在一个风格。</p>
-<p><img src="/archives/66b7033a/2.png" alt="2"></p>
+<p><img src="/images/loading.png" data-original="/archives/66b7033a/2.png" alt="2"></p>
 <h4 id="3-3-在菜单栏开启一些跳转页面"><a href="#3-3-在菜单栏开启一些跳转页面" class="headerlink" title="3.3 在菜单栏开启一些跳转页面"></a>3.3 在菜单栏开启一些跳转页面</h4><p>还是在主题目录下的_config.yml中。把想要的页面开启，去掉#即可。</p>
-<p><img src="/archives/66b7033a/3.png" alt="3"></p>
+<p><img src="/images/loading.png" data-original="/archives/66b7033a/3.png" alt="3"></p>
 <p>我开启的从上到下分别是：首页、阅读排行（这个是我加的原先没有，后面再说怎么加）、归档、分类、标签、关于我。<strong>可以在menu中调换显示顺序。</strong></p>
 <p>但是这些页面不会自动生成，得我们创建。</p>
 <p>比如：<strong>分类页面</strong>，在站点目录打开Git Bash，输入</p>
@@ -292,7 +284,7 @@
 <p>Node直接默认安装就行，点击下载 <a href="http://nodejs.cn/download/" target="_blank" rel="external nofollow noopener noreferrer">Node</a>。安装完不用理。</p>
 <p>Git也是直接下载，点击下载 <a href="https://git-scm.com/" target="_blank" rel="external nofollow noopener noreferrer">Git</a>。一直默认安装完需要如下操作：</p>
 <ul>
-<li><p>如果没有GitHub账号的，自己去注册，有账号的，直接创建一个新的仓库，名为 <code>yourgithubname.github.io</code>，其中<code>yourgithubname</code>是你的github名称，必须操作。比如我的：/ 前面是我的用户名，后面就是用我的用户名。<br><img src="/archives/f1c28309/gitname.png" alt></p>
+<li><p>如果没有GitHub账号的，自己去注册，有账号的，直接创建一个新的仓库，名为 <code>yourgithubname.github.io</code>，其中<code>yourgithubname</code>是你的github名称，必须操作。比如我的：/ 前面是我的用户名，后面就是用我的用户名。<br><img src="/images/loading.png" data-original="/archives/f1c28309/gitname.png" alt></p>
 </li>
 <li><p>配置Git的SSH Key，第一次使用Git Bash使用一些配置：</p>
 <ul>
@@ -307,10 +299,10 @@
 </ul>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"邮件地址"</span></span></pre></td></tr></table></figure>
 <ul>
-<li>然后连续3次回车，最终会生成一个文件在用户目录下，打开C盘下的用户目录的chast，找到.ssh\id_rsa.pub文件，记事本打开并复制里面的内容，打开你的github主页，进入个人设置 -&gt; SSH and GPG keys -&gt; New SSH key：<br><img src="/archives/f1c28309/ssh.png" alt></li>
+<li>然后连续3次回车，最终会生成一个文件在用户目录下，打开C盘下的用户目录的chast，找到.ssh\id_rsa.pub文件，记事本打开并复制里面的内容，打开你的github主页，进入个人设置 -&gt; SSH and GPG keys -&gt; New SSH key：<br><img src="/images/loading.png" data-original="/archives/f1c28309/ssh.png" alt></li>
 </ul>
 <h3 id="3-安装Hexo"><a href="#3-安装Hexo" class="headerlink" title="3.安装Hexo"></a>3.安装Hexo</h3><ul>
-<li>然后点开刚刚安装的git，在 Window开始界面会出现一个 Git Bash，点击它，然后在一个磁盘上面创建一个目录，随便名，再使用Git Bash定位到目录中<br><img src="/archives/f1c28309/1.png" alt></li>
+<li>然后点开刚刚安装的git，在 Window开始界面会出现一个 Git Bash，点击它，然后在一个磁盘上面创建一个目录，随便名，再使用Git Bash定位到目录中<br><img src="/images/loading.png" data-original="/archives/f1c28309/1.png" alt></li>
 <li>然后安装Hexo: 默认安装为4.0版本。</li>
 </ul>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">npm install -g hexo</span></pre></td></tr></table></figure>
@@ -321,7 +313,7 @@
 <ul>
 <li>初始化就如下面这样。</li>
 </ul>
-<p>  <img src="/archives/f1c28309/%E7%AB%99%E7%82%B9%E7%9B%AE%E5%BD%95.png" alt></p>
+<p>  <img src="/images/loading.png" data-original="/archives/f1c28309/%E7%AB%99%E7%82%B9%E7%9B%AE%E5%BD%95.png" alt></p>
 <ul>
 <li>以后在本地启动博客就使用下面三条指令。</li>
 </ul>
@@ -342,10 +334,10 @@
 
 <p>然后会在站点目录下的source文件的_posts文件就会出现刚刚创建的文件，然后用Markdown语法来写作。推荐一个写作的：Typora。</p>
 <p>然后在使用上面的三条指令部署到服务器。</p>
-<h3 id="5-Hexo的目录结构"><a href="#5-Hexo的目录结构" class="headerlink" title="5.Hexo的目录结构"></a>5.Hexo的目录结构</h3><p><img src="/archives/f1c28309/%E7%9B%AE%E5%BD%95.png" alt="目录"></p>
+<h3 id="5-Hexo的目录结构"><a href="#5-Hexo的目录结构" class="headerlink" title="5.Hexo的目录结构"></a>5.Hexo的目录结构</h3><p><img src="/images/loading.png" data-original="/archives/f1c28309/%E7%9B%AE%E5%BD%95.png" alt="目录"></p>
 <ul>
 <li>如果想自定义修改站点主题的内容在：站点目录\themes\next\layout中修改，根据文件名。</li>
-<li>如果想自己添加css样式，在主题配置文件中把下图的注释去掉，然后去对应的目录创建该文件，然后就在里面添加css样式。<br><img src="/archives/f1c28309/%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6css%E6%A0%B7%E5%BC%8F.png" alt></li>
+<li>如果想自己添加css样式，在主题配置文件中把下图的注释去掉，然后去对应的目录创建该文件，然后就在里面添加css样式。<br><img src="/images/loading.png" data-original="/archives/f1c28309/%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6css%E6%A0%B7%E5%BC%8F.png" alt></li>
 </ul>
 <h3 id="6-需要了解的一些名词"><a href="#6-需要了解的一些名词" class="headerlink" title="6.需要了解的一些名词"></a>6.需要了解的一些名词</h3><ul>
 <li>站点目录：就是最开始初始化hexo的那个目录。</li>
