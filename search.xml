@@ -165,32 +165,40 @@
 <p>然后去站点目录的source/categories的index.md 中，配置：copy过去即可。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">---</span></pre></td></tr><tr><td class="code"><pre><span class="line">title: 分类</span></pre></td></tr><tr><td class="code"><pre><span class="line">type: &quot;categories&quot; # 这要跟主题目录下的_config.yml的那个名称一样</span></pre></td></tr><tr><td class="code"><pre><span class="line">comments: false # 不开启评论</span></pre></td></tr><tr><td class="code"><pre><span class="line">---</span></pre></td></tr></table></figure>
 
-<p><strong>标签页面</strong></p>
+<ul>
+<li><strong>标签页面</strong></li>
+</ul>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new page tags</span></pre></td></tr></table></figure>
 
 <p>在source/tags的index.md 中</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">---</span></pre></td></tr><tr><td class="code"><pre><span class="line">title: 标签 # 默认是显示英文，需要自己改中文</span></pre></td></tr><tr><td class="code"><pre><span class="line">type: &quot;tags&quot;</span></pre></td></tr><tr><td class="code"><pre><span class="line">comments: false</span></pre></td></tr><tr><td class="code"><pre><span class="line">---</span></pre></td></tr></table></figure>
 
-<p><strong>关于页面</strong></p>
+<ul>
+<li><strong>关于页面</strong></li>
+</ul>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new page about</span></pre></td></tr></table></figure>
 
 <p>在source/about的index.md 中</p>
 <figure class="highlight md"><table><tr><td class="code"><pre><span class="line">title: 关于</span></pre></td></tr><tr><td class="code"><pre><span class="line">date: 2019-11-30 22:52:16</span></pre></td></tr><tr><td class="code"><pre><span class="line">type: "about"</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="section"># 然后下面就可以使用Markdown语法介绍自己</span></span></pre></td></tr></table></figure>
 
-<p><strong>文章阅读排行页面</strong></p>
+<ul>
+<li><strong>文章阅读排行页面</strong></li>
+</ul>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new page top</span></pre></td></tr></table></figure>
 
 <p>在source/top的index.md 中，添加：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">---</span></pre></td></tr><tr><td class="code"><pre><span class="line">comments: false</span></pre></td></tr><tr><td class="code"><pre><span class="line">type: &quot;top&quot;</span></pre></td></tr><tr><td class="code"><pre><span class="line">---</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;div id&#x3D;&quot;top&quot;&gt;&lt;&#x2F;div&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;script src&#x3D;&quot;https:&#x2F;&#x2F;cdn1.lncld.net&#x2F;static&#x2F;js&#x2F;av-core-mini-0.6.4.js&quot;&gt;&lt;&#x2F;script&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;script&gt;AV.initialize(&quot;PqPgFdX018fr1aVY5hzsSsNI-gzGzoHsz&quot;, &quot;3QD9vLXdOV4igzOOalSTkhkc&quot;);&lt;&#x2F;script&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;script type&#x3D;&quot;text&#x2F;javascript&quot;&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  var time&#x3D;0</span></pre></td></tr><tr><td class="code"><pre><span class="line">  var title&#x3D;&quot;&quot;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  var url&#x3D;&quot;&quot;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  var query &#x3D; new AV.Query(&#39;Counter&#39;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">  query.notEqualTo(&#39;id&#39;,0);</span></pre></td></tr><tr><td class="code"><pre><span class="line">  query.descending(&#39;time&#39;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">  query.limit(1000);</span></pre></td></tr><tr><td class="code"><pre><span class="line">  query.find().then(function (todo) &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    for (var i&#x3D;0;i&lt;1000;i++)&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">      var result&#x3D;todo[i].attributes;</span></pre></td></tr><tr><td class="code"><pre><span class="line">      time&#x3D;result.time;</span></pre></td></tr><tr><td class="code"><pre><span class="line">      title&#x3D;result.title;</span></pre></td></tr><tr><td class="code"><pre><span class="line">      url&#x3D;result.url;</span></pre></td></tr><tr><td class="code"><pre><span class="line">      var content&#x3D;&quot;&lt;p&gt;&quot;+&quot;&lt;font color&#x3D;&#39;#1C1C1C&#39;&gt;&quot;+&quot;【文章&quot;+time+&quot;人观看过】&quot;+&quot;&lt;&#x2F;font&gt;&quot;+&quot;&lt;a href&#x3D;&#39;&quot;+&quot;https:&#x2F;&#x2F;flunggg.cn&#x2F;&quot;+url+&quot;&#39;&gt;&quot;+title+&quot;&lt;&#x2F;a&gt;&quot;+&quot;&lt;&#x2F;p&gt;&quot;;</span></pre></td></tr><tr><td class="code"><pre><span class="line">      document.getElementById(&quot;top&quot;).innerHTML+&#x3D;content</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  &#125;, function (error) &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    console.log(&quot;error&quot;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">  &#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;&#x2F;script&gt;</span></pre></td></tr></table></figure>
 
 <p>并且在主题目录下，themes\next\languages 中找到我们最初在网站配置的语言，我是 zh-CN，所以我打开这个文件。在menu中添加 top: 阅读排行。<strong>每次在菜单栏新增就得在这里配置一个中文意思。</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">menu:</span></pre></td></tr><tr><td class="code"><pre><span class="line">  home: 首页</span></pre></td></tr><tr><td class="code"><pre><span class="line">  archives: 归档</span></pre></td></tr><tr><td class="code"><pre><span class="line">  categories: 分类</span></pre></td></tr><tr><td class="code"><pre><span class="line">  top: 阅读排行</span></pre></td></tr><tr><td class="code"><pre><span class="line">  tags: 标签</span></pre></td></tr><tr><td class="code"><pre><span class="line">  about: 关于</span></pre></td></tr><tr><td class="code"><pre><span class="line">  search: 搜索</span></pre></td></tr><tr><td class="code"><pre><span class="line">  schedule: 日程表</span></pre></td></tr><tr><td class="code"><pre><span class="line">  sitemap: 站点地图</span></pre></td></tr><tr><td class="code"><pre><span class="line">  commonweal: 公益 404</span></pre></td></tr></table></figure>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">menu:</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">home:</span> <span class="string">首页</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">archives:</span> <span class="string">归档</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">categories:</span> <span class="string">分类</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">top:</span> <span class="string">阅读排行</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">tags:</span> <span class="string">标签</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">about:</span> <span class="string">关于</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">search:</span> <span class="string">搜索</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">schedule:</span> <span class="string">日程表</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">sitemap:</span> <span class="string">站点地图</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">commonweal:</span> <span class="string">公益</span> <span class="number">404</span></span></pre></td></tr></table></figure>
 
-<p><strong>归档页面</strong></p>
+<ul>
+<li><strong>归档页面</strong></li>
+</ul>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new page top</span></pre></td></tr></table></figure>
 
 <p>然后source\archives中配置</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">title: archives</span></pre></td></tr><tr><td class="code"><pre><span class="line">type: &quot;archives&quot;</span></pre></td></tr><tr><td class="code"><pre><span class="line">comments: false</span></pre></td></tr></table></figure>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">title:</span> <span class="string">archives</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="attr">type:</span> <span class="string">"archives"</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="attr">comments:</span> <span class="literal">false</span></span></pre></td></tr></table></figure>
 
 <blockquote>
 <p> 观看下篇系列博文 NexT主题的美化</p>
