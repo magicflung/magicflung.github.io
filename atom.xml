@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://flunggg.cn/"/>
-  <updated>2019-12-24T08:41:58.727Z</updated>
+  <updated>2019-12-24T10:48:12.499Z</updated>
   <id>https://flunggg.cn/</id>
   
   <author>
@@ -20,25 +20,10 @@
     <title>hexo4-NexT7搭建博客(四)</title>
     <link href="https://flunggg.cn/archives/6bbc4ccb.html"/>
     <id>https://flunggg.cn/archives/6bbc4ccb.html</id>
-    <published>2019-12-24T08:41:58.000Z</published>
-    <updated>2019-12-24T08:41:58.727Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>hexo4-NexT7搭建博客(四)</title>
-    <link href="https://flunggg.cn/archives/6bbc4ccb.html"/>
-    <id>https://flunggg.cn/archives/6bbc4ccb.html</id>
     <published>2019-12-24T08:23:44.000Z</published>
-    <updated>2019-12-24T08:44:46.724Z</updated>
+    <updated>2019-12-24T10:48:12.499Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="23-添加评论"><a href="#23-添加评论" class="headerlink" title="23. 添加评论"></a>23. 添加评论</h2><p>评论系统有很多种，只能选一种。</p><h3 id="23-1-Valine评论"><a href="#23-1-Valine评论" class="headerlink" title="23.1 Valine评论"></a>23.1 Valine评论</h3><p>我自己喜欢用不登录评论，也就是偶尔有人要说一下，但是发现还得登录。这个评论系统就是Valine，下面是教程：</p><h4 id="1-注册LeanCloud"><a href="#1-注册LeanCloud" class="headerlink" title="1. 注册LeanCloud"></a>1. 注册LeanCloud</h4><p>点击<a href="https://www.leancloud.cn/" target="_blank" rel="external nofollow noopener noreferrer">LeanCloud</a>，去注册一个账号，点右上角的控制台就会跳到注册。这里有分为国内和国际版，国内的在2019-10-1之后需要自定义已备案域名才能继续提供服务了，觉得麻烦的同学可以移步去国际版<a href="https://leancloud.app/" target="_blank" rel="external nofollow noopener noreferrer">LeanCloud国际版</a>。</p><h4 id="2-创建应用"><a href="#2-创建应用" class="headerlink" title="2. 创建应用"></a>2. 创建应用</h4>]]></content>
+    <content type="html"><![CDATA[<h2 id="23-添加评论"><a href="#23-添加评论" class="headerlink" title="23. 添加评论"></a>23. 添加评论</h2><p>评论系统有很多种，只能选一种。</p><h3 id="23-1-Valine评论"><a href="#23-1-Valine评论" class="headerlink" title="23.1 Valine评论"></a>23.1 Valine评论</h3><p>我自己喜欢用不登录评论，也就是偶尔有人要说一下，但是发现还得登录。这个评论系统就是Valine，下面是教程：</p><h4 id="1-注册LeanCloud"><a href="#1-注册LeanCloud" class="headerlink" title="1. 注册LeanCloud"></a>1. 注册LeanCloud</h4><p>点击<a href="https://www.leancloud.cn/" target="_blank" rel="external nofollow noopener noreferrer">LeanCloud</a>，去注册一个账号，点右上角的控制台就会跳到注册。这里有分为国内和国际版，国内的在2019-10-1之后需要自定义已备案域名才能继续提供服务了，觉得麻烦的同学可以移步去国际版<a href="https://leancloud.app/" target="_blank" rel="external nofollow noopener noreferrer">LeanCloud国际版</a>。</p><h4 id="2-创建应用"><a href="#2-创建应用" class="headerlink" title="2. 创建应用"></a>2. 创建应用</h4><p>注册好之后，进行实名验证、邮箱验证等等。</p><p>点击创建应用，输入名称，然后直接创建。</p><p><img src="/images/loading.png" data-original="/archives/6bbc4ccb/2.png" alt></p><h3 id="3-设置Web安全域名，填入自己的域名"><a href="#3-设置Web安全域名，填入自己的域名" class="headerlink" title="3.  设置Web安全域名，填入自己的域名"></a>3.  设置Web安全域名，填入自己的域名</h3><p>目的是：为了数据安全。</p><p>打开应用，点击 设置 -&gt; 安全中心。看下面，把能访问到你网站的URL全写进去。</p><p><img src="/images/loading.png" data-original="/archives/6bbc4ccb/3.png" alt></p><h4 id="4-获取APP-ID-和-APP-Key"><a href="#4-获取APP-ID-和-APP-Key" class="headerlink" title="4. 获取APP ID 和 APP Key"></a>4. 获取APP ID 和 APP Key</h4><p>如下打开：</p><p><img src="/images/loading.png" data-original="/archives/6bbc4ccb/4.png" alt></p><p>然后在主题目录的_config.yml 文件查询 valine，然后把上面的两个复制进去</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"># Valine</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"># For more information: https:&#x2F;&#x2F;valine.js.org, https:&#x2F;&#x2F;github.com&#x2F;xCss&#x2F;Valine</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">valine:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">  enable: true # 开启</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">  appid:  # 添加你的appid</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">  appkey: # 添加你的appkey</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">  notify: false # Mail notifier</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">  verify: false # Verification code</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">  placeholder: Just go go # Comment box placeholder</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">  avatar: monsterid # Gravatar style</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">  guest_info: nick,mail,link # Custom comment header</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">  pageSize: 10 # Pagination size</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">  language: # Language, available values: en, zh-cn</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">  visitor: true # Article reading statistic</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">  comment_count: true # If false, comment count will only be displayed in post page, not in home page</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">  recordIP: false # Whether to record the commenter IP</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">  serverURLs: # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">  #post_meta_order: 0</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line">  avatar_cdn: https:&#x2F;&#x2F;www.gravatar.com&#x2F;avatar&#x2F;</span></pre></td></tr></table></figure><p>但是Vline有时会不稳定。。我也不知道咋回事，所以还有下面的评论系统</p>]]></content>
     
     <summary type="html">
     
@@ -47,6 +32,10 @@
     </summary>
     
     
+      <category term="hexo" scheme="https://flunggg.cn/categories/hexo/"/>
+    
+    
+      <category term="hexo" scheme="https://flunggg.cn/tags/hexo/"/>
     
   </entry>
   
