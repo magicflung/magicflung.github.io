@@ -178,10 +178,10 @@
 <p>效果：</p>
 <p><img src="/images/loading.png" data-original="/archives/53889e4c/10.png" alt></p>
 <h2 id="20-添加lazyload"><a href="#20-添加lazyload" class="headerlink" title="20. 添加lazyload"></a>20. 添加lazyload</h2><p>对于图片进行延迟加载，访问到图片位置时才去请求图片资源，这样可以提高博客的访问速度，节省流量。下面一整条都复制。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;theme-next-jquery-lazyload source&#x2F;lib&#x2F;jquery_lazyload</span></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-lazyload-image --save</span></pre></td></tr></table></figure>
 
-<p>然后在主题目录的_config.yml查询 lazyload，默认为false。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Vanilla JavaScript plugin for lazyloading images.</span></pre></td></tr><tr><td class="code"><pre><span class="line"># For more information: https:&#x2F;&#x2F;github.com&#x2F;ApoorvSaxena&#x2F;lozad.js</span></pre></td></tr><tr><td class="code"><pre><span class="line">lazyload: true</span></pre></td></tr></table></figure>
+<p>然后在你的 Hexo 目录的配置文件 <code>_config.yml</code> 中添加配置:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">lazyload:</span></pre></td></tr><tr><td class="code"><pre><span class="line">  enable: true</span></pre></td></tr><tr><td class="code"><pre><span class="line">  onlypost: false # 是否仅文章中的图片做懒加载, 如果为 false, 则主题中的其他图片, 也会做懒加载, 如头像, logo 等任何图片</span></pre></td></tr><tr><td class="code"><pre><span class="line">  loadingImg: &#x2F;images&#x2F;loading.png # 自己搞个未加载时要显示得图片</span></pre></td></tr></table></figure>
 
 
 
