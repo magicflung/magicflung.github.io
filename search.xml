@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>hexo4-NexT7搭建博客(四)</title>
+    <url>/archives/6bbc4ccb.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>hexo4-NexT7搭建博客(四)</title>
+    <url>/archives/6bbc4ccb.html</url>
+    <content><![CDATA[<h2 id="23-添加评论"><a href="#23-添加评论" class="headerlink" title="23. 添加评论"></a>23. 添加评论</h2><p>评论系统有很多种，只能选一种。</p>
+<h3 id="23-1-Valine评论"><a href="#23-1-Valine评论" class="headerlink" title="23.1 Valine评论"></a>23.1 Valine评论</h3><p>我自己喜欢用不登录评论，也就是偶尔有人要说一下，但是发现还得登录。这个评论系统就是Valine，下面是教程：</p>
+<h4 id="1-注册LeanCloud"><a href="#1-注册LeanCloud" class="headerlink" title="1. 注册LeanCloud"></a>1. 注册LeanCloud</h4><p>点击<a href="https://www.leancloud.cn/" target="_blank" rel="external nofollow noopener noreferrer">LeanCloud</a>，去注册一个账号，点右上角的控制台就会跳到注册。这里有分为国内和国际版，国内的在2019-10-1之后需要自定义已备案域名才能继续提供服务了，觉得麻烦的同学可以移步去国际版<a href="https://leancloud.app/" target="_blank" rel="external nofollow noopener noreferrer">LeanCloud国际版</a>。</p>
+<h4 id="2-创建应用"><a href="#2-创建应用" class="headerlink" title="2. 创建应用"></a>2. 创建应用</h4>]]></content>
+  </entry>
+  <entry>
     <title>hexo4-NexT7搭建博客(三)</title>
     <url>/archives/53889e4c.html</url>
     <content><![CDATA[<h2 id="1-添加博客图标"><a href="#1-添加博客图标" class="headerlink" title="1. 添加博客图标"></a>1. 添加博客图标</h2><p>如：<img src="/images/loading.png" data-original="/archives/53889e4c/0.png" alt></p>
@@ -209,6 +222,9 @@
 
 <p>然后还可以在 themes\next\layout_partials的footer.swig里修改，这个我在前面的Footer添加运行时间有说，在这个文件可以修改他们的位置，也可以手动去掉或添加某些东西。如我的：</p>
 <p><img src="/images/loading.png" data-original="/archives/53889e4c/11.png" alt></p>
+<blockquote>
+<p>观看下一篇hexo系列博文(四)</p>
+</blockquote>
 <p>参考：</p>
 <p>​    <a href="https://blog.csdn.net/weixin_42905141/article/details/102677424" target="_blank" rel="external nofollow noopener noreferrer">1</a></p>
 <p>​    <a href="https://zhuanlan.zhihu.com/p/60424755" target="_blank" rel="external nofollow noopener noreferrer">2</a></p>
