@@ -8,17 +8,17 @@
 <h4 id="1-注册LeanCloud"><a href="#1-注册LeanCloud" class="headerlink" title="1. 注册LeanCloud"></a>1. 注册LeanCloud</h4><p>点击<a href="https://www.leancloud.cn/" target="_blank" rel="external nofollow noopener noreferrer">LeanCloud</a>，去注册一个账号，点右上角的控制台就会跳到注册。这里有分为国内和国际版，国内的在2019-10-1之后需要自定义已备案域名才能继续提供服务了，觉得麻烦的同学可以移步去国际版<a href="https://leancloud.app/" target="_blank" rel="external nofollow noopener noreferrer">LeanCloud国际版</a>。</p>
 <h4 id="2-创建应用"><a href="#2-创建应用" class="headerlink" title="2. 创建应用"></a>2. 创建应用</h4><p>注册好之后，进行实名验证、邮箱验证等等。</p>
 <p>点击创建应用，输入名称，然后直接创建。</p>
-<p><img src="/images/loading.png" data-original="https://flunggg.oss-cn-shenzhen.aliyuncs.com/E:%5Cimg1.png" alt></p>
+<p><img src="/images/loading.png" data-original="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226223250-526177.png" alt></p>
 <h4 id="3-设置Web安全域名，填入自己的域名"><a href="#3-设置Web安全域名，填入自己的域名" class="headerlink" title="3.  设置Web安全域名，填入自己的域名"></a>3.  设置Web安全域名，填入自己的域名</h4><p>目的是：为了数据安全。</p>
 <p>打开应用，点击 设置 -&gt; 安全中心。看下面，把能访问到你网站的URL全写进去。</p>
-<p><img src="/images/loading.png" data-original="http://flunggg.oss-cn-shenzhen.aliyuncs.com/photos/hexo4-NexT7%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2(%E5%9B%9B)/3.png?OSSAccessKeyId=LTAI4FcpqDfvxQbbwUA3ZZyH&Expires=1577360912&Signature=OYKWpbxvFc%2FXL3R11wmM0ZodNGs%3D" alt></p>
+<p><img src="/images/loading.png" data-original="/archives/6bbc4ccb/D:%5Cmyblog%5Cblog%5Csource_posts%5Chexo4-NexT7%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2(%E5%9B%9B)%5C3.png" alt></p>
 <h4 id="4-获取APP-ID-和-APP-Key"><a href="#4-获取APP-ID-和-APP-Key" class="headerlink" title="4. 获取APP ID 和 APP Key"></a>4. 获取APP ID 和 APP Key</h4><p>如下打开：</p>
-<p><img src="/images/loading.png" data-original="/archives/6bbc4ccb/400.png" alt></p>
+<p><img src="/images/loading.png" data-original="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226223310-866021.png" alt></p>
 <p>然后在主题目录的_config.yml 文件查询 valine，然后把上面的两个复制进去</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Valine</span></pre></td></tr><tr><td class="code"><pre><span class="line"># For more information: https:&#x2F;&#x2F;valine.js.org, https:&#x2F;&#x2F;github.com&#x2F;xCss&#x2F;Valine</span></pre></td></tr><tr><td class="code"><pre><span class="line">valine:</span></pre></td></tr><tr><td class="code"><pre><span class="line">  enable: true # 开启</span></pre></td></tr><tr><td class="code"><pre><span class="line">  appid:  # 添加你的appid</span></pre></td></tr><tr><td class="code"><pre><span class="line">  appkey: # 添加你的appkey</span></pre></td></tr><tr><td class="code"><pre><span class="line">  notify: false # Mail notifier</span></pre></td></tr><tr><td class="code"><pre><span class="line">  verify: false # Verification code</span></pre></td></tr><tr><td class="code"><pre><span class="line">  placeholder: Just go go # Comment box placeholder</span></pre></td></tr><tr><td class="code"><pre><span class="line">  avatar: monsterid # Gravatar style</span></pre></td></tr><tr><td class="code"><pre><span class="line">  guest_info: nick,mail,link # Custom comment header</span></pre></td></tr><tr><td class="code"><pre><span class="line">  pageSize: 10 # Pagination size</span></pre></td></tr><tr><td class="code"><pre><span class="line">  language: # Language, available values: en, zh-cn</span></pre></td></tr><tr><td class="code"><pre><span class="line">  visitor: true # Article reading statistic</span></pre></td></tr><tr><td class="code"><pre><span class="line">  comment_count: true # If false, comment count will only be displayed in post page, not in home page</span></pre></td></tr><tr><td class="code"><pre><span class="line">  recordIP: false # Whether to record the commenter IP</span></pre></td></tr><tr><td class="code"><pre><span class="line">  serverURLs: # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)</span></pre></td></tr><tr><td class="code"><pre><span class="line">  #post_meta_order: 0</span></pre></td></tr><tr><td class="code"><pre><span class="line">  avatar_cdn: https:&#x2F;&#x2F;www.gravatar.com&#x2F;avatar&#x2F;</span></pre></td></tr></table></figure>
 
 <p>效果图是这样的：</p>
-<p><img src="/images/loading.png" data-original="/archives/6bbc4ccb/5.png" alt></p>
+<p><img src="/images/loading.png" data-original="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226223312-376598.png" alt></p>
 <p>不过上面的 网址(http://) 我觉得没什么用，就把它去掉了，打开themes\next\layout_third-party\comments中的valine.swig文件，删掉第三个，我的已经删了：</p>
 <p><img src="/images/loading.png" data-original="/archives/6bbc4ccb/6.png" alt></p>
 <p>也可以选择Gitalk评论系统，这个我就不说了。要的自己百度。</p>
@@ -133,7 +133,7 @@
 <p>如果你修改了头像后发现没有更新，请不要慌张，因为<code>gravatar.cat.net</code> 有七天的缓存期，安静的等待吧</p>
 </blockquote>
 <p>然后还可以设置自己的自定义头像，登录 <a href="https://cn.gravatar.com/" target="_blank" rel="external nofollow noopener noreferrer">gravatar</a>，注册账号并设置头像，然后在valine评论时，输入我们刚刚注册的邮箱，会显示出我们自定义的头像。我的设置如下：</p>
-<p><img src="/images/loading.png" data-original="/archives/6bbc4ccb/22.png" alt></p>
+<p><img src="/images/loading.png" data-original="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226223319-40315.png" alt></p>
 <h2 id="26-添加文章阅读次数"><a href="#26-添加文章阅读次数" class="headerlink" title="26. 添加文章阅读次数"></a>26. 添加文章阅读次数</h2><p>这个还是得借助<a href="https://leancloud.cn/dashboard/login.html#/signup" target="_blank" rel="external nofollow noopener noreferrer">Leancloud</a> 。</p>
 <p>在主题目录的_config.yml 查询 leancloud_visitors</p>
 <h2 id="27-Url-持久化"><a href="#27-Url-持久化" class="headerlink" title="27. Url 持久化"></a>27. Url 持久化</h2><p>我们可以发现 hexo 默认生成的文章地址路径是 <code>【网站名称／年／月／日／文章名称】</code>。</p>
@@ -145,7 +145,7 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># URL</span></pre></td></tr><tr><td class="code"><pre><span class="line">## If your site is put in a subdirectory, set url as &#39;http:&#x2F;&#x2F;yoursite.com&#x2F;child&#39; and root as &#39;&#x2F;child&#x2F;&#39;</span></pre></td></tr><tr><td class="code"><pre><span class="line">url: https:&#x2F;&#x2F;flunggg.cn&#x2F;  # 这里我填写我自己的域名，没有域名的先别动</span></pre></td></tr><tr><td class="code"><pre><span class="line">root: &#x2F;</span></pre></td></tr><tr><td class="code"><pre><span class="line">permalink: archives&#x2F;:abbrlink.html # 该这个</span></pre></td></tr><tr><td class="code"><pre><span class="line">abbrlink:</span></pre></td></tr><tr><td class="code"><pre><span class="line">  alg: crc32  # 算法：crc16(default) and crc32</span></pre></td></tr><tr><td class="code"><pre><span class="line">  rep: hex    # 进制：dec(default) and hex</span></pre></td></tr></table></figure>
 
 <p>效果：</p>
-<p><img src="/images/loading.png" data-original="/archives/6bbc4ccb/8.png" alt></p>
+<p><img src="/images/loading.png" data-original="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226223323-167250.png" alt></p>
 <h2 id="28-nofollow-标签的使用"><a href="#28-nofollow-标签的使用" class="headerlink" title="28. nofollow 标签的使用"></a>28. nofollow 标签的使用</h2><p>减少出站链接能够有效防止权重分散。简单的说就是，如果A网页上有一个链接指向B网页，但A网页给这个链接加上了 rel=”nofollow” 标注，则搜索引擎不把A网页计算入B网页的<a href="https://baike.baidu.com/item/反向链接/7535075" target="_blank" rel="external nofollow noopener noreferrer">反向链接</a>。<a href="https://baike.baidu.com/item/搜索引擎/104812" target="_blank" rel="external nofollow noopener noreferrer">搜索引擎</a>看到这个标签就可能减少或完全取消链接的投票<a href="https://baike.baidu.com/item/权重/10245966" target="_blank" rel="external nofollow noopener noreferrer">权重</a>。（百度百科）</p>
 <p>安装插件：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-autonofollow --save</span></pre></td></tr></table></figure>
