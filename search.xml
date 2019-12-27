@@ -35,11 +35,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>my</title>
-    <url>/archives/b853ce8d.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>hexo4-NexT7搭建博客(四)</title>
     <url>/archives/6bbc4ccb.html</url>
     <content><![CDATA[<h2 id="23-添加评论"><a href="#23-添加评论" class="headerlink" title="23. 添加评论"></a>23. 添加评论</h2><p>评论系统有很多种，只能选一种。</p>
@@ -637,7 +632,7 @@
     <title>Hello Myblog</title>
     <url>/archives/7d96358d.html</url>
     <content><![CDATA[<h3 id="已完成"><a href="#已完成" class="headerlink" title="已完成"></a>已完成</h3><blockquote>
-<p>本博客搭建的技术: hexo4.0 + next7.6 + vps + cnd加速</p>
+<p>本博客搭建的技术: hexo4.0 + next7.6 + vps + cnd加速（不cnd加速了https的好贵）</p>
 </blockquote>
 <ul>
 <li>引入<code>Valine</code>评论系统</li>
