@@ -8,19 +8,19 @@
 <h4 id="1-注册LeanCloud"><a href="#1-注册LeanCloud" class="headerlink" title="1. 注册LeanCloud"></a>1. 注册LeanCloud</h4><p>点击<a href="https://www.leancloud.cn/" target="_blank" rel="external nofollow noopener noreferrer">LeanCloud</a>，去注册一个账号，点右上角的控制台就会跳到注册。这里有分为国内和国际版，国内的在2019-10-1之后需要自定义已备案域名才能继续提供服务了，觉得麻烦的同学可以移步去国际版<a href="https://leancloud.app/" target="_blank" rel="external nofollow noopener noreferrer">LeanCloud国际版</a>。</p>
 <h4 id="2-创建应用"><a href="#2-创建应用" class="headerlink" title="2. 创建应用"></a>2. 创建应用</h4><p>注册好之后，进行实名验证、邮箱验证等等。</p>
 <p>点击创建应用，输入名称，然后直接创建。</p>
-<p><img src="/images/loading.png" data-original="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226223250-526177.png" alt></p>
+<p><img src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226223250-526177.png" alt></p>
 <h4 id="3-设置Web安全域名，填入自己的域名"><a href="#3-设置Web安全域名，填入自己的域名" class="headerlink" title="3.  设置Web安全域名，填入自己的域名"></a>3.  设置Web安全域名，填入自己的域名</h4><p>目的是：为了数据安全。</p>
 <p>打开应用，点击 设置 -&gt; 安全中心。看下面，把能访问到你网站的URL全写进去。</p>
-<p><img src="/images/loading.png" data-original="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226231100-189293.png" alt></p>
+<p><img src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226231100-189293.png" alt></p>
 <h4 id="4-获取APP-ID-和-APP-Key"><a href="#4-获取APP-ID-和-APP-Key" class="headerlink" title="4. 获取APP ID 和 APP Key"></a>4. 获取APP ID 和 APP Key</h4><p>如下打开：</p>
-<p><img src="/images/loading.png" data-original="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226223310-866021.png" alt></p>
+<p><img src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226223310-866021.png" alt></p>
 <p>然后在主题目录的_config.yml 文件查询 valine，然后把上面的两个复制进去</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Valine</span></pre></td></tr><tr><td class="code"><pre><span class="line"># For more information: https:&#x2F;&#x2F;valine.js.org, https:&#x2F;&#x2F;github.com&#x2F;xCss&#x2F;Valine</span></pre></td></tr><tr><td class="code"><pre><span class="line">valine:</span></pre></td></tr><tr><td class="code"><pre><span class="line">  enable: true # 开启</span></pre></td></tr><tr><td class="code"><pre><span class="line">  appid:  # 添加你的appid</span></pre></td></tr><tr><td class="code"><pre><span class="line">  appkey: # 添加你的appkey</span></pre></td></tr><tr><td class="code"><pre><span class="line">  notify: false # Mail notifier</span></pre></td></tr><tr><td class="code"><pre><span class="line">  verify: false # Verification code</span></pre></td></tr><tr><td class="code"><pre><span class="line">  placeholder: Just go go # Comment box placeholder</span></pre></td></tr><tr><td class="code"><pre><span class="line">  avatar: monsterid # Gravatar style</span></pre></td></tr><tr><td class="code"><pre><span class="line">  guest_info: nick,mail,link # Custom comment header</span></pre></td></tr><tr><td class="code"><pre><span class="line">  pageSize: 10 # Pagination size</span></pre></td></tr><tr><td class="code"><pre><span class="line">  language: # Language, available values: en, zh-cn</span></pre></td></tr><tr><td class="code"><pre><span class="line">  visitor: true # Article reading statistic</span></pre></td></tr><tr><td class="code"><pre><span class="line">  comment_count: true # If false, comment count will only be displayed in post page, not in home page</span></pre></td></tr><tr><td class="code"><pre><span class="line">  recordIP: false # Whether to record the commenter IP</span></pre></td></tr><tr><td class="code"><pre><span class="line">  serverURLs: # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)</span></pre></td></tr><tr><td class="code"><pre><span class="line">  #post_meta_order: 0</span></pre></td></tr><tr><td class="code"><pre><span class="line">  avatar_cdn: https:&#x2F;&#x2F;www.gravatar.com&#x2F;avatar&#x2F;</span></pre></td></tr></table></figure>
 
 <p>效果图是这样的：</p>
-<p><img src="/images/loading.png" data-original="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226223312-376598.png" alt></p>
+<p><img src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226223312-376598.png" alt></p>
 <p>不过上面的 网址(http://) 我觉得没什么用，就把它去掉了，打开themes\next\layout_third-party\comments中的valine.swig文件，删掉第三个，我的已经删了：</p>
-<p><img src="/images/loading.png" data-original="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226231109-15136.png" alt></p>
+<p><img src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226231109-15136.png" alt></p>
 <p>也可以选择Gitalk评论系统，这个我就不说了。要的自己百度。</p>
 <h2 id="24-Vline邮箱评论通知"><a href="#24-Vline邮箱评论通知" class="headerlink" title="24. Vline邮箱评论通知"></a>24. Vline邮箱评论通知</h2><p>每当有人在博文下面评论我们的博文，我们就可以使用这个插件通过邮箱知道。</p>
 <p>下面这款插件是新款，有几个优点：</p>
@@ -30,10 +30,10 @@
 <li>评论管理，避免直接操作数据库</li>
 </ul>
 <p>效果：</p>
-<img src="/images/loading.png" data-original="/archives/6bbc4ccb/myblog\blog\source\_posts\hexo4-NexT7搭建博客(四)\7.png" style="zoom:50%;">
+<img src="/archives/6bbc4ccb/myblog\blog\source\_posts\hexo4-NexT7搭建博客(四)\7.png" style="zoom:50%;">
 
 <p>1.我们还是要借助<a href="https://leancloud.cn/dashboard/login.html#/signup" target="_blank" rel="external nofollow noopener noreferrer">Leancloud</a>，打开刚刚我们创建的应用，如图：修改右边的边框内容。这是配置恢复模板。</p>
-<p><img src="/images/loading.png" data-original="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226231120-940462.png" alt></p>
+<p><img src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226231120-940462.png" alt></p>
 <blockquote>
 <p><strong>注</strong>：请注意修改链接为你的<code>博客</code>或者<code>网站首页</code>。</p>
 </blockquote>
@@ -42,14 +42,14 @@
 <p>2.还是在Leancloud中，打开 云引擎 -》设置，把下面代码复制进去：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;github.com&#x2F;DesertsP&#x2F;Valine-Admin.git</span></pre></td></tr></table></figure>
 
-<p><img src="/images/loading.png" data-original="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226231201-585025.png" alt></p>
+<p><img src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226231201-585025.png" alt></p>
 <p>然后还是在这，点击 部署，如图：</p>
-<p><img src="/images/loading.png" data-original="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226231521-977193.png" alt></p>
+<p><img src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226231521-977193.png" alt></p>
 <p>上面的图我用别人的，因为我自己点开就是下面的图：</p>
-<p><img src="/images/loading.png" data-original="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226231522-649612.png" alt></p>
+<p><img src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226231522-649612.png" alt></p>
 <p>然后等待部署完，比较久。</p>
 <p>3.然后还是回到 云引擎 -》 设置 中，如图：找到 自定义环境变量</p>
-<p><img src="/images/loading.png" data-original="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226231530-750242.png" alt></p>
+<p><img src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226231530-750242.png" alt></p>
 <p>需要配置信息：</p>
 <table>
 <thead>
@@ -106,15 +106,15 @@
 </tr>
 </tbody></table>
 <p>4.如何申请SMTP，直接看图，我用的是qq邮箱，你要用别的得去查。开启后把STMP密码复制到这。</p>
-<p><img src="/images/loading.png" data-original="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226231203-596536.png" alt></p>
+<p><img src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226231203-596536.png" alt></p>
 <p>5.设置二级域名后你可以访问评论管理后台。还是在这里的下面找到 Web主机域名</p>
-<p><img src="/images/loading.png" data-original="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226231540-510138.png" alt></p>
+<p><img src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226231540-510138.png" alt></p>
 <p>现在好像已经是默认给你一个，不能改的，然后把这个域名复制到上面环境变量的ADMIN_URL。</p>
 <p>我们还需要密码，用户名，需要在这里设置，只需要填写 email、password、username，这三个字段即可，使用 username 或 email 登陆即可。</p>
-<p><img src="/images/loading.png" data-original="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226231208-314925.png" alt></p>
-<p><img src="/images/loading.png" data-original="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226231212-930528.png" alt></p>
+<p><img src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226231208-314925.png" alt></p>
+<p><img src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226231212-930528.png" alt></p>
 <p>然后重启下实例</p>
-<p><img src="/images/loading.png" data-original="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226231211-767956.png" alt></p>
+<p><img src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226231211-767956.png" alt></p>
 <p>最后访问域名，输入我们刚刚的username或者email，登录。就可以管理我们的评论区啦。</p>
 <p>LeanCloud 休眠策略</p>
 <p>免费版的 LeanCloud 容器，是有强制性休眠策略的，不能 24 小时运行：</p>
@@ -125,7 +125,7 @@
 </ul>
 <p>分析了一下上方的策略，如果不想付费的话，最佳使用方案就设置定时器，每天 7 - 23 点每 20 分钟访问一次，这样可以保持每天的绝大多数时间邮件服务是正常的。</p>
 <h2 id="25-Valine-头像设置"><a href="#25-Valine-头像设置" class="headerlink" title="25. Valine 头像设置"></a>25. Valine 头像设置</h2><p>我们可以修改评论的头像，路人的头像有下面几种，默认为第一种</p>
-<p><img src="/images/loading.png" data-original="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226231205-269116.png" alt></p>
+<p><img src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226231205-269116.png" alt></p>
 <p>在主题目录的_config.yml文件查找：valine 中，找到avatar，然后就可以修改上面的图标</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line"># Valine</span></pre></td></tr><tr><td class="code"><pre><span class="line"># For more information: https:&#x2F;&#x2F;valine.js.org, https:&#x2F;&#x2F;github.com&#x2F;xCss&#x2F;Valine</span></pre></td></tr><tr><td class="code"><pre><span class="line">valine:</span></pre></td></tr><tr><td class="code"><pre><span class="line">  ...</span></pre></td></tr><tr><td class="code"><pre><span class="line">  avatar: monsterid # Gravatar style</span></pre></td></tr><tr><td class="code"><pre><span class="line">  ...</span></pre></td></tr></table></figure>
 
@@ -133,7 +133,7 @@
 <p>如果你修改了头像后发现没有更新，请不要慌张，因为<code>gravatar.cat.net</code> 有七天的缓存期，安静的等待吧</p>
 </blockquote>
 <p>然后还可以设置自己的自定义头像，登录 <a href="https://cn.gravatar.com/" target="_blank" rel="external nofollow noopener noreferrer">gravatar</a>，注册账号并设置头像，然后在valine评论时，输入我们刚刚注册的邮箱，会显示出我们自定义的头像。我的设置如下：</p>
-<p><img src="/images/loading.png" data-original="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226223319-40315.png" alt></p>
+<p><img src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226223319-40315.png" alt></p>
 <h2 id="26-添加文章阅读次数"><a href="#26-添加文章阅读次数" class="headerlink" title="26. 添加文章阅读次数"></a>26. 添加文章阅读次数</h2><p>这个还是得借助<a href="https://leancloud.cn/dashboard/login.html#/signup" target="_blank" rel="external nofollow noopener noreferrer">Leancloud</a> 。</p>
 <p>在主题目录的_config.yml 查询 leancloud_visitors</p>
 <h2 id="27-Url-持久化"><a href="#27-Url-持久化" class="headerlink" title="27. Url 持久化"></a>27. Url 持久化</h2><p>我们可以发现 hexo 默认生成的文章地址路径是 <code>【网站名称／年／月／日／文章名称】</code>。</p>
@@ -145,7 +145,7 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># URL</span></pre></td></tr><tr><td class="code"><pre><span class="line">## If your site is put in a subdirectory, set url as &#39;http:&#x2F;&#x2F;yoursite.com&#x2F;child&#39; and root as &#39;&#x2F;child&#x2F;&#39;</span></pre></td></tr><tr><td class="code"><pre><span class="line">url: https:&#x2F;&#x2F;flunggg.cn&#x2F;  # 这里我填写我自己的域名，没有域名的先别动</span></pre></td></tr><tr><td class="code"><pre><span class="line">root: &#x2F;</span></pre></td></tr><tr><td class="code"><pre><span class="line">permalink: archives&#x2F;:abbrlink.html # 该这个</span></pre></td></tr><tr><td class="code"><pre><span class="line">abbrlink:</span></pre></td></tr><tr><td class="code"><pre><span class="line">  alg: crc32  # 算法：crc16(default) and crc32</span></pre></td></tr><tr><td class="code"><pre><span class="line">  rep: hex    # 进制：dec(default) and hex</span></pre></td></tr></table></figure>
 
 <p>效果：</p>
-<p><img src="/images/loading.png" data-original="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226223323-167250.png" alt></p>
+<p><img src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226223323-167250.png" alt></p>
 <h2 id="28-nofollow-标签的使用"><a href="#28-nofollow-标签的使用" class="headerlink" title="28. nofollow 标签的使用"></a>28. nofollow 标签的使用</h2><p>减少出站链接能够有效防止权重分散。简单的说就是，如果A网页上有一个链接指向B网页，但A网页给这个链接加上了 rel=”nofollow” 标注，则搜索引擎不把A网页计算入B网页的<a href="https://baike.baidu.com/item/反向链接/7535075" target="_blank" rel="external nofollow noopener noreferrer">反向链接</a>。<a href="https://baike.baidu.com/item/搜索引擎/104812" target="_blank" rel="external nofollow noopener noreferrer">搜索引擎</a>看到这个标签就可能减少或完全取消链接的投票<a href="https://baike.baidu.com/item/权重/10245966" target="_blank" rel="external nofollow noopener noreferrer">权重</a>。（百度百科）</p>
 <p>安装插件：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-autonofollow --save</span></pre></td></tr></table></figure>
@@ -169,7 +169,7 @@
   <entry>
     <title>hexo4-NexT7搭建博客(三)</title>
     <url>/archives/53889e4c.html</url>
-    <content><![CDATA[<h2 id="1-添加博客图标"><a href="#1-添加博客图标" class="headerlink" title="1. 添加博客图标"></a>1. 添加博客图标</h2><p>如：<img src="/images/loading.png" data-original="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226231720-467532.png" alt="1"></p>
+    <content><![CDATA[<h2 id="1-添加博客图标"><a href="#1-添加博客图标" class="headerlink" title="1. 添加博客图标"></a>1. 添加博客图标</h2><p>如：<img src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226231720-467532.png" alt="1"></p>
 <p>在主题目录下_config.yml文件查询 favicon，只需要修改前两个：small和medium，图片的像素得为16像素和32像素</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">favicon:</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">small:</span> <span class="string">/images/favicon-16x16-next.png</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">medium:</span> <span class="string">/images/favicon-32x32-next.png</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">apple_touch_icon:</span> <span class="string">/images/apple-touch-icon-next.png</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">safari_pinned_tab:</span> <span class="string">/images/logo.svg</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment">#android_manifest: /images/manifest.json</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment">#ms_browserconfig: /images/browserconfig.xml</span></span></pre></td></tr></table></figure>
 
@@ -206,13 +206,13 @@
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Use icon instead of the symbol # to indicate the tag at the bottom of the post</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="attr">tag_icon:</span> <span class="literal">true</span></span></pre></td></tr></table></figure>
 
 <p>效果：</p>
-<p><img src="/images/loading.png" data-original="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226231727-159960.png" alt="2"></p>
+<p><img src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226231727-159960.png" alt="2"></p>
 <h2 id="6-访问量统计"><a href="#6-访问量统计" class="headerlink" title="6. 访问量统计"></a>6. 访问量统计</h2><p>在主题目录打开_config.yml，查询  busuanzi</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Show Views / Visitors of the website / page with busuanzi.</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment"># Get more information on http://ibruce.info/2015/04/04/busuanzi</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="attr">busuanzi_count:</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span> <span class="comment"># 是否开启访问量统计</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">total_visitors:</span> <span class="literal">false</span> <span class="comment"># 本站访客数</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">total_visitors_icon:</span> <span class="string">user</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">total_views:</span> <span class="literal">true</span> <span class="comment"># 本站总访问量</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">total_views_icon:</span> <span class="string">eye</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">post_views:</span> <span class="literal">false</span> <span class="comment"># 文章访问量，但我不喜欢用这个，因为在我的网站首页不会显示每篇博文的访问量，而是得点进博文，我用别的来统计，待会会说</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">post_views_icon:</span> <span class="string">eye</span></span></pre></td></tr></table></figure>
 
 <p>但是我当时配置时失效，我百度一下，找到解决方案，原来是不蒜子使用的七牛的域名被强制过期。。</p>
 <p>在\themes\next\layout_third-party\statistics中的busuanzi-counter.swig中，看最前面，如图：</p>
-<p><img src="/images/loading.png" data-original="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226231729-372918.png" alt="3"></p>
+<p><img src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226231729-372918.png" alt="3"></p>
 <p>我是改了的，你把src中的改为：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;busuanzi.ibruce.info&#x2F;busuanzi&#x2F;2.3&#x2F;busuanzi.pure.mini.js</span></pre></td></tr></table></figure>
 
@@ -236,10 +236,10 @@
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Read more button</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment"># If true, the read more button will be displayed in excerpt section.</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="attr">read_more_btn:</span> <span class="literal">true</span> <span class="comment"># 启动</span></span></pre></td></tr></table></figure>
 
 <p>效果：</p>
-<p><img src="/images/loading.png" data-original="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226231733-348452.png" alt="4"></p>
+<p><img src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226231733-348452.png" alt="4"></p>
 <p>这里需要额外说一下，必须在每篇博文的最前面有一堆默认键值对代码那里，添加上一个键: description，</p>
 <p>然后冒号： :，然后再空格，添加上自己的小文段。</p>
-<p> <img src="/images/loading.png" data-original="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226231737-415857.png" alt="5"></p>
+<p> <img src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226231737-415857.png" alt="5"></p>
 <p>但是每次都得自己加太麻烦了，所以在站点目录下的scaffolds文件中有个post文件，这个文件就是博文模板，点开就可以添加每篇博文的通用信息。我的如下：</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="attr">title:</span> <span class="string">&#123;&#123;</span> <span class="string">title</span> <span class="string">&#125;&#125;</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="attr">date:</span> <span class="string">&#123;&#123;</span> <span class="string">date</span> <span class="string">&#125;&#125;</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="attr">tags:</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="attr">categories:</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="attr">copyright:</span> <span class="literal">true</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="attr">top:</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="attr">description:</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span></pre></td></tr></table></figure>
 
@@ -261,13 +261,13 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% if post.top %&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">	&lt;i class&#x3D;&quot;fa fa-thumb-tack&quot;&gt;&lt;&#x2F;i&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">	&lt;font color&#x3D;7D26CD&gt;置顶&lt;&#x2F;font&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">	&lt;span class&#x3D;&quot;post-meta-divider&quot;&gt;|&lt;&#x2F;span&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#123;% endif %&#125;</span></pre></td></tr></table></figure>
 
 <p>效果：</p>
-<p><img src="/images/loading.png" data-original="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226231802-763884.png" alt="6"></p>
+<p><img src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226231802-763884.png" alt="6"></p>
 <h2 id="10-在文章底部增加版权信息"><a href="#10-在文章底部增加版权信息" class="headerlink" title="10. 在文章底部增加版权信息"></a>10. 在文章底部增加版权信息</h2><h3 id="10-1-方式一"><a href="#10-1-方式一" class="headerlink" title="10.1 方式一"></a>10.1 方式一</h3><p>最简单，在主题目录的_config.yml查询 creative_commons</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Creative Commons 4.0 International License.</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment"># See: https://creativecommons.org/share-your-work/licensing-types-examples</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment"># Available values of license: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment"># You can set a language value if you prefer a translated version of CC license, e.g. deed.zh</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment"># CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="attr">creative_commons:</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">license:</span> <span class="string">by-nc-sa</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">sidebar:</span> <span class="literal">false</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">post:</span> <span class="literal">true</span> <span class="comment"># 开启</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">language:</span></span></pre></td></tr></table></figure>
 
 <p>但是这种如何改变样式我没研究，我喜欢下面的方式，毕竟还可以自己加上样式、文字等。</p>
 <h3 id="10-2-方式二（比较麻烦，但是好看）"><a href="#10-2-方式二（比较麻烦，但是好看）" class="headerlink" title="10.2 方式二（比较麻烦，但是好看）"></a>10.2 方式二（比较麻烦，但是好看）</h3><p>我用网上的直接复制的代码，但是在这段代码中的sweetalert外部链接不知道咋了，访问超时，导致我的博文访问一篇文章贼慢，我以为是哪里出错。<strong>这也是一个启示：如果博文突然变得慢，打开web工具检查一下那些加载过慢，考虑是否要删去，或者是哪里出错。</strong>如下图：11s的加载。</p>
-<p><img src="/images/loading.png" data-original="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226231804-399466.png" alt="7"></p>
+<p><img src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226231804-399466.png" alt="7"></p>
 <p>所以出错就是在这一句：</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;script src=<span class="string">"https://unpkg.com/sweetalert/dist/sweetalert.min.js"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span></pre></td></tr></table></figure>
 
@@ -301,7 +301,7 @@
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;div id=<span class="string">"days"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span></pre></td></tr><tr><td class="code"><pre><span class="line">	&lt;<span class="regexp">/script&gt;</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="regexp">	&lt;script language="javascript"&gt;</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="regexp">	function show_date_time()&#123;</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="regexp">	window.setTimeout("show_date_time()", 1000);</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="regexp">	BirthDay=new Date("11/</span><span class="number">29</span>/<span class="number">2019</span> <span class="number">20</span>:<span class="number">00</span>:<span class="number">00</span><span class="string">");</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">	today=new Date();</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">	timeold=(today.getTime()-BirthDay.getTime());</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">	sectimeold=timeold/1000</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">	secondsold=Math.floor(sectimeold);</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">	msPerDay=24*60*60*1000</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">	e_daysold=timeold/msPerDay</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">	daysold=Math.floor(e_daysold);</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">	e_hrsold=(e_daysold-daysold)*24;</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">	hrsold=setzero(Math.floor(e_hrsold));</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">	e_minsold=(e_hrsold-hrsold)*60;</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">	minsold=setzero(Math.floor((e_hrsold-hrsold)*60));</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">	seconds=setzero(Math.floor((e_minsold-minsold)*60));</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">	document.getElementById('days').innerHTML="</span>已运行<span class="string">"+daysold+"</span>天<span class="string">"+hrsold+"</span>时<span class="string">"+minsold+"</span>分<span class="string">"+seconds+"</span>秒<span class="string">";</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">	&#125;</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">	function setzero(i)&#123;</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">	if (i&lt;10)</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">	&#123;i="</span><span class="number">0</span><span class="string">" + i&#125;;</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">	return i;</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">	&#125;</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">	show_date_time();</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">	&lt;/script&gt;</span></span></pre></td></tr></table></figure>
 
 <p>在这条语句里面我把原先的代码都注释了，不想用。为了怕说不清，贴图：</p>
-<p><img src="/images/loading.png" data-original="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226231815-105794.png" alt="8"></p>
+<p><img src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226231815-105794.png" alt="8"></p>
 <h2 id="15-实现文章统计功能"><a href="#15-实现文章统计功能" class="headerlink" title="15. 实现文章统计功能"></a>15. 实现文章统计功能</h2><p>安装一个 hexo-symbols-count-time插件，可以统计字数和阅读分钟数，</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-symbols-count-time --save</span></pre></td></tr></table></figure>
 
@@ -310,14 +310,14 @@
 
 <p>不喜欢的可以使用false让它不启动。并且文章字数统计时，他是连空格，标点符号等都统计了，可能会导致文章的字数会不正确，偏大。</p>
 <p>效果：</p>
-<p><img src="/images/loading.png" data-original="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226231824-661591.png" alt="9"></p>
+<p><img src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226231824-661591.png" alt="9"></p>
 <h2 id="16-修改博文目录"><a href="#16-修改博文目录" class="headerlink" title="16. 修改博文目录"></a>16. 修改博文目录</h2><p>在主题目录的_config.yml 查询 toc</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 侧边栏中的目录</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment"># Front-matter variable (unsupport wrap expand_all).</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="attr">toc:</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span> <span class="comment"># 是否启动博文目标</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment"># 自动将列表号添加到目录。</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">number:</span> <span class="literal">false</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment"># 如果为true，则如果标题宽度大于边栏宽度，则所有单词都将放在下一行。width.</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">wrap:</span> <span class="literal">false</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment"># 如果为true，则将显示帖子中所有级别的TOC，而不是其中激活的部分。</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">expand_all:</span> <span class="literal">false</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment"># 生成的子标题的最大深度。</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">max_depth:</span> <span class="number">6</span></span></pre></td></tr></table></figure>
 
 
 
 <h2 id="17-RSS订阅（非必要）"><a href="#17-RSS订阅（非必要）" class="headerlink" title="17. RSS订阅（非必要）"></a>17. RSS订阅（非必要）</h2><p>原因：RSS订阅可以对文章内容进行订阅。如下：就不必每次去收藏夹找该博客网站</p>
-<p><img src="/images/loading.png" data-original="/archives/53889e4c/D:%5Cmyblog%5Cblog%5Csource_posts%5Chexo4-NexT7%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2(%E4%B8%89)%5CRSSReader0.png" alt></p>
+<p><img src="/archives/53889e4c/D:%5Cmyblog%5Cblog%5Csource_posts%5Chexo4-NexT7%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2(%E4%B8%89)%5CRSSReader0.png" alt></p>
 <p>首先在站点目录下打开Git Bash 安装</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-feed --save</span></pre></td></tr></table></figure>
 
@@ -330,10 +330,10 @@
 
 <p>然后部署到网站就可以看到，但是我们点开时是一堆代码，我们需要安装一个RSS阅读器的插件，在浏览器搜索</p>
 <p>RSS，谷歌商城一般登不上，登得上一样查RSS就行，那在火狐的附加工具搜，第一个就是下面这个：</p>
-<p><img src="/images/loading.png" data-original="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226232019-428953.png" alt></p>
+<p><img src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226232019-428953.png" alt></p>
 <p>安装这个，使用方法：</p>
-<p><img src="/images/loading.png" data-original="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226231831-996338.png" alt="12"></p>
-<p><img src="/images/loading.png" data-original="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226231829-412970.png" alt="13"></p>
+<p><img src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226231831-996338.png" alt="12"></p>
+<p><img src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226231829-412970.png" alt="13"></p>
 <p>RSS的URL就是我们点开后一堆代码的上面的URL，比如我的是：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;flunggg.cn&#x2F;atom.xml</span></pre></td></tr></table></figure>
 
@@ -352,7 +352,7 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">bookmark:</span></pre></td></tr><tr><td class="code"><pre><span class="line">  enable: true # 开启</span></pre></td></tr><tr><td class="code"><pre><span class="line">  # Customize the color of the bookmark.</span></pre></td></tr><tr><td class="code"><pre><span class="line">  color: &quot;#836FFF&quot; # 自定义颜色</span></pre></td></tr><tr><td class="code"><pre><span class="line">  # If auto, save the reading progress when closing the page or clicking the bookmark-icon.</span></pre></td></tr><tr><td class="code"><pre><span class="line">  # If manual, only save it by clicking the bookmark-icon.</span></pre></td></tr><tr><td class="code"><pre><span class="line">  save: auto # 会自动保存阅读进度</span></pre></td></tr></table></figure>
 
 <p>效果：</p>
-<p><img src="/images/loading.png" data-original="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226231837-382250.png" alt="14"></p>
+<p><img src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226231837-382250.png" alt="14"></p>
 <h2 id="20-添加lazyload"><a href="#20-添加lazyload" class="headerlink" title="20. 添加lazyload"></a>20. 添加lazyload</h2><p>对于图片进行延迟加载，访问到图片位置时才去请求图片资源，这样可以提高博客的访问速度，节省流量。下面一整条都复制。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-lazyload-image --save</span></pre></td></tr></table></figure>
 
@@ -373,7 +373,7 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">footer:</span></pre></td></tr><tr><td class="code"><pre><span class="line">  # Specify the date when the site was setup. If not defined, current year will be used.</span></pre></td></tr><tr><td class="code"><pre><span class="line">  #since: 2019</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">  # Icon between year and copyright info.</span></pre></td></tr><tr><td class="code"><pre><span class="line">  icon:</span></pre></td></tr><tr><td class="code"><pre><span class="line">    # Icon name in Font Awesome. See: https:&#x2F;&#x2F;fontawesome.com&#x2F;v4.7.0&#x2F;icons&#x2F;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    # &#96;heart&#96; is recommended with animation in red (#ff0000).</span></pre></td></tr><tr><td class="code"><pre><span class="line">    name: heart # 可以修改图片，可以去 https:&#x2F;&#x2F;fontawesome.com&#x2F;v4.7.0&#x2F;icons&#x2F; 找</span></pre></td></tr><tr><td class="code"><pre><span class="line">    # If you want to animate the icon, set it to true.</span></pre></td></tr><tr><td class="code"><pre><span class="line">    animated: true</span></pre></td></tr><tr><td class="code"><pre><span class="line">    # Change the color of icon, using Hex Code.</span></pre></td></tr><tr><td class="code"><pre><span class="line">    color: &quot;#F5F5F5&quot; # 图标颜色</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">  # If not defined, &#96;author&#96; from Hexo &#96;_config.yml&#96; will be used.</span></pre></td></tr><tr><td class="code"><pre><span class="line">  copyright:</span></pre></td></tr><tr><td class="code"><pre><span class="line">  </span></pre></td></tr><tr><td class="code"><pre><span class="line">  # Powered by Hexo 字样，不喜欢可以设置为 false</span></pre></td></tr><tr><td class="code"><pre><span class="line">  powered:</span></pre></td></tr><tr><td class="code"><pre><span class="line">    # Hexo link (Powered by Hexo).</span></pre></td></tr><tr><td class="code"><pre><span class="line">    enable: true</span></pre></td></tr><tr><td class="code"><pre><span class="line">    # Version info of Hexo after Hexo link (vX.X.X).</span></pre></td></tr><tr><td class="code"><pre><span class="line">    version: true</span></pre></td></tr><tr><td class="code"><pre><span class="line">    </span></pre></td></tr><tr><td class="code"><pre><span class="line">  # 主题字样，不喜欢可以 false</span></pre></td></tr><tr><td class="code"><pre><span class="line">  theme:</span></pre></td></tr><tr><td class="code"><pre><span class="line">    # Theme &amp; scheme info link (Theme - NexT.scheme).</span></pre></td></tr><tr><td class="code"><pre><span class="line">    enable: true</span></pre></td></tr><tr><td class="code"><pre><span class="line">    # Version info of NexT after scheme info (vX.X.X).</span></pre></td></tr><tr><td class="code"><pre><span class="line">    version: true</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">  # 备案信息，如果网站有备案号，可以在这里填写备案号</span></pre></td></tr><tr><td class="code"><pre><span class="line">  # Beian ICP and gongan information for Chinese users. See: http:&#x2F;&#x2F;www.beian.miit.gov.cn, http:&#x2F;&#x2F;www.beian.gov.cn</span></pre></td></tr><tr><td class="code"><pre><span class="line">  beian:</span></pre></td></tr><tr><td class="code"><pre><span class="line">    enable: false</span></pre></td></tr><tr><td class="code"><pre><span class="line">    icp:</span></pre></td></tr><tr><td class="code"><pre><span class="line">    # The digit in the num of gongan beian.</span></pre></td></tr><tr><td class="code"><pre><span class="line">    gongan_id:</span></pre></td></tr><tr><td class="code"><pre><span class="line">    # The full num of gongan beian.</span></pre></td></tr><tr><td class="code"><pre><span class="line">    gongan_num:</span></pre></td></tr><tr><td class="code"><pre><span class="line">    # The icon for gongan beian. See: http:&#x2F;&#x2F;www.beian.gov.cn&#x2F;portal&#x2F;download</span></pre></td></tr><tr><td class="code"><pre><span class="line">    gongan_icon_url:</span></pre></td></tr></table></figure>
 
 <p>然后还可以在 themes\next\layout_partials的footer.swig里修改，这个我在前面的Footer添加运行时间有说，在这个文件可以修改他们的位置，也可以手动去掉或添加某些东西。如我的：</p>
-<p><img src="/images/loading.png" data-original="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226231827-982555.png" alt="15"></p>
+<p><img src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226231827-982555.png" alt="15"></p>
 <blockquote>
 <p>观看下一篇hexo系列博文(四)</p>
 </blockquote>
@@ -388,7 +388,7 @@
     <content><![CDATA[<h2 id="1-主题"><a href="#1-主题" class="headerlink" title="1. 主题"></a>1. 主题</h2><p>主题文件都是存放在站点的themes文件下，默认为landscape主题，主题可以从hexo官网下载，每个主题都会有文档。</p>
 <p>下载主题有两种方式，一种是下载主题包然后放到themes文件中，而我喜欢用另一种，就是使用GitBash从github上clone下来，可能速度有点慢，自己也可以用第一种方法，去github直接下载。</p>
 <h2 id="2-语言"><a href="#2-语言" class="headerlink" title="2. 语言"></a>2. 语言</h2><p>一开始来是英文的，所以得改成中文，打开站点目录下的_config.yml。找到下面的代码：</p>
-<p><img src="/images/loading.png" data-original="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226222123-835691.png" alt="1"></p>
+<p><img src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226222123-835691.png" alt="1"></p>
 <p>在language的值修改为: zh-CN</p>
 <p>然后测试下就变中文。</p>
 <h2 id="3-NexT主题"><a href="#3-NexT主题" class="headerlink" title="3. NexT主题"></a>3. NexT主题</h2><h4 id="3-1-下载NexT主题"><a href="#3-1-下载NexT主题" class="headerlink" title="3.1 下载NexT主题"></a>3.1 下载NexT主题</h4><p>我使用的是Next主题，比较火，出bug容易找到解决方案，访问速度很快，简洁。</p>
@@ -397,12 +397,12 @@
 
 <p>然后等待下载，最后的themes/next 表示会把克隆的主题放到该目录，具体可以参考  <a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="external nofollow noopener noreferrer">官方</a>。</p>
 <h4 id="3-2-更换主题"><a href="#3-2-更换主题" class="headerlink" title="3.2 更换主题"></a>3.2 更换主题</h4><p>在站点目录下的_config.yml文件中更改新下载的主题，把theme后面的值改为next，记得要有空格，这是yml文件得遵循yml语法。</p>
-<p><img src="/images/loading.png" data-original="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226222142-371141.png" alt="2"></p>
+<p><img src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226222142-371141.png" alt="2"></p>
 <p>然后使用之前说的三条指令启动本地测试，访问localhost:4000，就可以看到更换的next主题</p>
 <p>NexT主题中还有四个不同风格的主题，我是用Gemini风格，这个可以改，在主题目录下（next）的_config.yml中查询 Schemes，然后下面有四种风格，都试试喜欢哪一种，把不用的注释，只能存在一个风格。</p>
-<p><img src="/images/loading.png" data-original="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226222143-959399.png" alt="3"></p>
+<p><img src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226222143-959399.png" alt="3"></p>
 <h4 id="3-3-在菜单栏开启一些跳转页面"><a href="#3-3-在菜单栏开启一些跳转页面" class="headerlink" title="3.3 在菜单栏开启一些跳转页面"></a>3.3 在菜单栏开启一些跳转页面</h4><p>还是在主题目录下的_config.yml中。把想要的页面开启，去掉#即可。</p>
-<p><img src="/images/loading.png" data-original="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226222144-962329.png" alt="4"></p>
+<p><img src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226222144-962329.png" alt="4"></p>
 <p>我开启的从上到下分别是：首页、阅读排行（这个是我加的原先没有，后面再说怎么加）、归档、分类、标签、关于我。<strong>可以在menu中调换显示顺序。</strong></p>
 <p>但是这些页面不会自动生成，得我们创建。</p>
 <p>比如：<strong>分类页面</strong>，在站点目录打开Git Bash，输入</p>
@@ -468,7 +468,7 @@
 <p>Node直接默认安装就行，点击下载 <a href="http://nodejs.cn/download/" target="_blank" rel="external nofollow noopener noreferrer">Node</a>。安装完不用理。</p>
 <p>Git也是直接下载，点击下载 <a href="https://git-scm.com/" target="_blank" rel="external nofollow noopener noreferrer">Git</a>。一直默认安装完需要如下操作：</p>
 <ul>
-<li><p>如果没有GitHub账号的，自己去注册，有账号的，直接创建一个新的仓库，名为 <code>yourgithubname.github.io</code>，其中<code>yourgithubname</code>是你的github名称，必须操作。比如我的：/ 前面是我的用户名，后面就是用我的用户名。<br><img src="/images/loading.png" data-original="/archives/f1c28309/gitname.png" alt></p>
+<li><p>如果没有GitHub账号的，自己去注册，有账号的，直接创建一个新的仓库，名为 <code>yourgithubname.github.io</code>，其中<code>yourgithubname</code>是你的github名称，必须操作。比如我的：/ 前面是我的用户名，后面就是用我的用户名。<br><img src="/archives/f1c28309/gitname.png" alt></p>
 </li>
 <li><p>配置Git的SSH Key，第一次使用Git Bash使用一些配置：</p>
 <ul>
@@ -483,10 +483,10 @@
 </ul>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"邮件地址"</span></span></pre></td></tr></table></figure>
 <ul>
-<li>然后连续3次回车，最终会生成一个文件在用户目录下，打开C盘下的用户目录的chast，找到.ssh\id_rsa.pub文件，记事本打开并复制里面的内容，打开你的github主页，进入个人设置 -&gt; SSH and GPG keys -&gt; New SSH key：<br><img src="/images/loading.png" data-original="/archives/f1c28309/ssh.png" alt></li>
+<li>然后连续3次回车，最终会生成一个文件在用户目录下，打开C盘下的用户目录的chast，找到.ssh\id_rsa.pub文件，记事本打开并复制里面的内容，打开你的github主页，进入个人设置 -&gt; SSH and GPG keys -&gt; New SSH key：<br><img src="/archives/f1c28309/ssh.png" alt></li>
 </ul>
 <h3 id="3-安装Hexo"><a href="#3-安装Hexo" class="headerlink" title="3.安装Hexo"></a>3.安装Hexo</h3><ul>
-<li>然后点开刚刚安装的git，在 Window开始界面会出现一个 Git Bash，点击它，然后在一个磁盘上面创建一个目录，随便名，再使用Git Bash定位到目录中<br><img src="/images/loading.png" data-original="/archives/f1c28309/1.png" alt></li>
+<li>然后点开刚刚安装的git，在 Window开始界面会出现一个 Git Bash，点击它，然后在一个磁盘上面创建一个目录，随便名，再使用Git Bash定位到目录中<br><img src="/archives/f1c28309/1.png" alt></li>
 <li>然后安装Hexo: 默认安装为4.0版本。</li>
 </ul>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">npm install -g hexo</span></pre></td></tr></table></figure>
@@ -497,7 +497,7 @@
 <ul>
 <li>初始化就如下面这样。</li>
 </ul>
-<p>  <img src="/images/loading.png" data-original="/archives/f1c28309/%E7%AB%99%E7%82%B9%E7%9B%AE%E5%BD%95.png" alt></p>
+<p>  <img src="/archives/f1c28309/%E7%AB%99%E7%82%B9%E7%9B%AE%E5%BD%95.png" alt></p>
 <ul>
 <li>以后在本地启动博客就使用下面三条指令。</li>
 </ul>
@@ -518,10 +518,10 @@
 
 <p>然后会在站点目录下的source文件的_posts文件就会出现刚刚创建的文件，然后用Markdown语法来写作。推荐一个写作的：Typora。</p>
 <p>然后在使用上面的三条指令部署到服务器。</p>
-<h3 id="5-Hexo的目录结构"><a href="#5-Hexo的目录结构" class="headerlink" title="5.Hexo的目录结构"></a>5.Hexo的目录结构</h3><p><img src="/images/loading.png" data-original="/archives/f1c28309/%E7%9B%AE%E5%BD%95.png" alt="目录"></p>
+<h3 id="5-Hexo的目录结构"><a href="#5-Hexo的目录结构" class="headerlink" title="5.Hexo的目录结构"></a>5.Hexo的目录结构</h3><p><img src="/archives/f1c28309/%E7%9B%AE%E5%BD%95.png" alt="目录"></p>
 <ul>
 <li>如果想自定义修改站点主题的内容在：站点目录\themes\next\layout中修改，根据文件名。</li>
-<li>如果想自己添加css样式，在主题配置文件中把下图的注释去掉，然后去对应的目录创建该文件，然后就在里面添加css样式。<img src="/images/loading.png" data-original="/archives/f1c28309/%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6css%E6%A0%B7%E5%BC%8F.png" alt></li>
+<li>如果想自己添加css样式，在主题配置文件中把下图的注释去掉，然后去对应的目录创建该文件，然后就在里面添加css样式。<img src="/archives/f1c28309/%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6css%E6%A0%B7%E5%BC%8F.png" alt></li>
 </ul>
 <h3 id="6-需要了解的一些名词"><a href="#6-需要了解的一些名词" class="headerlink" title="6.需要了解的一些名词"></a>6.需要了解的一些名词</h3><ul>
 <li>站点目录：就是最开始初始化hexo的那个目录。</li>
