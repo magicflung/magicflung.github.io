@@ -135,6 +135,11 @@
 <p><img alt="8" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226223319-40315.png"></p>
 <h2 id="26-添加文章阅读次数"><a href="#26-添加文章阅读次数" class="headerlink" title="26. 添加文章阅读次数"></a>26. 添加文章阅读次数</h2><p>这个还是得借助<a href="https://leancloud.cn/dashboard/login.html#/signup" target="_blank" rel="external nofollow noopener noreferrer">Leancloud</a> 。</p>
 <p>在主题目录的_config.yml 查询 leancloud_visitors</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">![23](D:\myblog\blog\source\_posts\hexo4-NexT7搭建博客(四)\23.png)# Show number of visitors of each article.</span></pre></td></tr><tr><td class="code"><pre><span class="line"># You can visit https:&#x2F;&#x2F;leancloud.cn to get AppID and AppKey.</span></pre></td></tr><tr><td class="code"><pre><span class="line"># AppID and AppKey are recommended to be the same as valine&#39;s for counter compatibility.</span></pre></td></tr><tr><td class="code"><pre><span class="line"># Do not enable both &#96;valine.visitor&#96; and &#96;leancloud_visitors&#96;.</span></pre></td></tr><tr><td class="code"><pre><span class="line">leancloud_visitors:</span></pre></td></tr><tr><td class="code"><pre><span class="line">  enable: true # 开启</span></pre></td></tr><tr><td class="code"><pre><span class="line">  app_id: # 填入你的Leancloud的appId</span></pre></td></tr><tr><td class="code"><pre><span class="line">  app_key: # 填入你的Leancloud的appKey</span></pre></td></tr><tr><td class="code"><pre><span class="line">  # Dependencies: https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;hexo-leancloud-counter-security</span></pre></td></tr><tr><td class="code"><pre><span class="line">  # If you don&#39;t care about security in leancloud counter and just want to use it directly</span></pre></td></tr><tr><td class="code"><pre><span class="line">  # (without hexo-leancloud-counter-security plugin), set &#96;security&#96; to &#96;false&#96;.</span></pre></td></tr><tr><td class="code"><pre><span class="line">  security: false # 默认</span></pre></td></tr><tr><td class="code"><pre><span class="line">  betterPerformance: false # 默认</span></pre></td></tr></table></figure>
+
+<p>点击刚刚创建的应用（评论那个），点击设置-&gt;应用Keys中的Id和Key。复制粘贴到上面那个地方。然后在该应用，有一个叫 存储，点开，然后看到创建Class，创建一个Counter就行。</p>
+<p><img alt="9" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122720/20191227202707-993365.png"></p>
+<p><img alt="10" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122720/20191227202922-607348.png"></p>
 <h2 id="27-Url-持久化"><a href="#27-Url-持久化" class="headerlink" title="27. Url 持久化"></a>27. Url 持久化</h2><p>我们可以发现 hexo 默认生成的文章地址路径是 <code>【网站名称／年／月／日／文章名称】</code>。</p>
 <p>这种链接对搜索爬虫是很不友好的，它的 url 结构超过了三层，太深了。</p>
 <p>下面我推荐安装 <code>hexo-abbrlink</code> 插件：</p>
@@ -144,7 +149,7 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># URL</span></pre></td></tr><tr><td class="code"><pre><span class="line">## If your site is put in a subdirectory, set url as &#39;http:&#x2F;&#x2F;yoursite.com&#x2F;child&#39; and root as &#39;&#x2F;child&#x2F;&#39;</span></pre></td></tr><tr><td class="code"><pre><span class="line">url: https:&#x2F;&#x2F;flunggg.cn&#x2F;  # 这里我填写我自己的域名，没有域名的先别动</span></pre></td></tr><tr><td class="code"><pre><span class="line">root: &#x2F;</span></pre></td></tr><tr><td class="code"><pre><span class="line">permalink: archives&#x2F;:abbrlink.html # 该这个</span></pre></td></tr><tr><td class="code"><pre><span class="line">abbrlink:</span></pre></td></tr><tr><td class="code"><pre><span class="line">  alg: crc32  # 算法：crc16(default) and crc32</span></pre></td></tr><tr><td class="code"><pre><span class="line">  rep: hex    # 进制：dec(default) and hex</span></pre></td></tr></table></figure>
 
 <p>效果：</p>
-<p><img alt="19" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226223323-167250.png"></p>
+<p><img alt="11" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226223323-167250.png"></p>
 <h2 id="28-nofollow-标签的使用"><a href="#28-nofollow-标签的使用" class="headerlink" title="28. nofollow 标签的使用"></a>28. nofollow 标签的使用</h2><p>减少出站链接能够有效防止权重分散。简单的说就是，如果A网页上有一个链接指向B网页，但A网页给这个链接加上了 rel=”nofollow” 标注，则搜索引擎不把A网页计算入B网页的<a href="https://baike.baidu.com/item/反向链接/7535075" target="_blank" rel="external nofollow noopener noreferrer">反向链接</a>。<a href="https://baike.baidu.com/item/搜索引擎/104812" target="_blank" rel="external nofollow noopener noreferrer">搜索引擎</a>看到这个标签就可能减少或完全取消链接的投票<a href="https://baike.baidu.com/item/权重/10245966" target="_blank" rel="external nofollow noopener noreferrer">权重</a>。（百度百科）</p>
 <p>安装插件：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-autonofollow --save</span></pre></td></tr></table></figure>
@@ -154,9 +159,9 @@
 
 <p>这样，例外的链接将不会被加上 nofollow 属性。</p>
 <p>参考：</p>
-<p><a href="https://tding.top/archives/9a232bbe.html" target="_blank" rel="external nofollow noopener noreferrer">1</a></p>
+<p><a href="https://tding.top/archives/9a232bbe.html" target="_blank" rel="external nofollow noopener noreferrer">小丁的个人博客</a></p>
 <p><a href="https://cloud.tencent.com/developer/article/1142490" target="_blank" rel="external nofollow noopener noreferrer">评论邮箱参考</a></p>
-<p><a href="https://valine.js.org/avatar.html" target="_blank" rel="external nofollow noopener noreferrer">2</a></p>
+<p><a href="https://valine.js.org/avatar.html" target="_blank" rel="external nofollow noopener noreferrer">Valine官方</a></p>
 ]]></content>
       <categories>
         <category>hexo</category>
@@ -408,7 +413,7 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new page categories</span></pre></td></tr></table></figure>
 
 <p>然后去站点目录的source/categories的index.md 中，配置：copy过去即可。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">title: 分类</span></pre></td></tr><tr><td class="code"><pre><span class="line">type: &quot;categories&quot; # 这要跟主题目录下的_config.yml的那个名称一样</span></pre></td></tr><tr><td class="code"><pre><span class="line">comments: false # 不开启评论</span></pre></td></tr></table></figure>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="attr">title:</span> <span class="string">分类</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="attr">type:</span> <span class="string">"categories"</span> <span class="comment"># 这要跟主题目录下的_config.yml的那个名称一样</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="attr">comments:</span> <span class="literal">false</span> <span class="comment"># 不开启评论</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span></pre></td></tr></table></figure>
 
 <ul>
 <li><strong>标签页面</strong></li>
@@ -443,7 +448,7 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new page top</span></pre></td></tr></table></figure>
 
 <p>然后source\archives中配置</p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">title:</span> <span class="string">archives</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="attr">type:</span> <span class="string">"archives"</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="attr">comments:</span> <span class="literal">false</span></span></pre></td></tr></table></figure>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="attr">title:</span> <span class="string">archives</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="attr">type:</span> <span class="string">"archives"</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="attr">comments:</span> <span class="literal">false</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span></pre></td></tr></table></figure>
 
 <blockquote>
 <p> 观看下篇系列博文 NexT主题的美化</p>
@@ -463,6 +468,7 @@
     <url>/archives/f1c28309.html</url>
     <content><![CDATA[<h3 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h3><p>网上有很多hexo+nexT7的教程，很多因为现在版本问题，有些配置完会出错或者不生效。搭建这个博客用了我4天的时间，加上美化。<br>期间使用nexT5.0和hexo4.0导致访问路径有点问题，出现 <a href="http://localhost:4000/archives/20%/" target="_blank" rel="external nofollow noopener noreferrer">http://localhost:4000/archives/20%/</a> 我不明白咋回事，所以删了两次本地博客。结果发现是版本问题。</p>
 <p><strong>首先在前面说清楚，每做完一步就给我使用三条指令本地测试（下面会说）一下，别傻傻的等着搞完一半甚至全部做完才来测试，要是出错那可是很致命的，最坏的结果当然是重做。如果每次都有测试要是出现bug就可以根据哪步来排除问题。</strong></p>
+<p>而且我后期是使用阿里云服务器来搞的，别的服务器没碰过，但大致是一样的。后面有想搞域名的现在就可以先去搞域名，比如阿里云的万网（我是在这个搞的），腾讯云、百度云等都可以。并且先去备案。当然不备也可以，为了写博文用的床图，我用的是OSS来存图，所以得备案。国内的云存储，CDN加速都需要备案才可以申请。</p>
 <h3 id="2-安装Node和Git"><a href="#2-安装Node和Git" class="headerlink" title="2.安装Node和Git"></a>2.安装Node和Git</h3><p>使用hexo需要安装两个前置工具: Node 和 Git。</p>
 <p>Node直接默认安装就行，点击下载 <a href="http://nodejs.cn/download/" target="_blank" rel="external nofollow noopener noreferrer">Node</a>。安装完不用理。</p>
 <p>Git也是直接下载，点击下载 <a href="https://git-scm.com/" target="_blank" rel="external nofollow noopener noreferrer">Git</a>。一直默认安装完需要如下操作：</p>
