@@ -222,6 +222,12 @@
 <p>参考：</p>
 <p><a href="https://ihaoming.top/archives/c9c37af.html" target="_blank" rel="external nofollow noopener noreferrer">hexo部署到vps</a></p>
 ]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
   </entry>
   <entry>
     <title>hexo4-NexT7搭建博客(五)</title>
@@ -433,7 +439,7 @@
 </ul>
 <p>分析了一下上方的策略，如果不想付费的话，最佳使用方案就设置定时器，每天 7 - 23 点每 20 分钟访问一次，这样可以保持每天的绝大多数时间邮件服务是正常的。</p>
 <h2 id="25-Valine-头像设置"><a href="#25-Valine-头像设置" class="headerlink" title="25. Valine 头像设置"></a>25. Valine 头像设置</h2><p>我们可以修改评论的头像，路人的头像有下面几种，默认为第一种</p>
-<p><img alt="17" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226231205-269116.png"></p>
+<p><img alt="17" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122901/20191229014500-940138.png"></p>
 <p>在主题目录的_config.yml文件查找：valine 中，找到avatar，然后就可以修改上面的图标</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line"># Valine</span></pre></td></tr><tr><td class="code"><pre><span class="line"># For more information: https:&#x2F;&#x2F;valine.js.org, https:&#x2F;&#x2F;github.com&#x2F;xCss&#x2F;Valine</span></pre></td></tr><tr><td class="code"><pre><span class="line">valine:</span></pre></td></tr><tr><td class="code"><pre><span class="line">  ...</span></pre></td></tr><tr><td class="code"><pre><span class="line">  avatar: monsterid # Gravatar style</span></pre></td></tr><tr><td class="code"><pre><span class="line">  ...</span></pre></td></tr></table></figure>
 
@@ -441,7 +447,7 @@
 <p>如果你修改了头像后发现没有更新，请不要慌张，因为<code>gravatar.cat.net</code> 有七天的缓存期，安静的等待吧</p>
 </blockquote>
 <p>然后还可以设置自己的自定义头像，登录 <a href="https://cn.gravatar.com/" target="_blank" rel="external nofollow noopener noreferrer">gravatar</a>，注册账号并设置头像，然后在valine评论时，输入我们刚刚注册的邮箱，会显示出我们自定义的头像。我的设置如下：</p>
-<p><img alt="8" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226223319-40315.png"></p>
+<p><img alt="18" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122901/20191229014509-84570.png"></p>
 <h2 id="26-添加文章阅读次数"><a href="#26-添加文章阅读次数" class="headerlink" title="26. 添加文章阅读次数"></a>26. 添加文章阅读次数</h2><p>这个还是得借助<a href="https://leancloud.cn/dashboard/login.html#/signup" target="_blank" rel="external nofollow noopener noreferrer">Leancloud</a> 。</p>
 <p>在主题目录的_config.yml 查询 leancloud_visitors</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">![23](D:\myblog\blog\source\_posts\hexo4-NexT7搭建博客(四)\23.png)# Show number of visitors of each article.</span></pre></td></tr><tr><td class="code"><pre><span class="line"># You can visit https:&#x2F;&#x2F;leancloud.cn to get AppID and AppKey.</span></pre></td></tr><tr><td class="code"><pre><span class="line"># AppID and AppKey are recommended to be the same as valine&#39;s for counter compatibility.</span></pre></td></tr><tr><td class="code"><pre><span class="line"># Do not enable both &#96;valine.visitor&#96; and &#96;leancloud_visitors&#96;.</span></pre></td></tr><tr><td class="code"><pre><span class="line">leancloud_visitors:</span></pre></td></tr><tr><td class="code"><pre><span class="line">  enable: true # 开启</span></pre></td></tr><tr><td class="code"><pre><span class="line">  app_id: # 填入你的Leancloud的appId</span></pre></td></tr><tr><td class="code"><pre><span class="line">  app_key: # 填入你的Leancloud的appKey</span></pre></td></tr><tr><td class="code"><pre><span class="line">  # Dependencies: https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;hexo-leancloud-counter-security</span></pre></td></tr><tr><td class="code"><pre><span class="line">  # If you don&#39;t care about security in leancloud counter and just want to use it directly</span></pre></td></tr><tr><td class="code"><pre><span class="line">  # (without hexo-leancloud-counter-security plugin), set &#96;security&#96; to &#96;false&#96;.</span></pre></td></tr><tr><td class="code"><pre><span class="line">  security: false # 默认</span></pre></td></tr><tr><td class="code"><pre><span class="line">  betterPerformance: false # 默认</span></pre></td></tr></table></figure>
@@ -458,7 +464,7 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># URL</span></pre></td></tr><tr><td class="code"><pre><span class="line">## If your site is put in a subdirectory, set url as &#39;http:&#x2F;&#x2F;yoursite.com&#x2F;child&#39; and root as &#39;&#x2F;child&#x2F;&#39;</span></pre></td></tr><tr><td class="code"><pre><span class="line">url: https:&#x2F;&#x2F;flunggg.cn&#x2F;  # 这里我填写我自己的域名，没有域名的先别动</span></pre></td></tr><tr><td class="code"><pre><span class="line">root: &#x2F;</span></pre></td></tr><tr><td class="code"><pre><span class="line">permalink: archives&#x2F;:abbrlink.html # 该这个</span></pre></td></tr><tr><td class="code"><pre><span class="line">abbrlink:</span></pre></td></tr><tr><td class="code"><pre><span class="line">  alg: crc32  # 算法：crc16(default) and crc32</span></pre></td></tr><tr><td class="code"><pre><span class="line">  rep: hex    # 进制：dec(default) and hex</span></pre></td></tr></table></figure>
 
 <p>效果：</p>
-<p><img alt="11" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226223323-167250.png"></p>
+<p><img alt="11" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122901/20191229014745-258468.png"></p>
 <h2 id="28-nofollow-标签的使用"><a href="#28-nofollow-标签的使用" class="headerlink" title="28. nofollow 标签的使用"></a>28. nofollow 标签的使用</h2><p>减少出站链接能够有效防止权重分散。简单的说就是，如果A网页上有一个链接指向B网页，但A网页给这个链接加上了 rel=”nofollow” 标注，则搜索引擎不把A网页计算入B网页的<a href="https://baike.baidu.com/item/反向链接/7535075" target="_blank" rel="external nofollow noopener noreferrer">反向链接</a>。<a href="https://baike.baidu.com/item/搜索引擎/104812" target="_blank" rel="external nofollow noopener noreferrer">搜索引擎</a>看到这个标签就可能减少或完全取消链接的投票<a href="https://baike.baidu.com/item/权重/10245966" target="_blank" rel="external nofollow noopener noreferrer">权重</a>。（百度百科）</p>
 <p>安装插件：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-autonofollow --save</span></pre></td></tr></table></figure>
@@ -690,7 +696,7 @@
 
 
 <h2 id="17-RSS订阅（非必要）"><a href="#17-RSS订阅（非必要）" class="headerlink" title="17. RSS订阅（非必要）"></a>17. RSS订阅（非必要）</h2><p>原因：RSS订阅可以对文章内容进行订阅。如下：就不必每次去收藏夹找该博客网站</p>
-<p><img alt data-src="/archives/53889e4c/D:%5Cmyblog%5Cblog%5Csource_posts%5Chexo4-NexT7%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2(%E4%B8%89)%5CRSSReader0.png"></p>
+<p><img alt="10" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122901/20191229013659-263920.png"></p>
 <p>首先在站点目录下打开Git Bash 安装</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-feed --save</span></pre></td></tr></table></figure>
 
@@ -703,10 +709,11 @@
 
 <p>然后部署到网站就可以看到，但是我们点开时是一堆代码，我们需要安装一个RSS阅读器的插件，在浏览器搜索</p>
 <p>RSS，谷歌商城一般登不上，登得上一样查RSS就行，那在火狐的附加工具搜，第一个就是下面这个：</p>
-<p><img alt data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226232019-428953.png"></p>
+<p><img alt="11" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226232019-428953.png"></p>
 <p>安装这个，使用方法：</p>
-<p><img alt="12" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226231831-996338.png"></p>
-<p><img alt="13" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226231829-412970.png"></p>
+<p><img alt="12" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122901/20191229013913-420349.png"></p>
+<p><img alt="13" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122901/20191229013847-814814.png"></p>
+<p><img alt="14" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122901/20191229014002-593018.png"></p>
 <p>RSS的URL就是我们点开后一堆代码的上面的URL，比如我的是：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;flunggg.cn&#x2F;atom.xml</span></pre></td></tr></table></figure>
 
@@ -725,7 +732,7 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">bookmark:</span></pre></td></tr><tr><td class="code"><pre><span class="line">  enable: true # 开启</span></pre></td></tr><tr><td class="code"><pre><span class="line">  # Customize the color of the bookmark.</span></pre></td></tr><tr><td class="code"><pre><span class="line">  color: &quot;#836FFF&quot; # 自定义颜色</span></pre></td></tr><tr><td class="code"><pre><span class="line">  # If auto, save the reading progress when closing the page or clicking the bookmark-icon.</span></pre></td></tr><tr><td class="code"><pre><span class="line">  # If manual, only save it by clicking the bookmark-icon.</span></pre></td></tr><tr><td class="code"><pre><span class="line">  save: auto # 会自动保存阅读进度</span></pre></td></tr></table></figure>
 
 <p>效果：</p>
-<p><img alt="14" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226231837-382250.png"></p>
+<p><img alt="15" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122901/20191229013325-336995.png"></p>
 <h2 id="20-添加lazyload（跟后面的图片点击全屏看不能共存）"><a href="#20-添加lazyload（跟后面的图片点击全屏看不能共存）" class="headerlink" title="20. 添加lazyload（跟后面的图片点击全屏看不能共存）"></a>20. 添加lazyload（跟后面的图片点击全屏看不能共存）</h2><p>对于图片进行延迟加载，访问到图片位置时才去请求图片资源，这样可以提高博客的访问速度，节省流量。下面一整条都复制。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install --save lozad</span></pre></td></tr></table></figure>
 
@@ -746,7 +753,7 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">footer:</span></pre></td></tr><tr><td class="code"><pre><span class="line">  # Specify the date when the site was setup. If not defined, current year will be used.</span></pre></td></tr><tr><td class="code"><pre><span class="line">  #since: 2019</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">  # Icon between year and copyright info.</span></pre></td></tr><tr><td class="code"><pre><span class="line">  icon:</span></pre></td></tr><tr><td class="code"><pre><span class="line">    # Icon name in Font Awesome. See: https:&#x2F;&#x2F;fontawesome.com&#x2F;v4.7.0&#x2F;icons&#x2F;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    # &#96;heart&#96; is recommended with animation in red (#ff0000).</span></pre></td></tr><tr><td class="code"><pre><span class="line">    name: heart # 可以修改图片，可以去 https:&#x2F;&#x2F;fontawesome.com&#x2F;v4.7.0&#x2F;icons&#x2F; 找</span></pre></td></tr><tr><td class="code"><pre><span class="line">    # If you want to animate the icon, set it to true.</span></pre></td></tr><tr><td class="code"><pre><span class="line">    animated: true</span></pre></td></tr><tr><td class="code"><pre><span class="line">    # Change the color of icon, using Hex Code.</span></pre></td></tr><tr><td class="code"><pre><span class="line">    color: &quot;#F5F5F5&quot; # 图标颜色</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">  # If not defined, &#96;author&#96; from Hexo &#96;_config.yml&#96; will be used.</span></pre></td></tr><tr><td class="code"><pre><span class="line">  copyright:</span></pre></td></tr><tr><td class="code"><pre><span class="line">  </span></pre></td></tr><tr><td class="code"><pre><span class="line">  # Powered by Hexo 字样，不喜欢可以设置为 false</span></pre></td></tr><tr><td class="code"><pre><span class="line">  powered:</span></pre></td></tr><tr><td class="code"><pre><span class="line">    # Hexo link (Powered by Hexo).</span></pre></td></tr><tr><td class="code"><pre><span class="line">    enable: true</span></pre></td></tr><tr><td class="code"><pre><span class="line">    # Version info of Hexo after Hexo link (vX.X.X).</span></pre></td></tr><tr><td class="code"><pre><span class="line">    version: true</span></pre></td></tr><tr><td class="code"><pre><span class="line">    </span></pre></td></tr><tr><td class="code"><pre><span class="line">  # 主题字样，不喜欢可以 false</span></pre></td></tr><tr><td class="code"><pre><span class="line">  theme:</span></pre></td></tr><tr><td class="code"><pre><span class="line">    # Theme &amp; scheme info link (Theme - NexT.scheme).</span></pre></td></tr><tr><td class="code"><pre><span class="line">    enable: true</span></pre></td></tr><tr><td class="code"><pre><span class="line">    # Version info of NexT after scheme info (vX.X.X).</span></pre></td></tr><tr><td class="code"><pre><span class="line">    version: true</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">  # 备案信息，如果网站有备案号，可以在这里填写备案号</span></pre></td></tr><tr><td class="code"><pre><span class="line">  # Beian ICP and gongan information for Chinese users. See: http:&#x2F;&#x2F;www.beian.miit.gov.cn, http:&#x2F;&#x2F;www.beian.gov.cn</span></pre></td></tr><tr><td class="code"><pre><span class="line">  beian:</span></pre></td></tr><tr><td class="code"><pre><span class="line">    enable: false</span></pre></td></tr><tr><td class="code"><pre><span class="line">    icp:</span></pre></td></tr><tr><td class="code"><pre><span class="line">    # The digit in the num of gongan beian.</span></pre></td></tr><tr><td class="code"><pre><span class="line">    gongan_id:</span></pre></td></tr><tr><td class="code"><pre><span class="line">    # The full num of gongan beian.</span></pre></td></tr><tr><td class="code"><pre><span class="line">    gongan_num:</span></pre></td></tr><tr><td class="code"><pre><span class="line">    # The icon for gongan beian. See: http:&#x2F;&#x2F;www.beian.gov.cn&#x2F;portal&#x2F;download</span></pre></td></tr><tr><td class="code"><pre><span class="line">    gongan_icon_url:</span></pre></td></tr></table></figure>
 
 <p>然后还可以在 themes\next\layout_partials的footer.swig里修改，这个我在前面的Footer添加运行时间有说，在这个文件可以修改他们的位置，也可以手动去掉或添加某些东西。如我的：</p>
-<p><img alt="15" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226231827-982555.png"></p>
+<p><img alt="16" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122901/20191229014054-350909.png"></p>
 <blockquote>
 <p>观看下一篇hexo系列博文(四)</p>
 </blockquote>
@@ -829,7 +836,7 @@
 <p> 观看下篇系列博文 NexT主题的美化</p>
 </blockquote>
 <p>参考：</p>
-<p><a href="https://www.jianshu.com/p/d95cff938277" target="_blank" rel="external nofollow noopener noreferrer">1</a></p>
+<p><a href="https://www.jianshu.com/p/d95cff938277" target="_blank" rel="external nofollow noopener noreferrer">Hexo博客搭建全攻略(二)：NexT主题配置</a></p>
 ]]></content>
       <categories>
         <category>hexo</category>
