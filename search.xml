@@ -1,6 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>hexo4-NexT7搭建博客(六)</title>
+    <url>/archives/f41853c4.html</url>
+    <content><![CDATA[<h2 id="1-域名绑定"><a href="#1-域名绑定" class="headerlink" title="1. 域名绑定"></a>1. 域名绑定</h2><h3 id="1-1-GitHub仓库的域名绑定"><a href="#1-1-GitHub仓库的域名绑定" class="headerlink" title="1.1 GitHub仓库的域名绑定"></a>1.1 GitHub仓库的域名绑定</h3><ul>
+<li>如果一直打算把博客部署在GitHub上，默认就是部署在这里，那么我们来绑定一下域名。</li>
+</ul>
+<p>首先先去买个域名，<a href="https://wanwang.aliyun.com/" target="_blank" rel="external nofollow noopener noreferrer">阿里云的万网</a>（我是在这个搞的），<a href="https://dnspod.cloud.tencent.com/" target="_blank" rel="external nofollow noopener noreferrer">腾讯云</a>、<a href="https://cloud.baidu.com/product/bcd.html" target="_blank" rel="external nofollow noopener noreferrer">百度云</a>等都可以，这我在前面很早就有说。</p>
+<p>打开你部署在github的博客仓库，然后点击Settings，看到Repository name，复制下面那个。</p>
+<p><img alt="1" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122816/20191228165411-448783.png"></p>
+<p>在阿里云点开你的域名解析：我配置的是@，也就是<a href="http://www.xxx.cn和xxx.cn都可以访问，你可以自己按自己的方式。" target="_blank" rel="external nofollow noopener noreferrer">www.xxx.cn和xxx.cn都可以访问，你可以自己按自己的方式。</a></p>
+<p><img alt="2" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122816/20191228165615-800176.png"></p>
+<p><img alt data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122816/20191228165621-963532.png"></p>
+<p>然后点击左边那个蓝色按钮，添加记录。</p>
+<p><img alt="3" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122816/20191228165625-682867.png"></p>
+<p>然后再回到刚刚的github你博客仓库的setting中，往下拉。</p>
+<p><img alt="4" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122816/20191228165756-585323.png"></p>
+<p>最后，在自己本地的站点目录的source文件中，创建一个CNAME文件，然后在里面填上我们的域名。因为刚开始在github那边填上我们的域名，就会在仓库生成一个CNAME文件，而我们本地博客没有，每次上传时都会把它删了，所以得在本地创建一个这样的文件。</p>
+<p><img alt="5" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122817/20191228170240-899062.png"></p>
+<p>访问试试成功了没有。</p>
+<h3 id="1-2-阿里云的域名绑定"><a href="#1-2-阿里云的域名绑定" class="headerlink" title="1.2 阿里云的域名绑定"></a>1.2 阿里云的域名绑定</h3><p>这个最简单了，提前是自己要有阿里云的服务器或者别的服务器。然后去获取服务器的公网IP地址。比如：我的阿里云服务器的公网。</p>
+<p><img alt="6" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122817/20191228170757-391535.png"></p>
+<p>然后回到刚刚域名解析那边，如图：</p>
+<p><img alt="7" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122817/20191228171050-107982.png"></p>
+<p>如果服务器没有装nginx或者tomcat的话，访问不到什么，所以看下一步。</p>
+<h2 id="2-将博客部署到阿里云服务器"><a href="#2-将博客部署到阿里云服务器" class="headerlink" title="2. 将博客部署到阿里云服务器"></a>2. 将博客部署到阿里云服务器</h2><p>这一步我走了很多坑。有时候是githooks不起作用，有时候是nginx问题。</p>
+<h3 id="2-1-本地电脑连接阿里云"><a href="#2-1-本地电脑连接阿里云" class="headerlink" title="2.1 本地电脑连接阿里云"></a>2.1 本地电脑连接阿里云</h3><p><a href="https://blog.csdn.net/weixin_41800884/article/details/103148518" target="_blank" rel="external nofollow noopener noreferrer">阿里云入门</a></p>
+<p><a href="https://blog.csdn.net/weixin_41800884/article/details/103148850" target="_blank" rel="external nofollow noopener noreferrer">阿里云本地SSH连接</a></p>
+<p>这里额外补充，可以下载一个<a href="https://winscp.net/eng/docs/lang:chs" target="_blank" rel="external nofollow noopener noreferrer">WinSCP</a>的可视连接程序。</p>
+<h3 id="2-2-安装nginx"><a href="#2-2-安装nginx" class="headerlink" title="2.2 安装nginx"></a>2.2 安装nginx</h3><p>最好跟我安装一样版本的nginx。看下面的博文，也有某些nginx出错的解决方法。</p>
+<p><a href="https://blog.csdn.net/weixin_41800884/article/details/103545128" target="_blank" rel="external nofollow noopener noreferrer">安装nginx</a></p>
+<p>然后访问公网ip看看有没有出现什么，有出现nginx的首页就说明成功。</p>
+<h3 id="2-3-博客部署到阿里云服务器"><a href="#2-3-博客部署到阿里云服务器" class="headerlink" title="2.3 博客部署到阿里云服务器"></a>2.3 博客部署到阿里云服务器</h3><h4 id="2-3-1-原理"><a href="#2-3-1-原理" class="headerlink" title="2.3.1 原理"></a>2.3.1 原理</h4><p>在本地编辑文本，然后使用Git远程部署到VPS的Git仓库。<code>hexo d</code>命令实际上只deploy了本地的public文件夹，Git Hooks实际上就是当Git仓库收到最新的push时，将Git仓库接受到的内容复制到VPS上的网站目录内。相当于完成了手动将public文件夹复制到VPS的网站根目录里。</p>
+<p>下面这张是用别人的图，该原理就是这样：<a href="https://segmentfault.com/a/1190000016106584" target="_blank" rel="external nofollow noopener noreferrer">原地址</a></p>
+<p><img alt="8" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122819/20191228193136-962690.png"></p>
+<h4 id="2-3-2-安装配置Git"><a href="#2-3-2-安装配置Git" class="headerlink" title="2.3.2 安装配置Git"></a>2.3.2 安装配置Git</h4><p>连接上我们的远程阿里云服务器，然后执行：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo yum install git</span></pre></td></tr></table></figure>
+
+<p>等待下载，查看是否成功：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git --version</span></pre></td></tr></table></figure>
+
+<h4 id="2-3-3-创建git用户以及配置免密登录"><a href="#2-3-3-创建git用户以及配置免密登录" class="headerlink" title="2.3.3 创建git用户以及配置免密登录"></a>2.3.3 创建git用户以及配置免密登录</h4><ul>
+<li>创建一个名为git的用户。不是我们github上的那个git用户。</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">adduser git</span></pre></td></tr></table></figure>
+
+<p>假如没有提示输入密码,则</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">passwd git</span></pre></td></tr></table></figure>
+
+<p>输入自定义密码，以后登录该名为git的用户要用的。</p>
+<ul>
+<li>然后，赋给git用户sudo权限</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">chmod 740 /etc/sudoers</span></pre></td></tr><tr><td class="code"><pre><span class="line">vim /etc/sudoers</span></pre></td></tr></table></figure>
+
+<p>找到如下内容：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> User privilege specification</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">root    ALL=(ALL:ALL) ALL</span></pre></td></tr></table></figure>
+
+<p>然后在root下面添加：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> User privilege specification</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">root    ALL=(ALL:ALL) ALL</span></pre></td></tr><tr><td class="code"><pre><span class="line">git     ALL=(ALL:ALL) ALL</span></pre></td></tr></table></figure>
+
+<p>然后按下ESC键，加上 ; 再输入wq保存退出。这应该不用我说了，vim编译器的指令。</p>
+<p>然后修改回文件的权限：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">chmod 440 /etc/sudoers</span></pre></td></tr></table></figure>
+
+<ul>
+<li>切换到git用户</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">su git						// 切换到git用户</span></pre></td></tr><tr><td class="code"><pre><span class="line">cd /home/git				// 切换到git用户目录</span></pre></td></tr><tr><td class="code"><pre><span class="line">mkdir -p repo/myblog.git	// 创建git仓库文件夹，以myblog.git为例</span></pre></td></tr><tr><td class="code"><pre><span class="line">cd repo/myblog.git			// 切换到repo目录,进入仓库目录</span></pre></td></tr><tr><td class="code"><pre><span class="line">git init --bare				// 使用--bare参数初始化为裸仓库，这样创建的仓库不包含工作区</span></pre></td></tr></table></figure>
+
+<p>创建网站目录shell</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd /home/git 				// 切换到git用户目录</span></pre></td></tr><tr><td class="code"><pre><span class="line">mkdir -p hexo/blog			// 创建目录，用来存放博客的静态文件</span></pre></td></tr></table></figure>
+
+<ul>
+<li>配置ssh</li>
+</ul>
+<p>回到我们的本地主机，假设你电脑已经早有配置git密匙，在桌面右键点开Git Bash，输入：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cat ~&#x2F;.ssh&#x2F;id_rsa.pub</span></pre></td></tr></table></figure>
+
+<p>然后就会出现你的git密匙，复制，然后回到远程阿里云服务器，输入：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd &#x2F;home&#x2F;git				&#x2F;&#x2F; 切换到git用户目录</span></pre></td></tr><tr><td class="code"><pre><span class="line">mkdir .ssh				&#x2F;&#x2F;创建.ssh目录</span></pre></td></tr><tr><td class="code"><pre><span class="line">cd .ssh</span></pre></td></tr><tr><td class="code"><pre><span class="line">sudo vim authorized_keys</span></pre></td></tr></table></figure>
+
+<p>然后对着vim打开的黑框右键一下，就把刚刚复制的密匙复制过去了，但是注意：有可能在最前面有可能会漏掉几个字符，自己填上去。最后</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">按ESC，然后按分号键; 输入wq</span></pre></td></tr></table></figure>
+
+<p><img alt="9" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122819/20191228195944-185026.png"></p>
+<ul>
+<li>确认文件夹的权限</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo chown git:git -R &#x2F;home&#x2F;hexo&#x2F;blog</span></pre></td></tr><tr><td class="code"><pre><span class="line">sudo chown git:git -R &#x2F;home&#x2F;git&#x2F;myblog.git</span></pre></td></tr><tr><td class="code"><pre><span class="line">#然后查看这两个文件夹是不是都属于git:git</span></pre></td></tr><tr><td class="code"><pre><span class="line">ll &#x2F;home&#x2F;git&#x2F;</span></pre></td></tr><tr><td class="code"><pre><span class="line">ll &#x2F;var&#x2F;www&#x2F;</span></pre></td></tr></table></figure>
+
+<ul>
+<li>然后,到这里,就先验证vps是否能用git用户ssh免密登陆.在本地windows打开git bash,输入命令登陆</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh git@你的服务器的公网ip或者域名</span></pre></td></tr></table></figure>
+
+<p>首次出现要输入yes。如果有出现要输入密码就成功了，不成功再找我，我在这也走了很多坑。</p>
+<ul>
+<li>然后再配置免密码登录</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">chmod 700 ~/.ssh</span></pre></td></tr><tr><td class="code"><pre><span class="line">chmod 600 ~/.ssh/authorized_keys</span></pre></td></tr></table></figure>
+
+<h4 id="2-3-4-配置Nginx"><a href="#2-3-4-配置Nginx" class="headerlink" title="2.3.4 配置Nginx"></a>2.3.4 配置Nginx</h4><p>来到Nginx的目录下的默认配置文件：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd &#x2F;etc&#x2F;nginx&#x2F;conf.d&#x2F;</span></pre></td></tr><tr><td class="code"><pre><span class="line">vim default.conf</span></pre></td></tr></table></figure>
+
+<p>如果出现这个，别理，直接按Enter。</p>
+<p><img alt="10" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122820/20191228201653-975400.png"></p>
+<p>然后就出现下面这个： 改两处就行。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">server &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    listen  80; # 这里就是要在阿里云开放80端口</span></pre></td></tr><tr><td class="code"><pre><span class="line">    server_name  flunggg.cn www.flunggg.cn;  # 默认是你的公网，如果有域名填写你的域名，因为我域名解析是@，所以有www和无www都可以，全配上去。</span></pre></td></tr><tr><td class="code"><pre><span class="line">    #charset koi8-r;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    #access_log  &#x2F;var&#x2F;log&#x2F;nginx&#x2F;host.access.log  main;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    #return 301 https:&#x2F;&#x2F;$server_name$request_uri;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    #rewrite ^(.*) https:&#x2F;&#x2F;$server_name$1 permanent;   # 以后转https用的</span></pre></td></tr><tr><td class="code"><pre><span class="line">    location &#x2F; &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">        root   &#x2F;home&#x2F;git&#x2F;hexo&#x2F;blog&#x2F;; # 改这里</span></pre></td></tr><tr><td class="code"><pre><span class="line">        index  index.html index.htm;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">    error_page  404              &#x2F;404.html;</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">    # redirect server error pages to the static page &#x2F;50x.html</span></pre></td></tr><tr><td class="code"><pre><span class="line">    #</span></pre></td></tr><tr><td class="code"><pre><span class="line">    error_page   500 502 503 504  &#x2F;50x.html;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    location &#x3D; &#x2F;50x.html &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">        root   &#x2F;usr&#x2F;share&#x2F;nginx&#x2F;html;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">    # proxy the PHP scripts to Apache listening on 127.0.0.1:80</span></pre></td></tr><tr><td class="code"><pre><span class="line">    #</span></pre></td></tr><tr><td class="code"><pre><span class="line">    #location ~ \.php$ &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    #    proxy_pass   http:&#x2F;&#x2F;127.0.0.1;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    #&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">    # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000</span></pre></td></tr><tr><td class="code"><pre><span class="line">    #</span></pre></td></tr><tr><td class="code"><pre><span class="line">    #location ~ \.php$ &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    #    root           html;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    #    fastcgi_pass   127.0.0.1:9000;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    #    fastcgi_index  index.php;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    #    fastcgi_param  SCRIPT_FILENAME  &#x2F;scripts$fastcgi_script_name;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    #    include        fastcgi_params;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    #&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">    # deny access to .htaccess files, if Apache&#39;s document root</span></pre></td></tr><tr><td class="code"><pre><span class="line">    # concurs with nginx&#39;s one</span></pre></td></tr><tr><td class="code"><pre><span class="line">    #</span></pre></td></tr><tr><td class="code"><pre><span class="line">    #location ~ &#x2F;\.ht &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    #    deny  all;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    #&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+
+<p>然后保存退出。</p>
+<p><strong>这里教一个强制保存退出的，就是在wq加个！。</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">按ESC，然后按分号键; 输入wq!</span></pre></td></tr></table></figure>
+
+<p>这是http的，如果要配置https，加SSL证书看这里，现在都是https的网站我建议配上好。</p>
+<p><a href="https://blog.csdn.net/weixin_41800884/article/details/103545130" target="_blank" rel="external nofollow noopener noreferrer">给博客配置上https</a></p>
+<p>我现在用的是https，也就是有SSL证书，http和https的两个配置文件可以共存，就是需要做http的强制跳转，也就是我上面代码那句。但我目前就只是配置https，http就没有配置。</p>
+<h4 id="2-3-5-配置Git-Hooks"><a href="#2-3-5-配置Git-Hooks" class="headerlink" title="2.3.5 配置Git Hooks"></a>2.3.5 配置Git Hooks</h4><p>简称钩子，我们在本地推送时，即会部署到服务器，也会因为git hooks部署到github存储。</p>
+<p>创建post-receive文件</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">su git</span></pre></td></tr><tr><td class="code"><pre><span class="line">cd /home/git/repo/myblog.git/hooks</span></pre></td></tr><tr><td class="code"><pre><span class="line">vim post-receive			// 创建文件</span></pre></td></tr></table></figure>
+
+<p>然后添加上：–work-tree的路径是博客存放的路径；–git-dir的路径是git裸库的路径，如果上面跟我配置一样，就不用改，直接抄。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#!&#x2F;bin&#x2F;sh</span></pre></td></tr><tr><td class="code"><pre><span class="line">git --work-tree&#x3D;&#x2F;home&#x2F;git&#x2F;hexo&#x2F;blog --git-dir&#x3D;&#x2F;home&#x2F;git&#x2F;repo&#x2F;myblog.git checkout -f</span></pre></td></tr></table></figure>
+
+<p>然后保存退出。再执行：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">chmod +x post-receive</span></pre></td></tr></table></figure>
+
+<p>注意：要是钩子不起效果，就是本地推送完，稍等几分钟去github看看，如果没有更新到说明githooks失效，就得看看权限问题。我的钩子权限如下：</p>
+<p><img alt="11" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122820/20191228203247-904161.png"></p>
+<h4 id="2-3-6-本地配置"><a href="#2-3-6-本地配置" class="headerlink" title="2.3.6 本地配置"></a>2.3.6 本地配置</h4><p>最后还需要在</p>
+]]></content>
+  </entry>
+  <entry>
     <title>hexo4-NexT7搭建博客(五)</title>
     <url>/archives/6d171bb6.html</url>
     <content><![CDATA[<h2 id="1-Hexo添加文章时自动打开编辑器"><a href="#1-Hexo添加文章时自动打开编辑器" class="headerlink" title="1. Hexo添加文章时自动打开编辑器"></a>1. Hexo添加文章时自动打开编辑器</h2><ul>
@@ -22,8 +153,7 @@
 </ul>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var exec &#x3D; require(&#39;child_process&#39;).exec;</span></pre></td></tr><tr><td class="code"><pre><span class="line">hexo.on(&#39;new&#39;, function(data)&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    exec(&#39;open -a &quot;markdown编辑器绝对路径.app&quot; &#39; + data.path);</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr></table></figure>
 
-
-
+<p>注意：有时创建完没有弹出typora，有可能你已经打开了typora。</p>
 <h2 id="2-新建文章时，在相同目录下创建同名文件夹（便于图片管理）"><a href="#2-新建文章时，在相同目录下创建同名文件夹（便于图片管理）" class="headerlink" title="2. 新建文章时，在相同目录下创建同名文件夹（便于图片管理）"></a>2. 新建文章时，在相同目录下创建同名文件夹（便于图片管理）</h2><ul>
 <li>打开站点配置文件<code>_config.yml</code>，搜索<code>post_asset_folder</code>字段，设置其值为<code>true</code></li>
 <li>安装hexo-asset-image：<code>npm install hexo-asset-image --save</code></li>
@@ -46,12 +176,12 @@
 <ul>
 <li>顺便点开右上角我们的头像，如图：点开AccessKey管理</li>
 </ul>
-<p><img alt data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122811/20191228115910-637021.png"></p>
+<p><img alt="6" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122811/20191228115910-637021.png"></p>
 <ul>
 <li>点开完，出现下面的这个，如果有用户AccessKey就把它的AccessKey ID和Access Key Secret保存到txt，我记得刚创建会自动下载一个文件，该文件就保存这两个键值对。</li>
 <li>如果没有，则创建该用户，然后就会弹出一个下载框下载一个文件。</li>
 </ul>
-<p><img alt data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122812/20191228120208-577925.png"></p>
+<p><img alt="7" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122812/20191228120208-577925.png"></p>
 <p><img alt data-src="/archives/6d171bb6/D:%5Cmyblog%5Cblog%5Csource_posts%5Chexo4-NexT7%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2-%E4%BA%94%5C8.png"></p>
 <ul>
 <li>然后先放着，下面的<strong>自动变图床链接的编译器</strong>要用</li>
@@ -61,24 +191,30 @@
 <ul>
 <li>先把该项目下载下来，然后里面有window.html和plugins两个文件。然后我在我的github这样写。</li>
 </ul>
-<p><img alt data-src="/archives/6d171bb6/D:%5Cmyblog%5Cblog%5Csource_posts%5Chexo4-NexT7%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2-%E4%BA%94%5C9.png"></p>
+<p><img alt="8" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122812/20191228122715-350912.png"></p>
 <ul>
 <li>最后，得去配置好我们的图床，在<code>plugins\image</code>的upload.js文件，该文件就是可以配置我们的图床。把刚刚在阿里云下载的文件中，两个AccessKeyId和AccessKeySecret的值复制进去。</li>
 </ul>
-<p><img alt data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122812/20191228121525-979618.png"></p>
+<p><img alt="9" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122812/20191228121525-979618.png"></p>
 <ul>
 <li>而BucketDomain需要去阿里云的OSS中的文件管理，先随便上传一张图片，然后点击看看它的链接，如图：</li>
 </ul>
-<p><img alt data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122812/20191228121712-240809.png"></p>
+<p><img alt="10" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122812/20191228121712-240809.png"></p>
 <ul>
 <li>然后把类似<code>http://flunggg.oss-cn-shenzhen.aliyuncs.com/</code>复制到BucketDomain去。</li>
 <li>这个upload.js文件可以自定义配置很多东西，比如我上面限制上传文件大小最多为10MB，不过一般不要这么大，最多4MB左右，或者去压缩一下，推荐一个压缩网站：<a href="https://tinyjpg.com/" target="_blank" rel="external nofollow noopener noreferrer">tinyjpg</a>。太大的可以去压缩一下再放到图床。</li>
 </ul>
-<p><img alt data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122812/20191228122331-572148.png"></p>
+<p><img alt="11" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122812/20191228122331-572148.png"></p>
 <p><strong>注意：可能有时对于旧文章想上传，鼠标点一下，等候一下就会上传，如果没有上传则重新本地上传就会自动变为图床链接。并且再改变图片样式时不成功，我想把图片缩小点就不成功。</strong>但是确实方便很多。</p>
 <p>参考：</p>
 <p><a href="https://blog.csdn.net/weixin_39345384/article/details/80785373" target="_blank" rel="external nofollow noopener noreferrer">Hexo添加文章时自动打开编辑器</a></p>
 ]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
   </entry>
   <entry>
     <title>hexo4-NexT7搭建博客(四)</title>
@@ -525,6 +661,12 @@
 <p>​    <a href="https://blog.csdn.net/weixin_42905141/article/details/102677424" target="_blank" rel="external nofollow noopener noreferrer">1</a></p>
 <p>​    <a href="https://zhuanlan.zhihu.com/p/60424755" target="_blank" rel="external nofollow noopener noreferrer">2</a></p>
 ]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
   </entry>
   <entry>
     <title>hexo4 - NexT7搭建博客(二)</title>
