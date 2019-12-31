@@ -58,7 +58,7 @@
 <h2 id="4-谷歌收录"><a href="#4-谷歌收录" class="headerlink" title="4. 谷歌收录"></a>4. 谷歌收录</h2><p>提交谷歌搜索引擎比较简单，在提交之前，我们依然可以使用 <code>site:域名</code> 查看网站是否被收录，谷歌爬虫的确是强大，即使没有提交过，我现在也可以看到我的文章。牛逼！！不像某某推送这么久没效果。</p>
 <p><img alt="8" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122900/20191229005043-463018.png"></p>
 <p>进入<a href="https://www.google.com/webmasters/#?modal_active=none" target="_blank" rel="external nofollow noopener noreferrer">谷歌站长</a>，登录你的谷歌账号。然后如下操作，要是第一次就弹出一个让你输入域名的提示框，就直接输入你要收录的网站域名就行。</p>
-<p><img alt="9" data-src="/archives/6b104b4e/D:%5Cmyblog%5Cblog%5Csource_posts%5Chexo4-NexT7%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2-%E4%B8%83%5C10.png"></p>
+<p><img alt="9" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019123117/20191231170655-456946.png"></p>
 <p><img alt="10" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122900/20191229005435-133975.png"></p>
 <p>我是选择第一个。然后需要等待一天。</p>
 <p>然后还需要验证，下面的图我是借来的，因为我已经验证好了。复制那条TXT记录，然后到域名解析那里，使用TXT来映射。</p>
