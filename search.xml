@@ -715,6 +715,7 @@
 <li>只需在 md 文件里使用 <code>![title](图片名.jpg)</code> ，无需路径名就可以插入图片。但是我们会使用图床，存到这只是为了以后图床失效可以找到图片。</li>
 </ul>
 <h2 id="3-图床"><a href="#3-图床" class="headerlink" title="3. 图床"></a>3. 图床</h2><p>图床有很多，比如阿里云，<a href="https://cloud.tencent.com/" target="_blank" rel="external nofollow noopener noreferrer">腾讯云</a>，<a href="https://www.upyun.com/" target="_blank" rel="external nofollow noopener noreferrer">又拍云</a>等，这些都是可以用的。我使用的是阿里云的OSS来存储图床。</p>
+<p><strong>也可以把图床存在CSDN，从CSDN文章copy过去，但是切记要本地保存，别以后CSDN失效找不到图。</strong></p>
 <p>到<a href="https://oss.console.aliyun.com/" target="_blank" rel="external nofollow noopener noreferrer">阿里云</a>，没注册的先去注册一下。然后如下图：</p>
 <p><img alt="1" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122811/20191228114909-744979.png"></p>
 <ul>
@@ -740,7 +741,6 @@
 <ul>
 <li>然后先放着，下面的<strong>自动变图床链接的编译器</strong>要用</li>
 </ul>
-<p><strong>也可以把图床存在CSDN，从CSDN文章copy过去，但是切记要本地保存，别以后CSDN失效找不到图。</strong></p>
 <h2 id="4-自动变图床链接的编译器"><a href="#4-自动变图床链接的编译器" class="headerlink" title="4. 自动变图床链接的编译器"></a>4. 自动变图床链接的编译器</h2><p>我是在网上发现一个typora的插件，可以自动把上传的本地连接。</p>
 <p><a href="https://www.lanzous.com/i8brcxg" target="_blank" rel="external nofollow noopener noreferrer">typora下载</a>，也可以去<a href="https://typora.io/" target="_blank" rel="external nofollow noopener noreferrer">官网</a>，但是官网加载好慢。。</p>
 <p><a href="https://github.com/Thobian/typora-plugins-win-img" target="_blank" rel="external nofollow noopener noreferrer">原作者</a>，我fork到<a href="https://github.com/magicflung/typora-plugins-win-img" target="_blank" rel="external nofollow noopener noreferrer">我的github</a>，测试了一下，最新版能够用，下面是我的教程：</p>
