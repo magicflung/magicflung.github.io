@@ -111,8 +111,8 @@ deploy:
 - type: git
   #repository: https://github.com/magicflung/magicflung.github.io.git
   repo: 
-    github: git@github.com:magicflung/magicflung.github.io.git
-    vps: git@47.112.208.195:/home/git/repo/myblog.git
+    github: git@github.com:magicflung/magicflung.github.io.git # 修改
+    vps: git@47.112.208.195:/home/git/repo/myblog.git # 修改
   branch: master
 - type: baidu_url_submitter
 
@@ -139,7 +139,7 @@ nofollow:
 baidu_url_submit:
   count: 10 # 提交最新的五个链接
   host: flunggg.cn # 百度站长平台中注册的域名
-  token: eMjyPrqF8NOL5Ns9 # 秘钥，百度站长平台 > 推送接口 > 接口调用地址中token字段
+  token:  # 秘钥，百度站长平台 > 推送接口 > 接口调用地址中token字段
   path: baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本文档里
 
 # 懒加载
