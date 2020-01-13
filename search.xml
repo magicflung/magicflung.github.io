@@ -1,6 +1,149 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>MySQL数据库(六)更新和删除操作</title>
+    <url>/archives/821101a1.html</url>
+    <content><![CDATA[<blockquote>
+<p>前提要述：参考书籍《MySQL必知必会》</p>
+</blockquote>
+<h2 id="6-1-更新数据"><a href="#6-1-更新数据" class="headerlink" title="6.1 更新数据"></a>6.1 更新数据</h2><p>为了更新（修改）表中的数据，可使用UPDATE语句。可采用两种方式使用UPDATE：</p>
+<ul>
+<li>更新表中特定的行；</li>
+<li>更新表中所有的行。</li>
+</ul>
+<p>UPDATE语法的结构由3部分组成：</p>
+<ul>
+<li>要更新的表；</li>
+<li>列名和它们的新值；</li>
+<li>确定要更新行的过滤条件（WHERE关键字）。</li>
+</ul>
+<p>格式：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">UPDATE &lt;table_name&gt; SET field1&#x3D;newValue1, field2&#x3D;newValue2,...</span></pre></td></tr><tr><td class="code"><pre><span class="line">    WHERE condition;</span></pre></td></tr></table></figure>
+
+<p>解释：</p>
+<ul>
+<li>SET命令用来将新值赋给被更新的列。</li>
+<li><strong>使用WHERE子句来告诉MySQL要更新哪一行，一般会选择一个可以唯一区别其他行的字段作为条件。如果没有WHERE子句那么就会更新表中所有的行，这是非常致命的问题。</strong></li>
+</ul>
+<p>比如：在学生表中修改李四的性别：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">UPDATE student SET stu_sex&#x3D;&#39;女&#39; WHERE stu_name&#x3D;&#39;李四&#39;;</span></pre></td></tr></table></figure>
+
+<p>如果为了删除某个列的值，则可以设置为NULL（假设表定义允许NULL值）</p>
+<p>在UPDATE语句中可以使用子查询的结果来更新数据；如果在更新一行或多行时出现一个错误，则整个UPDATE操作都会被取消（错误发生前更新的所有列被恢复到它们原来的值）。即使是错误，如果要继续执行更新，则可以使用IGNORE关键字。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">UPDATE IGNORE &lt;table_name&gt;...;</span></pre></td></tr></table></figure>
+
+<h2 id="6-2-删除数据"><a href="#6-2-删除数据" class="headerlink" title="6.2 删除数据"></a>6.2 删除数据</h2><p>为了将一个表中的某一行删除，使用DELETE语句。可以有两种方式使用DELETE:</p>
+<ul>
+<li>从表中删除特定的行；</li>
+<li>从表中删除所有行。</li>
+</ul>
+<p>格式：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">DELETE FROM &lt;table_name&gt; WHERE condition;</span></pre></td></tr></table></figure>
+
+<p>解释：</p>
+<ul>
+<li>DELETE不需要列名和通配符。<strong>DELETE删除整行而不是删除列</strong><br>。如果要删除列，使用UPDATE。</li>
+<li><strong>DELETE跟UPDATE一样，都必须要有WHERE，即指定要删除哪一行，所以必须注意；除非你要删除表中全部数据，那就不加WHERE。</strong></li>
+<li>WHERE一般指定的是能够唯一区分行的字段，比如主键，名字（假设没有重名的话）</li>
+</ul>
+<p>例如：删除学生表中名为李四的学生：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">DELETE FROM student WHERE stu_name&#x3D;&#39;李四&#39;;</span></pre></td></tr></table></figure>
+
+<p><strong>如果想要更快的从表中删除所有的行，不要使用DELETE，使用TRUNCATE TABLE语句，它完成相同的工作，但是速度更快。因为TRUNCATE实际是删除原来的表并重新创建一个表，而不是逐行删除表中的数据。</strong></p>
+<h2 id="6-3-更新和删除的指导原则"><a href="#6-3-更新和删除的指导原则" class="headerlink" title="6.3 更新和删除的指导原则"></a>6.3 更新和删除的指导原则</h2><p>SQL程序员使用UPDATE和DELETE必须遵循的习惯：</p>
+<ul>
+<li>除非确实打算更新和删除每一行，否则绝不要使用不带WHERE子句的UPDATE或DELETE语句。</li>
+<li>保证每个表都是有主键的，尽可能像WHERE子句那样使用它（可以指定各主键，多个值或值的范围）。</li>
+<li>在对UPDATE或DELETE语句使用WHERE子句前，应该先用SELECT查询语句进行测试，保证它过滤的是正确的记录，以防止编写WHERE子句不正确。</li>
+<li>使用强制实施引用完整性的数据库，这样MySQL将不允许删除具有与其他表相关联的数据的行（外键）。</li>
+<li>MySQL没有撤销（undo）按钮，所以应该小心使用UPDATE和DELETE语句。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>数据库</category>
+      </categories>
+      <tags>
+        <tag>数据库</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MySQL数据库(五)插入操作</title>
+    <url>/archives/d51ba115.html</url>
+    <content><![CDATA[<blockquote>
+<p>前提要述：参考书籍《MySQL必知必会》  </p>
+</blockquote>
+<p>《MySQL必知必会》是先讲了查询，但是没有记录就无法查询，所以先将如何添加数据。</p>
+<p>表已经知道怎么创建了，随便创两张。</p>
+<h2 id="5-1-插入数据"><a href="#5-1-插入数据" class="headerlink" title="5.1 插入数据"></a>5.1 插入数据</h2><p>MySQL使用 INSERT来插入（或添加）行（记录）到数据库表中。插入可用以下几种方式使用：</p>
+<ul>
+<li>插入完整的行（记录）；</li>
+<li>插入行的一部分；</li>
+<li>插入多行；</li>
+<li>插入某些查询结果。</li>
+</ul>
+<h2 id="5-2-插入完整的行（记录）"><a href="#5-2-插入完整的行（记录）" class="headerlink" title="5.2 插入完整的行（记录）"></a>5.2 插入完整的行（记录）</h2><p>什么叫完整的行，即插入的有效数据都可以对应表中的每一列。</p>
+<p>把数据插入表中，最简单的方法是使用基本的INSERT语法，需要指定表名和被插入到新行中的值，格式：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 写法：</span></pre></td></tr><tr><td class="code"><pre><span class="line">INSERT INTO &lt;table_name&gt; VALUES(value1，value2，...);</span></pre></td></tr><tr><td class="code"><pre><span class="line"># 规范写法：</span></pre></td></tr><tr><td class="code"><pre><span class="line">INSERT INTO &lt;table_name&gt;(field1, field2, ...) VALUES(value1，value2，...);</span></pre></td></tr></table></figure>
+<p> 解释：</p>
+<ul>
+<li>如果使用第一种写法，<strong>虽然很简单，但是并不安全，应该尽量避免使用。因为该语句高度依赖于表中列的次序，并且还依赖其次序容易获得的信息。即使可得到这种次序信息，也不能保证下次表结构变动后各个列保持完全相同的次序</strong>。所以在开发中如果这样写，那么就是把插入语句写死了。因为数据库表中的列的顺序有可能可能会改变，一旦改变，就会出现致命错误，比如：一个varchar类型的可能会被插入到char中，如果超长度可能会报错，而且varchar是大范围而char是小范围，可能会导致数据丢失；而如果一个浮点型的数据因为列顺序的改变插入到了一个整型的列中，这又不会报错，所以也很难找错。</li>
+<li>推荐使用规范写法，特别是在开发时编写sql语句。<strong>因为一旦指定列名，那么VALUES必须以其指定的次序匹配指定的列名，不一定按各个列出现在实际表中的次序。</strong> 所以即使表的结构改变，此INSERT语句仍然可以正确工作。</li>
+<li>第一种写法必须完整的给出表中的全部列的值，并且还得按照表中列的次序；而规范写法不用，因为会根据<table_name>(field1, field2, …)来进行赋值，即使跟表中的列的次序不一样，或者一些列不想赋值。</table_name></li>
+</ul>
+<hr>
+<p>例子：在学生表中插入数据</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">INSERT INTO student(stu_id, stu_name, stu_sex)  VALUES(1, &#39;张三&#39;, &#39;男&#39;);</span></pre></td></tr></table></figure>
+<p>注意：字符串或字符需要使用’’（单引号）圈起来。</p>
+<p>输出：如果成功的话</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Query OK, 1 row affected (0.01 sec)</span></pre></td></tr></table></figure>
+
+<p>而如果在主键使用了自增长（AUTO_INCREMENT），那么则可以这样写</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">INSERT INTO student(stu_id, stu_name, stu_sex)  VALUES(null, &#39;张三&#39;, &#39;男&#39;);</span></pre></td></tr></table></figure>
+<p>或者，不写主键：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">INSERT INTO student(stu_name, stu_sex)  VALUES(&#39;张三&#39;, &#39;男&#39;);</span></pre></td></tr></table></figure>
+
+<p>也就是插入时，在主键的位置直接插入null或者不写默认就是赋给null，MySQL会因为AUTO_INCREMENT自己给它赋值。</p>
+<hr>
+<ul>
+<li>如果对表中不允许NULL值且没有默认值的列不给出值（插入时省略了），则MySQL将产生一条错误信息，并且相应的行插入不成功。</li>
+<li>规范写法哪些列可以省略不写：<ul>
+<li><strong>该列定义为允许NULL值（无值或空值）；</strong></li>
+<li><strong>在表定义中给出默认值。也就表示如果在插入时不给出值，就会使用默认值；</strong></li>
+<li><strong>使用AUTO_INCREMENT的列。</strong></li>
+</ul>
+</li>
+<li>INSERT操作可能很耗时（特别是有很多索引需要更新时），而且它可能降低等待处理的SELECT语句的性能。如果数据检索是最重要的，则可以通过在INSERT和INTO之间添加关键字LOW_PRIORITY，指示MySQL降低INSERT语句的优先级。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">INSERT LOW_PRIORITY INTO</span></pre></td></tr></table></figure>
+<ul>
+<li>UPDATE操作和DELETE操作也适用。</li>
+</ul>
+<h2 id="5-3-插入多个行"><a href="#5-3-插入多个行" class="headerlink" title="5.3 插入多个行"></a>5.3 插入多个行</h2><p>INSERT可以插入一行到一个表中，也可以插入多行到一个表中，第一种方式就是写多条INSERT语句，还有一种方式就是在一条INSERT语句中插入多行。</p>
+<p>语法：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">INSERT INTO &lt;table_name&gt;(</span></pre></td></tr><tr><td class="code"><pre><span class="line">    field1,</span></pre></td></tr><tr><td class="code"><pre><span class="line">    field2,</span></pre></td></tr><tr><td class="code"><pre><span class="line">    ...</span></pre></td></tr><tr><td class="code"><pre><span class="line">    )</span></pre></td></tr><tr><td class="code"><pre><span class="line">    VALUES(</span></pre></td></tr><tr><td class="code"><pre><span class="line">        valueA1,</span></pre></td></tr><tr><td class="code"><pre><span class="line">        valueA2,</span></pre></td></tr><tr><td class="code"><pre><span class="line">        ...</span></pre></td></tr><tr><td class="code"><pre><span class="line">        ),</span></pre></td></tr><tr><td class="code"><pre><span class="line">        (</span></pre></td></tr><tr><td class="code"><pre><span class="line">        valueB1,</span></pre></td></tr><tr><td class="code"><pre><span class="line">        valueB2,</span></pre></td></tr><tr><td class="code"><pre><span class="line">        ...</span></pre></td></tr><tr><td class="code"><pre><span class="line">    );</span></pre></td></tr></table></figure>
+
+<p>此写法可以提供INSERT的性能，因为MySQL用单条INSERT语句处理多个插入比使用多条INSERT快。</p>
+<h2 id="5-4-插入检索出的数据"><a href="#5-4-插入检索出的数据" class="headerlink" title="5.4 插入检索出的数据"></a>5.4 插入检索出的数据</h2><p>INSERT语句可以利用一条SELECT语句查询的结果插入到表中。也就是所谓的INSERT SELECT，它是由一条INSERT语句和一条SELECT语句构成。</p>
+<p>比如我需要把一张表的数据复制到另一张表，语法：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">INSERT INTO &lt;new_table_name&gt;(field1, field2, ...) </span></pre></td></tr><tr><td class="code"><pre><span class="line">    SELECT field1, field2 FROM &lt;old_table_name&gt;;</span></pre></td></tr><tr><td class="code"><pre><span class="line"># 或 也就是列名可以不同</span></pre></td></tr><tr><td class="code"><pre><span class="line">INSERT INTO &lt;new_table_name&gt;(field1, field2, ...) </span></pre></td></tr><tr><td class="code"><pre><span class="line">    SELECT f1, f2 FROM &lt;old_table_name&gt;;</span></pre></td></tr></table></figure>
+<p>注意：如果新表不存在则报错。<br>解释：</p>
+<ul>
+<li>先使用SELECT语句从旧表中查询出数据，然后再使用INSERT语句把查询的结果插入到新表中。</li>
+<li>SELECT列出的每一个列对应于<new_table_name>后所跟的列表中的每一个列。</new_table_name></li>
+<li>如果<old_table_name>为空，即没有行可以插入也不会报错。</old_table_name></li>
+<li><strong>如果能保证从旧表导入到新表（假设新表有数据）的主键值不会重复，那么插入时可以省略这主键，比如有AUTO_INCREMENT的主键就可以省略。</strong></li>
+<li><strong>在INSERT和SELECT语句中使用相同的列名，但是不一定要求列名匹配。实际上，MySQL甚至不关心SELECT返回的列名。它使用的是列的位置</strong>，因此SELECT中的第一列（不管列名）将用来填充表列中指定的第一个列，第二列将用来填充表列中指定的第二列等。</li>
+<li>INSERT SELECT中SELECT语句可包含WHERE子句以过滤插入的数据。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>数据库</category>
+      </categories>
+      <tags>
+        <tag>数据库</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>MySQL数据库(四)数据库和表操作</title>
     <url>/archives/c30e04ba.html</url>
     <content><![CDATA[<h2 id="4-1-连接"><a href="#4-1-连接" class="headerlink" title="4.1 连接"></a>4.1 连接</h2><p>在最初安装MySQL，可能会要求你输入一个管理登录（通常为root）和一个口令（密码）。</p>
