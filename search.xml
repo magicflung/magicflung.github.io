@@ -665,7 +665,7 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo4-NexT7搭建博客(七)</title>
+    <title>快速搭建搭建博客：收录</title>
     <url>/archives/6b104b4e.html</url>
     <content><![CDATA[<p>我们必须把我们的网站推送到搜索引擎那， 不然别人除了输入我们的域名，是没法发现我们的博文。</p>
 <p>如何查看我的网站是否被收录：</p>
@@ -742,7 +742,7 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo4-NexT7搭建博客(六)</title>
+    <title>快速搭建博客：优化博客</title>
     <url>/archives/f41853c4.html</url>
     <content><![CDATA[<h2 id="1-域名绑定"><a href="#1-域名绑定" class="headerlink" title="1. 域名绑定"></a>1. 域名绑定</h2><h3 id="1-1-GitHub仓库的域名绑定"><a href="#1-1-GitHub仓库的域名绑定" class="headerlink" title="1.1 GitHub仓库的域名绑定"></a>1.1 GitHub仓库的域名绑定</h3><ul>
 <li>如果一直打算把博客部署在GitHub上，默认就是部署在这里，那么我们来绑定一下域名。</li>
