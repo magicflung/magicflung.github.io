@@ -944,7 +944,7 @@
 <li>如果没有，则创建该用户，然后就会弹出一个下载框下载一个文件。</li>
 </ul>
 <p><img alt="7" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122812/20191228120208-577925.png"></p>
-<p><img alt data-src="/archives/6d171bb6/D:%5Cmyblog%5Cblog%5Csource_posts%5Chexo4-NexT7%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2-%E4%BA%94%5C8.png"></p>
+<p><img alt="8" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20200113/20200113174134-81243.png"></p>
 <ul>
 <li>然后先放着，下面的<strong>自动变图床链接的编译器</strong>要用</li>
 </ul>
@@ -967,7 +967,7 @@
 <li>然后把类似<code>http://flunggg.oss-cn-shenzhen.aliyuncs.com/</code>复制到BucketDomain去。</li>
 <li>这个upload.js文件可以自定义配置很多东西，比如我上面限制上传文件大小最多为10MB，不过一般不要这么大，最多4MB左右，或者去压缩一下，推荐一个压缩网站：<a href="https://tinyjpg.com/" target="_blank" rel="external nofollow noopener noreferrer">tinyjpg</a>。太大的可以去压缩一下再放到图床。</li>
 </ul>
-<p><img alt="11" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122812/20191228122331-572148.png"></p>
+<p><img alt="11" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20200113/20200113174421-292473.png"></p>
 <p><strong>注意：可能有时对于旧文章想上传，鼠标点一下，等候一下就会上传，如果没有上传则重新本地上传就会自动变为图床链接。并且再改变图片样式时不成功，我想把图片缩小点就不成功。</strong>但是确实方便很多。</p>
 <p>参考：</p>
 <p><a href="https://blog.csdn.net/weixin_39345384/article/details/80785373" target="_blank" rel="external nofollow noopener noreferrer">Hexo添加文章时自动打开编辑器</a></p>
