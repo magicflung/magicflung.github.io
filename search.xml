@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>将博客搬至CSDN</title>
-    <url>/archives/4fef9451.html</url>
-    <content><![CDATA[<h1 id="没有搬家，只是同步博文。"><a href="#没有搬家，只是同步博文。" class="headerlink" title="没有搬家，只是同步博文。"></a>没有搬家，只是同步博文。</h1>]]></content>
-      <categories>
-        <category>个人</category>
-      </categories>
-      <tags>
-        <tag>个人</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>MySQL数据库(四)数据库和表操作</title>
     <url>/archives/c30e04ba.html</url>
     <content><![CDATA[<h2 id="4-1-连接"><a href="#4-1-连接" class="headerlink" title="4.1 连接"></a>4.1 连接</h2><p>在最初安装MySQL，可能会要求你输入一个管理登录（通常为root）和一个口令（密码）。</p>

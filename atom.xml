@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://flunggg.cn/"/>
-  <updated>2020-01-12T13:37:42.292Z</updated>
+  <updated>2020-01-13T03:32:53.150Z</updated>
   <id>https://flunggg.cn/</id>
   
   <author>
@@ -15,29 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>将博客搬至CSDN</title>
-    <link href="https://flunggg.cn/archives/4fef9451.html"/>
-    <id>https://flunggg.cn/archives/4fef9451.html</id>
-    <published>2020-01-12T13:36:29.000Z</published>
-    <updated>2020-01-12T13:37:42.292Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="没有搬家，只是同步博文。"><a href="#没有搬家，只是同步博文。" class="headerlink" title="没有搬家，只是同步博文。"></a>没有搬家，只是同步博文。</h1>]]></content>
-    
-    <summary type="html">
-    
-      没有搬家，只是同步博文。
-    
-    </summary>
-    
-    
-      <category term="个人" scheme="https://flunggg.cn/categories/%E4%B8%AA%E4%BA%BA/"/>
-    
-    
-      <category term="个人" scheme="https://flunggg.cn/tags/%E4%B8%AA%E4%BA%BA/"/>
-    
-  </entry>
   
   <entry>
     <title>MySQL数据库(四)数据库和表操作</title>
