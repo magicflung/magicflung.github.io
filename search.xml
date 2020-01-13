@@ -27,13 +27,13 @@
 <p>现在说下：Navicat Premium 12，打开它。</p>
 <p><img alt data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20200110/20200110104303-263787.png"></p>
 <p><img alt data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20200110/20200110104311-592179.png"></p>
-<h2 id="3-2-创建数据库"><a href="#3-2-创建数据库" class="headerlink" title="3.2 创建数据库"></a>3.2 创建数据库</h2><p>《MySQL必知必会》前面一开始就开讲SELETE查询等，而像新手可能就会不知道怎么创建数据库，创建表；然后利用这些表去测试所学的SELETE查询等。</p>
+<h2 id="4-2-创建数据库"><a href="#4-2-创建数据库" class="headerlink" title="4.2 创建数据库"></a>4.2 创建数据库</h2><p>《MySQL必知必会》前面一开始就开讲SELETE查询等，而像新手可能就会不知道怎么创建数据库，创建表；然后利用这些表去测试所学的SELETE查询等。</p>
 <p>下面提供两种方式创建数据库：  </p>
 <ol>
 <li>图形界面创建数据库</li>
 </ol>
 <p><img alt data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20200110/20200110104334-611903.png"></p>
-<p><img alt data-src="/archives/c30e04ba/D:%5Cmyblog%5Cblog%5Csource_posts%5CMySQL-%E5%9B%9B%5C4.png"></p>
+<p><img alt data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20200113/20200113112658-212527.png"></p>
 <p>那么数据库就创建完成。</p>
 <ol start="2">
 <li>命令行创建数据库</li>
@@ -60,7 +60,7 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">drop database &lt;数据库名&gt;;</span></pre></td></tr></table></figure>
 
 
-<h2 id="3-4-选择数据库"><a href="#3-4-选择数据库" class="headerlink" title="3.4 选择数据库"></a>3.4 选择数据库</h2><p>可以看到我们刚刚是在my连接这里开启命令界面，我们操作的使用并不是对所有数据库进行操作，而是对单个数据库进行操作，那么就需要输入选择数据库的语句。</p>
+<h2 id="4-4-选择数据库"><a href="#4-4-选择数据库" class="headerlink" title="4.4 选择数据库"></a>4.4 选择数据库</h2><p>可以看到我们刚刚是在my连接这里开启命令界面，我们操作的使用并不是对所有数据库进行操作，而是对单个数据库进行操作，那么就需要输入选择数据库的语句。</p>
 <p>格式：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">USE &lt;数据库名&gt;;</span></pre></td></tr></table></figure>
 
@@ -70,7 +70,7 @@
 <p>命令行界面会返回：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Database changed # 表示成功</span></pre></td></tr></table></figure>
 
-<h2 id="3-5-了解数据库和表"><a href="#3-5-了解数据库和表" class="headerlink" title="3.5 了解数据库和表"></a>3.5 了解数据库和表</h2><p>数据库、表、用户、列、权限等信息被存储在数据库和表中（MySQL用MySQL来存储这些信息）。不过，内部的表一般不直接访问。可用MySQL的SHOW命令来显示这些信息（MySQL从内部表中提取这些信息）。</p>
+<h2 id="4-5-了解数据库和表"><a href="#4-5-了解数据库和表" class="headerlink" title="4.5 了解数据库和表"></a>4.5 了解数据库和表</h2><p>数据库、表、用户、列、权限等信息被存储在数据库和表中（MySQL用MySQL来存储这些信息）。不过，内部的表一般不直接访问。可用MySQL的SHOW命令来显示这些信息（MySQL从内部表中提取这些信息）。</p>
 <ol>
 <li>查询已经存在的数据库(包括MySQL系统数据库：mysql和information_schema)：</li>
 </ol>
@@ -172,7 +172,7 @@
 </blockquote>
 <p><a href="https://www.runoob.com/mysql/mysql-create-tables.html" target="_blank" rel="external nofollow noopener noreferrer">评论区说的注意事项</a></p>
 <p><img alt data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20200110/20200110104555-897640.png"></p>
-<h2 id="3-8-引擎类型"><a href="#3-8-引擎类型" class="headerlink" title="3.8 引擎类型"></a>3.8 引擎类型</h2><p>上面创建表中最后有一个 ENGINE=InnoDB。下面来解释一下：</p>
+<h2 id="4-8-引擎类型"><a href="#4-8-引擎类型" class="headerlink" title="4.8 引擎类型"></a>4.8 引擎类型</h2><p>上面创建表中最后有一个 ENGINE=InnoDB。下面来解释一下：</p>
 <p>MySQL与其他DBMS一样有一个具体管理和处理数据的内部引擎。比如当你使用CREATE TABLE语句时，该引擎具体创建表，而在你使用SELECE查询语句时或进行其他数据库处理时，该引擎在内部处理你的请求。所以它是对我们透明化的。</p>
 <p>MySQL与其他DBMS不一样的是，MySQL具有多种引擎。这些引擎都隐藏在MySQL服务器内，全都能执行CREATE TABLE和SELECE等命令。</p>
 <p>为什么要这么多引擎，因为它们具有各自不同的功能和特效，为不同的任务选择正确的引擎能够获得良好的功能和灵活性。</p>
@@ -184,10 +184,10 @@
 <li><strong>MyISAM是一个性能极高的引擎，它支持全文本搜索，但不支持事务处理。</strong></li>
 </ul>
 <p>引擎类型可以混用。但是外键不能跨引擎。混合引擎有一个很大缺陷。<strong>外键（用于强制实施引用完整性）不能跨引擎，即使用一个引擎的表不能引用具有使用不同引擎的表的外键</strong>。</p>
-<h2 id="3-9-删除表"><a href="#3-9-删除表" class="headerlink" title="3.9 删除表"></a>3.9 删除表</h2><p>格式：</p>
+<h2 id="4-9-删除表"><a href="#4-9-删除表" class="headerlink" title="4.9 删除表"></a>4.9 删除表</h2><p>格式：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">DROP TABLE &lt;表名&gt; ;</span></pre></td></tr></table></figure>
 
-<h2 id="3-10-更新表"><a href="#3-10-更新表" class="headerlink" title="3.10 更新表"></a>3.10 更新表</h2><p>语法：</p>
+<h2 id="4-10-更新表"><a href="#4-10-更新表" class="headerlink" title="4.10 更新表"></a>4.10 更新表</h2><p>语法：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ALTER TABLE &lt;表名&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">操作</span></pre></td></tr></table></figure>
 
 <p>比如：<br>给表添加一个列：</p>
@@ -234,7 +234,7 @@
 <p>前提要述：参考书籍《MySQL必知必会》</p>
 </blockquote>
 <h2 id="3-1-MySQL简介"><a href="#3-1-MySQL简介" class="headerlink" title="3.1 MySQL简介"></a>3.1 MySQL简介</h2><h3 id="3-1-1-什么是MySQL"><a href="#3-1-1-什么是MySQL" class="headerlink" title="3.1.1 什么是MySQL"></a>3.1.1 什么是MySQL</h3><p>MySQL是一种关系数据库管理系统。负责数据库中数据的存储，检索，管理和处理。</p>
-<h3 id="2-1-2-MySQL的优点"><a href="#2-1-2-MySQL的优点" class="headerlink" title="2.1.2 MySQL的优点"></a>2.1.2 MySQL的优点</h3><ul>
+<h3 id="3-1-2-MySQL的优点"><a href="#3-1-2-MySQL的优点" class="headerlink" title="3.1.2 MySQL的优点"></a>3.1.2 MySQL的优点</h3><ul>
 <li>成本低——MySQL是开源的，一般可以免费使用。</li>
 <li>性能——MySQL执行快。</li>
 <li>可信赖，体积小。</li>
@@ -258,7 +258,7 @@
 <li><strong>客户机可以是MySQL提供的工具（如navicat等）、脚本语言(如Perl)、Web应用开发语言（PHP，ASP，JSP等）、程序设计语言等。</strong></li>
 </ul>
 <p>通过这样讲，就清楚了MySQL跟使用的Navicat Premium的区别。</p>
-<h3 id="2-1-4-MySQL版本"><a href="#2-1-4-MySQL版本" class="headerlink" title="2.1.4 MySQL版本"></a>2.1.4 MySQL版本</h3><ul>
+<h3 id="3-1-4-MySQL版本"><a href="#3-1-4-MySQL版本" class="headerlink" title="3.1.4 MySQL版本"></a>3.1.4 MySQL版本</h3><ul>
 <li>《MySQL必知必会》使用的是MySQL5，下面是最近版本中引入的主要更改<ul>
 <li>4——InnoDB引擎，增加事物处理、并、改进全文本搜索</li>
 <li>4.1—对函数库、子查询、集成帮助等的重要增加。</li>
@@ -269,13 +269,13 @@
 </ul>
 <h2 id="2-2-MySQL工具"><a href="#2-2-MySQL工具" class="headerlink" title="2.2 MySQL工具"></a>2.2 MySQL工具</h2><p>正如前面所述，MySQL是一个客户机-服务器的DBMS。因此要使用MySQL，需要一个客户机，即你需要用来于MySQL打交道（给MySQL提供要执行的命令）的一个应用。</p>
 <p>客户机有很多，下面介绍4个（书上3个和另外一个）</p>
-<h3 id="2-2-1-mysql命令行实用程序"><a href="#2-2-1-mysql命令行实用程序" class="headerlink" title="2.2.1 mysql命令行实用程序"></a>2.2.1 mysql命令行实用程序</h3><p>不教如何安装MySQL。</p>
+<h3 id="3-2-1-mysql命令行实用程序"><a href="#3-2-1-mysql命令行实用程序" class="headerlink" title="3.2.1 mysql命令行实用程序"></a>3.2.1 mysql命令行实用程序</h3><p>不教如何安装MySQL。</p>
 <p>每个MySQL安装都有一个名为mysql的简单命令行实用程序。这个程序没有下拉菜单、流行的用户界面等，就是类似win上的cmd。</p>
 <blockquote>
 <p>如果仅输入mysql，可能会出现一个错误信息。可能需要安全证书，可能是MySQL没有运行在本地或者默认端口上，可能需要输入用户名和密码。默认用户名为root。<br>一般的登录是输入：mysql -uroot -p  , 然后输入密码。(-uroot = -u root)<br>可能需要更具体的用户名(默认是root)，主机名(本机localhost)，端口(默认是3306)和口令：<br>mysql -uroot -p -h localhost -P 3306</p>
 </blockquote>
 <p>这个工具大家都是有的。最好先熟悉一下这个。</p>
-<h3 id="2-2-2-MySQL-Administrator"><a href="#2-2-2-MySQL-Administrator" class="headerlink" title="2.2.2 MySQL Administrator"></a>2.2.2 MySQL Administrator</h3><p>MySQL Administrator（MySQL管理器）是一个图形交互客户机，来简化MySQL服务器的管理。</p>
+<h3 id="3-2-2-MySQL-Administrator"><a href="#3-2-2-MySQL-Administrator" class="headerlink" title="3.2.2 MySQL Administrator"></a>3.2.2 MySQL Administrator</h3><p>MySQL Administrator（MySQL管理器）是一个图形交互客户机，来简化MySQL服务器的管理。</p>
 <p>这个我没用过，详细请看百度</p>
 <h3 id="3-2-3-MySQL-Query-Browser"><a href="#3-2-3-MySQL-Query-Browser" class="headerlink" title="3.2.3 MySQL Query Browser"></a>3.2.3 MySQL Query Browser</h3><p>MySQL Query Browser也是一个图形交互客户机，用来编写和执行MySQL命令。</p>
 <p>详细请看百度</p>
