@@ -1,0 +1,97 @@
+// 雨代码
+canvas {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  height: auto;
+  width: auto;
+  z-index: -1;
+}
+// 添加背景图片
+body {
+  //background: #0087E1;
+  //background: url(/images/background.jpg);
+  //-moz-background-size:100% 100%;
+  //-webkit-background-size:100% 100%;
+  //top: 0;
+  //left: 0;
+  //z-index: -2;
+  //background-repeat: no-repeat;
+  //background-attachment: fixed;
+  //background-position: 50% 50%;
+  //background-size: cover;
+}
+
+// 文章之间的分割线
+.posts-expand .post-eof {
+  margin: 4em auto 4em;
+  background: white;
+}
+// 标题栏
+.site-meta {
+
+
+}
+
+//.footer {
+//  //  display: block;
+//  //  //position: absolute;
+//  //left:0;
+//  //bottom:0;
+//  //widows: 100%;
+//  //height:100%;
+//  //min-height:50px;
+//   padding: 0;
+//   margin: 0;
+//}
+
+// 底部文字
+.footer-inner {
+  font-size: 17px;
+  color:  #262626;
+  font-family: 'EB Garamond',"Noto Serif SC",sans-serif;
+  font-weight: bold;
+}
+
+.fa-heart {
+  color: red;
+}
+.post-meta-item-icon {
+  color: red;
+}
+.footer {
+
+}
+
+// 修改主体透明度
+.main-inner {
+  background: #000;
+  opacity: 0.90;
+  padding-right: 3px;
+  padding-left: 3px;
+}
+
+//主页文章添加阴影效果
+.post {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 25px;
+  -webkit-box-shadow: 0 0 5px rgba(202, 203, 203, .5);
+  -moz-box-shadow: 0 0 5px rgba(202, 203, 204, .5);
+}
+// 移动端
+@media (max-width: 767px) {
+  .post-block {
+    padding-right:10px;
+  }
+  .posts-expand .post-eof {
+    margin: 4em auto 4em;
+    background: white;
+  }
+
+}
+
+
+

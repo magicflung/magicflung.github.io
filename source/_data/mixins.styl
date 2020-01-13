@@ -1,0 +1,170 @@
+/*适应手机屏幕设置*/
+@media (max-width: 767px) {
+  .header-inner {
+    margin-bottom: 10px !important;
+    background: none;
+    overflow: auto; /*下拉标题是否浮动*/
+  }
+  .posts-expand .post-body h1 {
+    padding-top: 20px;
+  }
+  .post-button {
+    text-align: center;
+  }
+  .posts-expand .post-body h2,
+  .posts-expand .post-body h3 {
+    pointer-events: none;
+  }
+  .posts-expand .post-body h1 ,
+  .posts-expand .post-body h2 ,
+  .posts-expand .post-body h3 ,
+  .posts-expand .post-body h4  {
+    pointer-events: auto;
+    color: #2c3e50;
+  }
+  .posts-expand .post-body h1:before
+  .posts-expand .post-body h2:before
+  .posts-expand .post-body h3:before
+  .posts-expand .post-body h4:before
+  .posts-expand .post-body h5:before
+  .posts-expand .post-body h6:before{
+    display: none;
+  }
+  .posts-expand .post-body h2 {
+    padding-bottom: 0.7em;
+    border-bottom: 1px solid #ddd;
+  }
+  .posts-expand .post-body h3 {
+    line-height: 1.2;
+    position: relative;
+  }
+}
+/*手机端显示设置信息*/
+@media (max-width: 767px)
+{
+  /*手机端代码行上text文档设置*/
+  .highlight figcaption{
+    font-size: 12px;
+  }
+  /*手机端显示代码行数背景设置*/
+  .highlight .gutter pre{
+    padding-left: 2px;
+  }
+
+/*手机端显示代码行数字体大小*/
+.highlight, pre{
+    font-size: 10px;
+  }
+/*手机端显示代码字体大小*/
+.code span{
+  font-size: 12px;
+}
+div#comments.comments.v{
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+}
+
+/*手机适配文章底部信息*/
+@media (max-width: 767px) {
+  .main{
+    padding-bottom: 130px;
+  }
+  .footer{
+    font-size: 14px;
+  }
+  .read-over{/*本文阅读结束*/
+    text-align: center;
+    margin-top: 20px;
+    color: #ea103d91;
+    font-size: 12px;
+  }
+  .share_reward{/*打赏*/
+    font-size: 12px;
+    padding: 10px 0;
+    margin: 5px auto;
+    width: 90%;
+    text-align: center;
+  }
+  #rewardButton {
+    margin: 15px auto;
+  }
+  #rewardButton span {
+    display: inline-block;
+    width: 50px;
+    height: 35px;
+  }
+  #QR{
+    padding-top: 5px;
+  }
+  #QR a{
+    border:0;
+  }
+  #QR img{
+    width: 60px;
+    display: inline-block;
+    margin: 0.8em 2em 0 2em;
+  }
+  .post-copyright{
+    padding: .1em .5em;
+    margin: 0em 0 0;
+    border-left: 2px solid #ff1700;
+  }
+  .post-copyright li{
+    font-size: 13.5px;
+  }
+  .posts-expand .post-tags{
+    margin-top: 20px;
+    font-size: 8px;
+  }
+  .post-nav-item a{
+    font-size: 12px;
+    line-height: unset;
+  }
+  .pagination{
+    margin: 20px;
+    text-align: center;
+    border-top:0px;
+  }
+  /*TopX适应手机屏幕设置*/
+  #top p{
+    font-size: 13.5px;
+    display: inline-block;
+  }
+  .post-body .note{
+    margin: 10px auto;
+    font-size: 14px;
+  }
+  .post-body .note.info p{
+    font-size: 13px;
+  }
+  .post-body .tabs .tab-content .note {
+    margin: 10px auto;
+    font-size: 14px;
+  }
+
+}
+@media (max-width: 767px) {
+
+  /*小胡同背景图*/
+  .xiaohutong-img-class{
+    width:360px;
+    height:260px;
+  }
+
+  /* 小胡同里tab页*/
+  .post-body .tabs ul.nav-tabs{
+    display: flex;
+  }
+
+  /*手机友链页*/
+  .card{
+    width: 88%;
+    padding: 3px 20px;
+    margin-bottom: 0rem;
+  }
+  #links {
+    margin-top: 3rem;
+  }
+
+}
