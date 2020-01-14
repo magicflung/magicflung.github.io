@@ -972,6 +972,9 @@
 </ul>
 <p><img alt="11" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20200113/20200113174421-292473.png"></p>
 <p><strong>注意：可能有时对于旧文章想上传，鼠标点一下，等候一下就会上传，如果没有上传则重新本地上传就会自动变为图床链接。并且再改变图片样式时不成功，我想把图片缩小点就不成功。</strong>但是确实方便很多。</p>
+<p>其他写作技巧请看：<a href="https://bestzuo.cn/posts/3147047336.html" target="_blank" rel="external nofollow noopener noreferrer">hexo博客Next主题进阶写作技巧</a></p>
+<figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">&#123;%<span class="built_in"> note </span>danger %&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">note text,<span class="built_in"> note </span>text, </span></pre></td></tr><tr><td class="code"><pre><span class="line">note textnote text, </span></pre></td></tr><tr><td class="code"><pre><span class="line">note text, </span></pre></td></tr><tr><td class="code"><pre><span class="line">note textnote text, </span></pre></td></tr><tr><td class="code"><pre><span class="line">note text,<span class="built_in"> note </span>text</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#123;% endnote %&#125;</span></pre></td></tr></table></figure>
+
 <hr>
 <p>参考：</p>
 <p><a href="https://blog.csdn.net/weixin_39345384/article/details/80785373" target="_blank" rel="external nofollow noopener noreferrer">Hexo添加文章时自动打开编辑器</a></p>
