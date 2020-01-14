@@ -1355,6 +1355,7 @@
 <p><img alt="15" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122723/20191227235317-936841.png"></p>
 <p>在主题目录<code>themes\next\layout\_macro</code>的post.swig中修改。主要是加个换行。</p>
 <p><img alt="16" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122723/20191227235613-926949.png"></p>
+<p><img alt data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20200114/20200114162848-820411.png"></p>
 <p>搜索：if theme.leancloud_visitors.enable 。然后在这上面添加如下代码：</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line">&#123;#添加换行#&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">br</span>&gt;</span></span></pre></td></tr></table></figure>
 
