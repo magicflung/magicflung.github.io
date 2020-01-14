@@ -879,8 +879,7 @@
 <p>然后在部署的时候只需要运行</p>
 <figure class="highlight dockerfile"><table><tr><td class="code"><pre><span class="line">npm <span class="keyword">run</span><span class="bash"> push</span></span></pre></td></tr></table></figure>
 
-
-
+<hr>
 <p>参考：</p>
 <p><a href="https://ihaoming.top/archives/c9c37af.html" target="_blank" rel="external nofollow noopener noreferrer">hexo部署到vps</a></p>
 ]]></content>
@@ -973,6 +972,7 @@
 </ul>
 <p><img alt="11" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20200113/20200113174421-292473.png"></p>
 <p><strong>注意：可能有时对于旧文章想上传，鼠标点一下，等候一下就会上传，如果没有上传则重新本地上传就会自动变为图床链接。并且再改变图片样式时不成功，我想把图片缩小点就不成功。</strong>但是确实方便很多。</p>
+<hr>
 <p>参考：</p>
 <p><a href="https://blog.csdn.net/weixin_39345384/article/details/80785373" target="_blank" rel="external nofollow noopener noreferrer">Hexo添加文章时自动打开编辑器</a></p>
 ]]></content>
@@ -1433,9 +1433,10 @@
 <blockquote>
 <p>观看下一篇hexo系列博文(四)</p>
 </blockquote>
+<hr>
 <p>参考：</p>
-<p>​    <a href="https://blog.csdn.net/weixin_42905141/article/details/102677424" target="_blank" rel="external nofollow noopener noreferrer">1</a></p>
-<p>​    <a href="https://zhuanlan.zhihu.com/p/60424755" target="_blank" rel="external nofollow noopener noreferrer">2</a></p>
+<p>​    <a href="https://blog.csdn.net/weixin_42905141/article/details/102677424" target="_blank" rel="external nofollow noopener noreferrer">hexo4.0 - Next7.2.4 主题优化配置</a></p>
+<p>​    <a href="https://zhuanlan.zhihu.com/p/60424755" target="_blank" rel="external nofollow noopener noreferrer">hexo的next主题个性化配置</a></p>
 ]]></content>
       <categories>
         <category>hexo</category>
@@ -1520,6 +1521,7 @@
 <blockquote>
 <p> 观看下篇系列博文 NexT主题的美化</p>
 </blockquote>
+<hr>
 <p>参考：</p>
 <p><a href="https://www.jianshu.com/p/d95cff938277" target="_blank" rel="external nofollow noopener noreferrer">Hexo博客搭建全攻略(二)：NexT主题配置</a></p>
 ]]></content>
