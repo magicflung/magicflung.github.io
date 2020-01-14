@@ -975,7 +975,7 @@
 </ul>
 <p><img alt="11" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20200113/20200113174421-292473.png"></p>
 <p><strong>注意：可能有时对于旧文章想上传，鼠标点一下，等候一下就会上传，如果没有上传则重新本地上传就会自动变为图床链接。并且再改变图片样式时不成功，我想把图片缩小点就不成功。</strong>但是确实方便很多。</p>
-<h2 id="5-note标签的官方文档使用"><a href="#5-note标签的官方文档使用" class="headerlink" title="5. note标签的官方文档使用"></a>5. <a href="https://bestzuo.cn/posts/3147047336.html#note标签的官方文档使用" target="_blank" rel="external nofollow noopener noreferrer">note标签的官方文档使用</a></h2><p>转载：<a href="https://bestzuo.cn/posts/3147047336.html" target="_blank" rel="external nofollow noopener noreferrer">hexo博客Next主题进阶写作技巧</a></p>
+<h2 id="5-note标签的官方文档使用"><a href="#5-note标签的官方文档使用" class="headerlink" title="5. note标签的官方文档使用"></a>5. note标签的官方文档使用</h2><p>转载：<a href="https://bestzuo.cn/posts/3147047336.html" target="_blank" rel="external nofollow noopener noreferrer">hexo博客Next主题进阶写作技巧</a></p>
 <p>首先我们需要在<code>Next</code>主题<code>_config.xml</code>中设置一下功能开关，有些默认是开的，有些默认是关的：</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">note:</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment"># Note tag style values:</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment">#  - simple    bs-callout old alert style. Default.</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment">#  - modern    bs-callout new (v2-v3) alert style.</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment">#  - flat      flat callout style with background, like on Mozilla or StackOverflow.</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment">#  - disabled  disable all CSS styles import of note tag.</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">style:</span> <span class="string">simple</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">icons:</span> <span class="literal">false</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">border_radius:</span> <span class="number">3</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment"># Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment"># Offset also applied to label tag variables. This option can work with disabled note tag.</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">light_bg_offset:</span> <span class="number">0</span></span></pre></td></tr></table></figure>
 
@@ -993,11 +993,15 @@
 <figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">&#123;%<span class="built_in"> note </span>danger %&#125;note text</span></pre></td></tr><tr><td class="code"><pre><span class="line">note text</span></pre></td></tr><tr><td class="code"><pre><span class="line">note text</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#123;% endnote %&#125;</span></pre></td></tr></table></figure>
 
 <p>内容必须要跟<code>note</code>标签不在一行：</p>
-<figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">&#123;%<span class="built_in"> note </span>%&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">(没有定义样式类别)</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#123;% endnote %&#125;</span></pre></td></tr></table></figure>
+<figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">&#123;%<span class="built_in"> note </span>danger %&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">note text,<span class="built_in"> note </span>text,<span class="built_in"> note </span>text</span></pre></td></tr><tr><td class="code"><pre><span class="line">note text,<span class="built_in"> note </span>text,<span class="built_in"> note </span>text</span></pre></td></tr><tr><td class="code"><pre><span class="line">note text,<span class="built_in"> note </span>text,<span class="built_in"> note </span>text</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#123;% endnote %&#125;</span></pre></td></tr></table></figure>
+
+<h3 id="5-2-示例"><a href="#5-2-示例" class="headerlink" title="5.2 示例"></a>5.2 示例</h3><h4 id="5-2-1-没有定义样式类别"><a href="#5-2-1-没有定义样式类别" class="headerlink" title="5.2.1 没有定义样式类别"></a>5.2.1 没有定义样式类别</h4><figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">&#123;%<span class="built_in"> note </span>%&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">(没有定义样式类别)</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#123;% endnote %&#125;</span></pre></td></tr></table></figure>
 
 <div class="note ">
             <p>(没有定义样式类别)</p>
           </div>
+
+
 
 <h4 id="5-2-2-默认的类别"><a href="#5-2-2-默认的类别" class="headerlink" title="5.2.2 默认的类别"></a>5.2.2 默认的类别</h4><figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">&#123;%<span class="built_in"> note default </span>%&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">默认形式的类别</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#123;% endnote %&#125;</span></pre></td></tr></table></figure>
 
@@ -1005,11 +1009,15 @@
             <p>默认形式的类别</p>
           </div>
 
+
+
 <h4 id="5-2-3-primary形式的类别"><a href="#5-2-3-primary形式的类别" class="headerlink" title="5.2.3 primary形式的类别"></a>5.2.3 primary形式的类别</h4><figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">&#123;%<span class="built_in"> note </span>primary %&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">首要类型形式</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#123;% endnote %&#125;</span></pre></td></tr></table></figure>
 
 <div class="note primary">
             <p>首要类型形式</p>
           </div>
+
+
 
 <h4 id="5-2-4-info形式的类别"><a href="#5-2-4-info形式的类别" class="headerlink" title="5.2.4 info形式的类别"></a>5.2.4 info形式的类别</h4><figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">&#123;%<span class="built_in"> note </span><span class="builtin-name">info</span> %&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">info形式的类别</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#123;% endnote %&#125;</span></pre></td></tr></table></figure>
 
@@ -1017,15 +1025,110 @@
             <p>info形式的类别</p>
           </div>
 
+
+
 <h4 id="5-2-5-success形式的类别"><a href="#5-2-5-success形式的类别" class="headerlink" title="5.2.5 success形式的类别"></a>5.2.5 success形式的类别</h4><figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">&#123;%<span class="built_in"> note </span>success %&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">success形式的类别</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#123;% endnote %&#125;</span></pre></td></tr></table></figure>
 
 <div class="note success">
             <p>success形式的类别</p>
           </div>
 
-<h4 id="5-2-6-warning形式的类别"><a href="#5-2-6-warning形式的类别" class="headerlink" title="5.2.6 warning形式的类别"></a>5.2.6 warning形式的类别</h4><h4 id><a href="#" class="headerlink" title></a></h4><hr>
+<h4 id="5-2-6-warning形式的类别"><a href="#5-2-6-warning形式的类别" class="headerlink" title="5.2.6 warning形式的类别"></a>5.2.6 warning形式的类别</h4><h4 id="5-2-11-note标签中插入表格"><a href="#5-2-11-note标签中插入表格" class="headerlink" title="5.2.11 note标签中插入表格"></a>5.2.11 note标签中插入表格</h4><figure class="highlight gherkin"><table><tr><td class="code"><pre><span class="line">&#123;% note default %&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">|<span class="string"> 1 </span>|<span class="string"> 2 </span>|</span></pre></td></tr><tr><td class="code"><pre><span class="line">|<span class="string"> - </span>|<span class="string"> - </span>|</span></pre></td></tr><tr><td class="code"><pre><span class="line">|<span class="string"> 3 </span>|<span class="string"> 4 </span>|</span></pre></td></tr><tr><td class="code"><pre><span class="line">|<span class="string"> 5 </span>|<span class="string"> 6 </span>|</span></pre></td></tr><tr><td class="code"><pre><span class="line">|<span class="string"> 7 </span>|<span class="string"> 8 </span>|</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#123;% endnote %&#125;</span></pre></td></tr></table></figure>
+
+<div class="note default">
+            <table><thead><tr><th>1</th><th>2</th></tr></thead><tbody><tr><td>3</td><td>4</td></tr><tr><td>5</td><td>6</td></tr><tr><td>7</td><td>8</td></tr></tbody></table>
+          </div>
+
+<h2 id="6-代码块内部样式高亮"><a href="#6-代码块内部样式高亮" class="headerlink" title="6. 代码块内部样式高亮"></a>6. 代码块内部样式高亮</h2><p>Next主题其实是自带代码块高亮显示的，但是有另外一种好玩的代码块高亮写法，叫<code>diff</code>语言</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">highlight:</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">line_number:</span> <span class="literal">true</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment"># 代码自动高亮</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="bullet">-</span>  <span class="attr">auto_detect:</span> <span class="literal">false</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="string">+</span>  <span class="attr">auto_detect:</span> <span class="literal">true</span></span></pre></td></tr></table></figure>
+
+<p>只需要在markdown语法代码块的语言选择处写上<code>diff</code>即可，然后在相应代码前面加上<code>-</code>和<code>+</code>就行了。不过默认的<code>-</code>是绿色，<code>+</code>是红色，与 GitHub 上相反，也可以自己修改成Github上样式。</p>
+<figure class="highlight dts"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 文章```代码块diff样式</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">pre .<span class="class">addition </span>&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="symbol">    background:</span> <span class="meta">#e6ffed;</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">pre .<span class="class">deletion </span>&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="symbol">    background:</span> <span class="meta">#ffeef0;</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+
+<h2 id="7-文本居中引用"><a href="#7-文本居中引用" class="headerlink" title="7. 文本居中引用"></a>7. 文本居中引用</h2><p>效果：</p>
+<blockquote class="blockquote-center"><p>看我！！</p>
+</blockquote>
+
+<p>源码：</p>
+<figure class="highlight django"><table><tr><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">cq</span> %&#125;</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="xml">看我！！</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">endcq</span> %&#125;</span></span></pre></td></tr></table></figure>
+
+<h2 id="8-主题自带label标签"><a href="#8-主题自带label标签" class="headerlink" title="8. 主题自带label标签"></a>8. 主题自带label标签</h2><p>首先需要在Next主题<code>_config.xml</code>中配置：</p>
+<p>复制</p>
+<figure class="highlight dockerfile"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Label tag.</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="keyword">label</span><span class="bash">: <span class="literal">true</span></span></span></pre></td></tr></table></figure>
+
+<p>然后效果如下（@ 前面的是<code>label</code>的名字，后面的是要显示的文字）：</p>
+<ul>
+<li><span class="label default">default</span>
+
+
+
+</li>
+</ul>
+<figure class="highlight dust"><table><tr><td class="code"><pre><span class="line"><span class="template-variable">&#123;% label <span class="keyword">default</span>@<span class="keyword">default</span> %&#125;</span></span></pre></td></tr></table></figure>
+
+<ul>
+<li><span class="label primary">primary</span>
+
+
+
+</li>
+</ul>
+<figure class="highlight sas"><table><tr><td class="code"><pre><span class="line">&#123;% <span class="meta">label</span> <span class="meta">primary</span>@<span class="meta">primary</span> %&#125;</span></pre></td></tr></table></figure>
+
+<ul>
+<li><span class="label success">success</span>
+
+
+
+</li>
+</ul>
+<figure class="highlight django"><table><tr><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">label</span> success@success %&#125;</span></span></pre></td></tr></table></figure>
+
+<ul>
+<li><span class="label info">info</span>
+
+
+
+</li>
+</ul>
+<figure class="highlight django"><table><tr><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">label</span> info@info %&#125;</span></span></pre></td></tr></table></figure>
+
+<ul>
+<li><span class="label warning">warning</span>
+
+
+
+</li>
+</ul>
+<figure class="highlight mel"><table><tr><td class="code"><pre><span class="line">&#123;% label <span class="keyword">warning</span>@warning %&#125;</span></pre></td></tr></table></figure>
+
+<ul>
+<li><span class="label danger">danger</span>
+
+
+
+</li>
+</ul>
+<figure class="highlight django"><table><tr><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">label</span> danger@danger %&#125;</span></span></pre></td></tr></table></figure>
+
+<div class="note warning">
+            <p>注意这个有一个BUG，千万不要把这个放到段首。。。</p>
+          </div>
+
+<h2 id="9-主题自带tabs标签"><a href="#9-主题自带tabs标签" class="headerlink" title="9. 主题自带tabs标签"></a>9. 主题自带tabs标签</h2><p>效果：</p>
+<div class="tabs" id="选项卡"><ul class="nav-tabs"><li class="tab"><a href="#选项卡-1">选项卡 1</a></li><li class="tab active"><a href="#选项卡-2">选项卡 2</a></li><li class="tab"><a href="#选项卡-3">选项卡 3</a></li></ul><div class="tab-content"><div class="tab-pane" id="选项卡-1"><p><strong>这是选项卡 1</strong> 呵呵哈哈哈哈哈哈哈哈呵呵哈哈哈哈哈哈哈哈呵呵哈哈哈哈哈哈哈哈呵呵哈哈哈哈哈哈哈哈呵呵哈哈哈哈哈哈哈哈呵呵哈哈哈哈哈哈哈哈……</p></div><div class="tab-pane active" id="选项卡-2"><p><strong>这是选项卡 2</strong></p></div><div class="tab-pane" id="选项卡-3"><p><strong>这是选项卡 3</strong> 哇，你找到我了！φ(≧ω≦*)♪～</p></div></div></div>
+
+<p>源码：</p>
+<figure class="highlight django"><table><tr><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">tabs</span> 选项卡, 2 %&#125;</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="xml"><span class="comment">&lt;!-- tab --&gt;</span></span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="xml">**这是选项卡 1** 呵呵哈哈哈哈哈哈哈哈呵呵哈哈哈哈哈哈哈哈呵呵哈哈哈哈哈哈哈哈呵呵哈哈哈哈哈哈哈哈呵呵哈哈哈哈哈哈哈哈呵呵哈哈哈哈哈哈哈哈……</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="xml"><span class="comment">&lt;!-- endtab --&gt;</span></span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="xml"><span class="comment">&lt;!-- tab --&gt;</span></span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="xml">**这是选项卡 2**</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="xml"><span class="comment">&lt;!-- endtab --&gt;</span></span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="xml"><span class="comment">&lt;!-- tab --&gt;</span></span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="xml">**这是选项卡 3** 哇，你找到我了！φ(≧ω≦*)♪～</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="xml"><span class="comment">&lt;!-- endtab --&gt;</span></span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">endtabs</span> %&#125;</span></span></pre></td></tr></table></figure>
+
+<p>首先还是需要在Next主题配置文件中配置：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Tabs tag.</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="attr">tabs:</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">transition:</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attr">tabs:</span> <span class="literal">true</span> <span class="comment"># 改为true</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attr">labels:</span> <span class="literal">true</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">border_radius:</span> <span class="number">0</span></span></pre></td></tr></table></figure>
+
+<p>然后上面源码中<code>, 2</code>表示一开始在第二个选项卡，非必须，若数值为<code>-1</code>则隐藏选项卡内容。更多用法请查看<a href="https://almostover.ru/2016-01/hexo-theme-next-test/#Tab-tag-test" target="_blank" rel="external nofollow noopener noreferrer">这个页面</a>。</p>
+<hr>
 <p>参考：</p>
 <p><a href="https://blog.csdn.net/weixin_39345384/article/details/80785373" target="_blank" rel="external nofollow noopener noreferrer">Hexo添加文章时自动打开编辑器</a></p>
+<p><a href="https://bestzuo.cn/posts/3147047336.html" target="_blank" rel="external nofollow noopener noreferrer">hexo博客Next主题进阶写作技巧</a></p>
 ]]></content>
       <categories>
         <category>hexo</category>
