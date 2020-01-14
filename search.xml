@@ -429,6 +429,9 @@
     <content><![CDATA[<blockquote>
 <p>前提要述：参考书籍《MySQL必知必会》</p>
 </blockquote>
+<blockquote class="blockquote-center"><p>前提要述：参考书籍《MySQL必知必会》</p>
+</blockquote>
+
 <h2 id="3-1-MySQL简介"><a href="#3-1-MySQL简介" class="headerlink" title="3.1 MySQL简介"></a>3.1 MySQL简介</h2><h3 id="3-1-1-什么是MySQL"><a href="#3-1-1-什么是MySQL" class="headerlink" title="3.1.1 什么是MySQL"></a>3.1.1 什么是MySQL</h3><p>MySQL是一种关系数据库管理系统。负责数据库中数据的存储，检索，管理和处理。</p>
 <h3 id="3-1-2-MySQL的优点"><a href="#3-1-2-MySQL的优点" class="headerlink" title="3.1.2 MySQL的优点"></a>3.1.2 MySQL的优点</h3><ul>
 <li>成本低——MySQL是开源的，一般可以免费使用。</li>
