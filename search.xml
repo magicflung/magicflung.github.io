@@ -1132,23 +1132,6 @@
 <figure class="highlight vim"><table><tr><td class="code"><pre><span class="line">&#123;% btn http<span class="variable">s:</span>//www.baidu.<span class="keyword">com</span>, 点击下载百度, download fa-<span class="keyword">lg</span> fa-fw %&#125;</span></pre></td></tr></table></figure>
 
 <p>关于按钮的更多使用可以前往<a href="https://almostover.ru/2016-01/hexo-theme-next-test/#Button-tag-test" target="_blank" rel="external nofollow noopener noreferrer">这个页面</a>查看。</p>
-<h2 id="11-代码块上部显示文字"><a href="#11-代码块上部显示文字" class="headerlink" title="11. 代码块上部显示文字"></a>11. 代码块上部显示文字</h2><p>效果：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">上面有就文字。</span></pre></td></tr></table></figure>
-
-<p>操作：</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">​```<span class="selector-attr">[language]</span> <span class="selector-attr">[title]</span> <span class="selector-attr">[url]</span> <span class="selector-attr">[link-text]</span></span></pre></td></tr></table></figure>
-
-<p>在Typora中别使用快捷键，先点3个然后[]就可以成功。</p>
-<ul>
-<li>[language] 是代码语言的名称，用来设置代码块颜色高亮，非必须；</li>
-<li>[title] 是顶部左边的说明，非必须；</li>
-<li>[url] 是顶部右边的超链接地址，非必须；</li>
-<li>[link text] 如它的字面意思，超链接的名称，非必须。</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">看我</span></pre></td></tr></table></figure>
-
-
-
 <hr>
 <p>参考：</p>
 <p><a href="https://blog.csdn.net/weixin_39345384/article/details/80785373" target="_blank" rel="external nofollow noopener noreferrer">Hexo添加文章时自动打开编辑器</a></p>
