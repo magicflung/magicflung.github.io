@@ -1254,9 +1254,10 @@
 <p><img alt data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226231540-510138.png"></p>
 <p>现在好像已经是默认给你一个，不能改的，然后把这个域名复制到上面环境变量的ADMIN_URL。</p>
 <p>我们还需要密码，用户名，需要在这里设置，只需要填写 email、password、username，这三个字段即可，使用 username 或 email 登陆即可。</p>
-<p><img alt data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226231212-930528.png"></p>
+<p><img alt data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20200114/20200114171311-784219.png"></p>
+<p><img alt data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226231211-767956.png"></p>
 <p>然后重启下实例</p>
-<p><img alt="16" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226231211-767956.png"></p>
+<p><img alt data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226231212-930528.png"></p>
 <p>最后访问域名，输入我们刚刚的username或者email，登录。就可以管理我们的评论区啦。</p>
 <p>LeanCloud 休眠策略</p>
 <p>免费版的 LeanCloud 容器，是有强制性休眠策略的，不能 24 小时运行：</p>
