@@ -1355,7 +1355,7 @@
 <p><img alt="15" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122723/20191227235317-936841.png"></p>
 <p>在主题目录<code>themes\next\layout\_macro</code>的post.swig中修改。主要是加个换行。</p>
 <p><img alt="16" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122723/20191227235613-926949.png"></p>
-<p><img alt data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20200114/20200114162848-820411.png"></p>
+<p><img alt data-src="/archives/6bbc4ccb/D:%5Cmyblog%5Cblog%5Csource_posts%5Chexo4-NexT7%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2(%E5%9B%9B)%5C30.png"></p>
 <p>搜索：if theme.leancloud_visitors.enable 。然后在这上面添加如下代码：</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line">&#123;#添加换行#&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">br</span>&gt;</span></span></pre></td></tr></table></figure>
 
@@ -1487,7 +1487,7 @@
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"post-meta"</span>&gt;</span></span></pre></td></tr></table></figure>
 
 <p>然后这个div的下一行添加上：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% if post.top %&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">	&lt;i class&#x3D;&quot;fa fa-thumb-tack&quot;&gt;&lt;&#x2F;i&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">	&lt;font color&#x3D;7D26CD&gt;置顶&lt;&#x2F;font&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">	&lt;span class&#x3D;&quot;post-meta-divider&quot;&gt;|&lt;&#x2F;span&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#123;% endif %&#125;</span></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% if post.top %&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">      &lt;i class&#x3D;&quot;fa fa-thumb-tack&quot;&gt;&lt;&#x2F;i&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">      &lt;font color&#x3D;7D26CD&gt;置顶&lt;&#x2F;font&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#123;% endif %&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#123;#添加换行#&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;br&gt;</span></pre></td></tr></table></figure>
 
 <p>效果：</p>
 <p><img alt="6" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226231802-763884.png"></p>
