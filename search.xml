@@ -921,7 +921,7 @@
 <li>打开站点配置文件<code>_config.yml</code>，搜索<code>post_asset_folder</code>字段，设置其值为<code>true</code></li>
 <li>安装hexo-asset-image：<code>npm install hexo-asset-image --save</code></li>
 <li>此时<code>hexo new &quot;fileName&quot;</code>会在<code>/source/_posts</code>目录下创建同名的文件夹</li>
-<li>只需在 md 文件里使用 <code>![title](图片名.jpg)</code> ，无需路径名就可以插入图片。但是我们会使用图床，存到这只是为了以后图床失效可以找到图片。</li>
+<li>只需在 md 文件里使用 <code>![title](同名的文件夹\图片名.jpg)</code> ，无需路径名就可以插入图片。但是我们会使用图床，存到这只是为了以后图床失效可以找到图片。</li>
 </ul>
 <h2 id="3-图床"><a href="#3-图床" class="headerlink" title="3. 图床"></a>3. 图床</h2><p><strong>我本来是使用阿里云来存储，但是好贵，我换成一个免费的 路过图床。</strong>也可以来这里：<a href="https://zhuanlan.zhihu.com/p/35270383" target="_blank" rel="external nofollow noopener noreferrer">图床大全</a></p>
 <p>图床有很多，比如阿里云，<a href="https://cloud.tencent.com/" target="_blank" rel="external nofollow noopener noreferrer">腾讯云</a>，<a href="https://www.upyun.com/" target="_blank" rel="external nofollow noopener noreferrer">又拍云</a>等，这些都是可以用的。</p>
@@ -995,8 +995,10 @@
 <p>内容必须要跟<code>note</code>标签不在一行：</p>
 <figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">&#123;%<span class="built_in"> note </span>danger %&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">note text,<span class="built_in"> note </span>text,<span class="built_in"> note </span>text</span></pre></td></tr><tr><td class="code"><pre><span class="line">note text,<span class="built_in"> note </span>text,<span class="built_in"> note </span>text</span></pre></td></tr><tr><td class="code"><pre><span class="line">note text,<span class="built_in"> note </span>text,<span class="built_in"> note </span>text</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#123;% endnote %&#125;</span></pre></td></tr></table></figure>
 
+<p>注意：不用代码块，这里的代码块只是演示源码。</p>
 <h3 id="5-2-示例"><a href="#5-2-示例" class="headerlink" title="5.2 示例"></a>5.2 示例</h3><h4 id="5-2-1-没有定义样式类别"><a href="#5-2-1-没有定义样式类别" class="headerlink" title="5.2.1 没有定义样式类别"></a>5.2.1 没有定义样式类别</h4><figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">&#123;%<span class="built_in"> note </span>%&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">(没有定义样式类别)</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#123;% endnote %&#125;</span></pre></td></tr></table></figure>
 
+<p>效果：</p>
 <div class="note ">
             <p>(没有定义样式类别)</p>
           </div>
@@ -1005,6 +1007,7 @@
 
 <h4 id="5-2-2-默认的类别"><a href="#5-2-2-默认的类别" class="headerlink" title="5.2.2 默认的类别"></a>5.2.2 默认的类别</h4><figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">&#123;%<span class="built_in"> note default </span>%&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">默认形式的类别</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#123;% endnote %&#125;</span></pre></td></tr></table></figure>
 
+<p>效果：</p>
 <div class="note default">
             <p>默认形式的类别</p>
           </div>
@@ -1013,6 +1016,7 @@
 
 <h4 id="5-2-3-primary形式的类别"><a href="#5-2-3-primary形式的类别" class="headerlink" title="5.2.3 primary形式的类别"></a>5.2.3 primary形式的类别</h4><figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">&#123;%<span class="built_in"> note </span>primary %&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">首要类型形式</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#123;% endnote %&#125;</span></pre></td></tr></table></figure>
 
+<p>效果：</p>
 <div class="note primary">
             <p>首要类型形式</p>
           </div>
@@ -1021,6 +1025,7 @@
 
 <h4 id="5-2-4-info形式的类别"><a href="#5-2-4-info形式的类别" class="headerlink" title="5.2.4 info形式的类别"></a>5.2.4 info形式的类别</h4><figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">&#123;%<span class="built_in"> note </span><span class="builtin-name">info</span> %&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">info形式的类别</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#123;% endnote %&#125;</span></pre></td></tr></table></figure>
 
+<p>效果：</p>
 <div class="note info">
             <p>info形式的类别</p>
           </div>
@@ -1029,12 +1034,14 @@
 
 <h4 id="5-2-5-success形式的类别"><a href="#5-2-5-success形式的类别" class="headerlink" title="5.2.5 success形式的类别"></a>5.2.5 success形式的类别</h4><figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">&#123;%<span class="built_in"> note </span>success %&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">success形式的类别</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#123;% endnote %&#125;</span></pre></td></tr></table></figure>
 
+<p>效果：</p>
 <div class="note success">
             <p>success形式的类别</p>
           </div>
 
 <h4 id="5-2-6-warning形式的类别"><a href="#5-2-6-warning形式的类别" class="headerlink" title="5.2.6 warning形式的类别"></a>5.2.6 warning形式的类别</h4><h4 id="5-2-11-note标签中插入表格"><a href="#5-2-11-note标签中插入表格" class="headerlink" title="5.2.11 note标签中插入表格"></a>5.2.11 note标签中插入表格</h4><figure class="highlight gherkin"><table><tr><td class="code"><pre><span class="line">&#123;% note default %&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">|<span class="string"> 1 </span>|<span class="string"> 2 </span>|</span></pre></td></tr><tr><td class="code"><pre><span class="line">|<span class="string"> - </span>|<span class="string"> - </span>|</span></pre></td></tr><tr><td class="code"><pre><span class="line">|<span class="string"> 3 </span>|<span class="string"> 4 </span>|</span></pre></td></tr><tr><td class="code"><pre><span class="line">|<span class="string"> 5 </span>|<span class="string"> 6 </span>|</span></pre></td></tr><tr><td class="code"><pre><span class="line">|<span class="string"> 7 </span>|<span class="string"> 8 </span>|</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#123;% endnote %&#125;</span></pre></td></tr></table></figure>
 
+<p>效果：</p>
 <div class="note default">
             <table><thead><tr><th>1</th><th>2</th></tr></thead><tbody><tr><td>3</td><td>4</td></tr><tr><td>5</td><td>6</td></tr><tr><td>7</td><td>8</td></tr></tbody></table>
           </div>
@@ -1250,14 +1257,14 @@
 </tbody></table>
 <p>4.如何申请SMTP，直接看图，我用的是qq邮箱，你要用别的得去查。开启后把STMP密码复制到上面的<code>SMTP_PASS</code>。</p>
 <p><img alt data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226231208-314925.png"></p>
-<p>5.设置二级域名后你可以访问评论管理后台。还是在这里的下面找到 Web主机域名</p>
+<p>5.设置二级域名后你可以访问评论管理后台。还是在这里的下面找到 Web主机域名( 云引擎 -》 设置 )</p>
 <p><img alt data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122623/20191226231540-510138.png"></p>
 <p>现在好像已经是默认给你一个，不能改的，然后把这个域名复制到上面环境变量的ADMIN_URL。</p>
 <p><img alt data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20200114/20200114172320-324217.png"></p>
 <p>我们还需要密码，用户名，需要在这里设置，只需要填写 email、password、username，这三个字段即可，使用 username 或 email 登陆即可。</p>
 <p><img alt data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20200114/20200114171311-784219.png"></p>
 <p><img alt data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226231211-767956.png"></p>
-<p>然后重启下实例</p>
+<p>然后重启下实例，点击右上角的设置里面就有重启按钮</p>
 <p><img alt data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226231212-930528.png"></p>
 <p>最后访问域名，输入我们刚刚的username或者email，登录。就可以管理我们的评论区啦。</p>
 <p>LeanCloud 休眠策略</p>
@@ -1267,7 +1274,6 @@
 <li>30 分钟内没有外部请求，则休眠。</li>
 <li>休眠后如果有新的外部请求实例则马上启动（但激活时发送邮件会失败）。</li>
 </ul>
-<p>分析了一下上方的策略，如果不想付费的话，最佳使用方案就设置定时器，每天 7 - 23 点每 20 分钟访问一次，这样可以保持每天的绝大多数时间邮件服务是正常的。</p>
 <h2 id="25-Valine-头像设置"><a href="#25-Valine-头像设置" class="headerlink" title="25. Valine 头像设置"></a>25. Valine 头像设置</h2><p>我们可以修改评论的头像，路人的头像有下面几种，默认为第一种</p>
 <p><img alt="17" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/2019122901/20191229014500-940138.png"></p>
 <p>在主题目录的_config.yml文件查找：valine 中，找到avatar，然后就可以修改上面的图标</p>
@@ -1338,7 +1344,7 @@
 
 
 
-<h2 id="32-一些样式"><a href="#32-一些样式" class="headerlink" title="32. 一些样式"></a>32. 一些样式</h2><p>还是刚刚的主题目录的配置文件_config.yml中查找 custom_file_path</p>
+<h2 id="32-一些样式"><a href="#32-一些样式" class="headerlink" title="32. 一些样式"></a>32. 一些样式</h2><p>还是刚刚的主题目录的配置文件_config.yml中查找 custom_file_path，这是在next7.5有的，其他的我不知道，反正就开启一个外部的css文件让我添加css样式。</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Define custom file paths.</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment"># Create your custom files in site directory `source/_data` and uncomment needed files below.</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="attr">custom_file_path:</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment">#head: source/_data/head.swig</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment">#header: source/_data/header.swig</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment">#sidebar: source/_data/sidebar.swig</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment">#postMeta: source/_data/post-meta.swig</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment">#postBodyEnd: source/_data/post-body-end.swig</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment">#footer: source/_data/footer.swig</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment">#bodyEnd: source/_data/body-end.swig</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment">#variable: source/_data/variables.styl</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment">#mixin: source/_data/mixins.styl</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">style:</span> <span class="string">source/_data/styles.styl</span></span></pre></td></tr></table></figure>
 
 <p>在<code>source/_data/styles.styl</code>中添加如下代码：下面的属性都可以在自己的网站按F12来查看要修改哪里，这应该不用我废话了。我的CSS都是复制别人的，自己不会CSS。</p>
@@ -1509,7 +1515,7 @@
 <p>然后在themes\next\source\css\_common\components\post中新建my-post-copyright.styl 文件，添加上我们的版权样式。</p>
 <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.my_post_copyright</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attribute">width</span>: <span class="number">85%</span>;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attribute">max-width</span>: <span class="number">45em</span>;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attribute">margin</span>: <span class="number">2.8em</span> auto <span class="number">0</span>;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attribute">padding</span>: <span class="number">0.5em</span> <span class="number">1.0em</span>;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#d3d3d3</span>;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attribute">font-size</span>: <span class="number">0.93rem</span>;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attribute">line-height</span>: <span class="number">1.6em</span>;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attribute">word-break</span>: break-all;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attribute">background</span>: <span class="built_in">rgba</span>(255,255,255,0.4);</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="selector-class">.my_post_copyright</span> <span class="selector-tag">p</span>&#123;<span class="attribute">margin</span>:<span class="number">0</span>;&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="selector-class">.my_post_copyright</span> <span class="selector-tag">span</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attribute">display</span>: inline-block;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attribute">width</span>: <span class="number">5.2em</span>;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attribute">color</span>: <span class="number">#b5b5b5</span>;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attribute">font-weight</span>: bold;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="selector-class">.my_post_copyright</span> <span class="selector-class">.raw</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attribute">margin-left</span>: <span class="number">1em</span>;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attribute">width</span>: <span class="number">5em</span>;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="selector-class">.my_post_copyright</span> <span class="selector-tag">a</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attribute">color</span>: <span class="number">#808080</span>;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attribute">border-bottom</span>:<span class="number">0</span>;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="selector-class">.my_post_copyright</span> <span class="selector-tag">a</span><span class="selector-pseudo">:hover</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attribute">color</span>: <span class="number">#a3d2a3</span>;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attribute">text-decoration</span>: underline;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="selector-class">.my_post_copyright</span><span class="selector-pseudo">:hover</span> <span class="selector-class">.fa-clipboard</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attribute">color</span>: <span class="number">#000</span>;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="selector-class">.my_post_copyright</span> <span class="selector-class">.post-url</span><span class="selector-pseudo">:hover</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attribute">font-weight</span>: normal;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="selector-class">.my_post_copyright</span> <span class="selector-class">.copy-path</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attribute">margin-left</span>: <span class="number">1em</span>;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attribute">width</span>: <span class="number">1em</span>;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  +mobile()&#123;display:none;&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="selector-class">.my_post_copyright</span> <span class="selector-class">.copy-path</span><span class="selector-pseudo">:hover</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attribute">color</span>: <span class="number">#808080</span>;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attribute">cursor</span>: pointer;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
 
-<p>在themes/next/source/css/_common/components/post/post.styl文件中最后添加：表示加载刚刚的样式。</p>
+<p>在themes/next/source/css/_common/components/post/post.styl文件中最后添加：表示使刚刚添加的样式生效。</p>
 <figure class="highlight xl"><table><tr><td class="code"><pre><span class="line">@<span class="keyword">import</span> <span class="string">"my-post-copyright"</span></span></pre></td></tr></table></figure>
 
 <p>然后在themes/next/layout/_macro/post.swig中，搜索 END POST BODY，然后再下一行添加：</p>
