@@ -918,10 +918,17 @@
 
 
 <h2 id="2-新建文章时，在相同目录下创建同名文件夹（便于图片管理）"><a href="#2-新建文章时，在相同目录下创建同名文件夹（便于图片管理）" class="headerlink" title="2. 新建文章时，在相同目录下创建同名文件夹（便于图片管理）"></a>2. 新建文章时，在相同目录下创建同名文件夹（便于图片管理）</h2><ul>
-<li>打开站点配置文件<code>_config.yml</code>，搜索<code>post_asset_folder</code>字段，设置其值为<code>true</code></li>
-<li>安装hexo-asset-image：<code>npm install hexo-asset-image --save</code></li>
-<li>此时<code>hexo new &quot;fileName&quot;</code>会在<code>/source/_posts</code>目录下创建同名的文件夹</li>
-<li>只需在 md 文件里使用 <code>![title](同名的文件夹\图片名.jpg)</code> ，无需路径名就可以插入图片。但是我们会使用图床，存到这只是为了以后图床失效可以找到图片。</li>
+<li><p>打开站点配置文件<code>_config.yml</code>，搜索<code>post_asset_folder</code>字段，设置其值为<code>true</code></p>
+</li>
+<li><p>安装hexo-asset-image：<code>npm install hexo-asset-image --save</code></p>
+</li>
+<li><p>此时<code>hexo new &quot;fileName&quot;</code>会在<code>/source/_posts</code>目录下创建同名的文件夹</p>
+</li>
+<li><p>然后在typora设置：</p>
+<p><img alt data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20200227/20200227132558-831598.png"></p>
+</li>
+<li><p>只需在 md 文件里使用 CTRL+SHIFT+I，可以插入相对路径的图片。不过我是使用图床，存到这只是为了以后图床失效可以找到图片。</p>
+</li>
 </ul>
 <h2 id="3-图床"><a href="#3-图床" class="headerlink" title="3. 图床"></a>3. 图床</h2><p><strong>我本来是使用阿里云来存储，但是好贵，我换成一个免费的 路过图床。</strong>也可以来这里：<a href="https://zhuanlan.zhihu.com/p/35270383" target="_blank" rel="external nofollow noopener noreferrer">图床大全</a></p>
 <p>图床有很多，比如阿里云，<a href="https://cloud.tencent.com/" target="_blank" rel="external nofollow noopener noreferrer">腾讯云</a>，<a href="https://www.upyun.com/" target="_blank" rel="external nofollow noopener noreferrer">又拍云</a>等，这些都是可以用的。</p>
