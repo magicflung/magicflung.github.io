@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://flunggg.cn/"/>
-  <updated>2020-01-14T05:51:25.994Z</updated>
+  <updated>2020-03-07T08:41:17.809Z</updated>
   <id>https://flunggg.cn/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test bed</title>
+    <link href="https://flunggg.cn/archives/ac6690f2.html"/>
+    <id>https://flunggg.cn/archives/ac6690f2.html</id>
+    <published>2020-03-07T08:39:48.000Z</published>
+    <updated>2020-03-07T08:41:17.809Z</updated>
+    
+    <content type="html"><![CDATA[<p><img alt data-src="/archives/ac6690f2/xgulp4.png"></p>]]></content>
+    
+    <summary type="html">
+    
+      test
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>快速回顾MySQL：简单查询操作</title>
