@@ -1648,6 +1648,8 @@
     <content><![CDATA[<h2 id="1-主题"><a href="#1-主题" class="headerlink" title="1. 主题"></a>1. 主题</h2><p>主题文件都是存放在站点的themes文件下，默认为landscape主题，主题可以从hexo官网下载，每个主题都会有文档。</p>
 <p>下载主题有两种方式，一种是下载主题包然后放到themes文件中，而我喜欢用另一种，就是使用GitBash从github上clone下来，可能速度有点慢，自己也可以用第一种方法，去github直接下载。</p>
 <h2 id="2-语言"><a href="#2-语言" class="headerlink" title="2. 语言"></a>2. 语言</h2><p>一开始来是英文的，所以得改成中文，打开站点目录下的_config.yml。找到下面的代码：</p>
+<p><img alt data-src="/archives/66b7033a/5.png"></p>
+<p><img alt data-src="https://raw.githubusercontent.com/magicflung/Figurebed/master/img/5.png"></p>
 <p><img alt="1" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226222123-835691.png"></p>
 <p>在language的值修改为: zh-CN</p>
 <p>然后测试下就变中文。</p>
