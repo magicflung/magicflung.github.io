@@ -1648,9 +1648,7 @@
     <content><![CDATA[<h2 id="1-主题"><a href="#1-主题" class="headerlink" title="1. 主题"></a>1. 主题</h2><p>主题文件都是存放在站点的themes文件下，默认为landscape主题，主题可以从hexo官网下载，每个主题都会有文档。</p>
 <p>下载主题有两种方式，一种是下载主题包然后放到themes文件中，而我喜欢用另一种，就是使用GitBash从github上clone下来，可能速度有点慢，自己也可以用第一种方法，去github直接下载。</p>
 <h2 id="2-语言"><a href="#2-语言" class="headerlink" title="2. 语言"></a>2. 语言</h2><p>一开始来是英文的，所以得改成中文，打开站点目录下的_config.yml。找到下面的代码：</p>
-<p><img alt data-src="/archives/66b7033a/5.png"></p>
 <p><img alt data-src="https://raw.githubusercontent.com/magicflung/Figurebed/master/img/5.png"></p>
-<p><img alt="1" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226222123-835691.png"></p>
 <p>在language的值修改为: zh-CN</p>
 <p>然后测试下就变中文。</p>
 <h2 id="3-NexT主题"><a href="#3-NexT主题" class="headerlink" title="3. NexT主题"></a>3. NexT主题</h2><h4 id="3-1-下载NexT主题"><a href="#3-1-下载NexT主题" class="headerlink" title="3.1 下载NexT主题"></a>3.1 下载NexT主题</h4><p>我使用的是Next主题，比较火，出bug容易找到解决方案，访问速度很快，简洁。</p>
@@ -1659,12 +1657,12 @@
 
 <p>然后等待下载，最后的themes/next 表示会把克隆的主题放到该目录，具体可以参考  <a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="external nofollow noopener noreferrer">官方</a>。</p>
 <h4 id="3-2-更换主题"><a href="#3-2-更换主题" class="headerlink" title="3.2 更换主题"></a>3.2 更换主题</h4><p>在站点目录下的_config.yml文件中更改新下载的主题，把theme后面的值改为next，记得要有空格，这是yml文件得遵循yml语法。</p>
-<p><img alt="2" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226222142-371141.png"></p>
+<p><img alt data-src="/archives/66b7033a/1.png"></p>
 <p>然后使用之前说的三条指令启动本地测试，访问localhost:4000，就可以看到更换的next主题</p>
 <p>NexT主题中还有四个不同风格的主题，我是用Gemini风格，这个可以改，在主题目录下（next）的_config.yml中查询 Schemes，然后下面有四种风格，都试试喜欢哪一种，把不用的注释，只能存在一个风格。</p>
-<p><img alt="3" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226222143-959399.png"></p>
+<p><img alt data-src="/archives/66b7033a/2.png"></p>
 <h4 id="3-3-在菜单栏开启一些跳转页面"><a href="#3-3-在菜单栏开启一些跳转页面" class="headerlink" title="3.3 在菜单栏开启一些跳转页面"></a>3.3 在菜单栏开启一些跳转页面</h4><p>还是在主题目录下的<code>_config.yml</code>中。把想要的页面开启，去掉#即可。</p>
-<p><img alt="4" data-src="http://flunggg.oss-cn-shenzhen.aliyuncs.com/hexoImg/20191226222144-962329.png"></p>
+<p><img alt data-src="/archives/66b7033a/3.png"></p>
 <p>我开启的从上到下分别是：首页、阅读排行（这个是我加的原先没有，后面再说怎么加）、归档、分类、标签、关于我。<strong>可以在menu中调换显示顺序。</strong></p>
 <p>但是这些页面不会自动生成，得我们创建。</p>
 <p>比如：<strong>分类页面</strong>，在站点目录打开Git Bash，输入</p>
